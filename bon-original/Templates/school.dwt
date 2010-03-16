@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<script language="JavaScript" type="text/javascript" src="../js/utilities.js"></script>
+<link rel="stylesheet" href="../css/default.css" type="text/css" />
+</head>
+
+<body bgcolor="#F4FFE4">
+<table width="900" border="0" cellspacing="0" cellpadding="0" align="center" id="tablebody">
+  <tr bgcolor="#0033FF">
+    <td height="150" width="900" colspan="2" class="logo" nowrap="nowrap" align="CENTER"><br />
+	BON NAME HERE <BR /><span class="tagline">OPTIONAL TAGLINE HERE</span></td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#0099FF" class="borderline" background="mm_dashed_line.gif"><img src="mm_dashed_line.gif" alt="line decor" width="4" height="3" border="0" /></td>
+  </tr>
+
+  <tr bgcolor="#0033FF">
+  	<td height="20" colspan="3">
+		<table width="895" border="0" id="navigationTop">
+			<tr>	
+				<td width="55" align="center"><a href="../bon.php" class="navText">HOME</a></td>
+				<td width="110" align="center"><a href="../bon.php" class="navText">CONTACT US</a></td>
+				<td width="83" align="center"><a href="../bon.php" class="navText">HELP</a></td>
+				<td width="91" align="center"><a href="#" class="navText"><font color="#660000">LOG OUT</font></a></td>
+			  <td width="534" align="right" id="dateformat">Today: 
+		      <script language="javascript">document.write(getDate())</script></td>
+			</tr>
+	  </table>	</td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#0099FF" class="borderline" background="mm_dashed_line.gif"><img src="mm_dashed_line.gif" alt="line decor" width="4" height="3" border="0" /></td>
+  </tr>
+
+ <tr>
+    <td width="192" valign="top" bgcolor="#0099FF">
+	<br />
+	<table border="0" cellspacing="0" cellpadding="0" width="165" id="navigation" align="center">
+        <tr>
+          <td width="165">&nbsp;<br /></td>
+        </tr>
+        <tr>
+          <td width="165"><a href="javascript:;" class="navText">menu 1</a></td>
+        </tr>
+        <tr>
+          <td width="165"><a href="javascript:;" class="navText">menu 2</a></td>
+        </tr>
+        <tr>
+          <td width="165"><a href="javascript:;" class="navText">menu 3</a></td>
+        </tr>
+        <tr>
+          <td width="165"><a href="javascript:;" class="navText">menu 4</a></td>
+        </tr>
+        <tr>
+          <td width="165"><a href="javascript:;" class="navText">menu 5</a></td>
+        </tr>
+      </table>
+ 	 <br />
+	<table border="1" bgcolor="#F5F5F5" cellpadding="0" width="165" id="sidebar" align="center">
+        <tr>
+          <td width="165">Some Reminders</td>
+        </tr>
+		<tr>
+          <td width="165">
+		  	this part here are reminders <br />
+			this part here are reminders <br />
+			this part here are reminders <br />
+			this part here are reminders <br />
+			this part here are reminders <br />		</td>
+        </tr>
+    </table>
+  	 <br />
+  	&nbsp;<br /> 	</td>
+    <td width="665" valign="top" ><br />
+	&nbsp;<br />
+	<table border="0" cellspacing="0" cellpadding="0" width="697" align="center">
+      <tr>
+        <td width="677" class="pageName"><!-- TemplateBeginEditable name="contentName" -->WELCOME MESSAGE<!-- TemplateEndEditable --> </td>
+      </tr>
+      <tr>
+        <td class="bodyText"><br /><!-- TemplateBeginEditable name="content" -->
+        <p>This Home Page layout makes a great starting point for your website. Virtually all of the content is customizable, including the images, the text, and the links. You can decide whether to keep the existing graphics or swap them out for pictures of your own.</p>
+            <p>The text on this page is intended to help you jumpstart your design by suggesting the sort of content you may want to include, but don't let it limit you. The same is also true for the link text - feel free to change the names of the links to better suit your particular needs. The Home Page layout can be used for multiple pages on your site, or you can choose from the Text, Catalogue, Product, or Calendar layouts as well. Don't be afraid to get creative and combine different page layouts to make your site as engaging as possible. If you have any questions about using Contribute to edit these pages, refer to the Read Me file included with the download or to the Contribute Help System. Have fun and make a great website!</p><!-- TemplateEndEditable --> </td>
+      </tr>
+    </table>
+	<br />
+	<br /> 	</td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#0099FF" class="borderline" background="mm_dashed_line.gif"><img src="mm_dashed_line.gif" alt="line decor" width="4" height="3" border="0" /></td>
+  </tr>
+  <tr bgcolor="#0033FF">
+  	<td height="20" colspan="3">&nbsp;<br />	</td>
+  </tr>
+</table>
+</body>
+</html>
+
