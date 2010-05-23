@@ -1,3 +1,0 @@
-<% checked = app.has_order ? "checked" : "" %>
-<input type="checkbox" onchange="status_report.toogle_status_ordr(<%=app.id-%>, this.checked)" <%= checked -%> >
-<%= span_loader("status_ordr_loader_#{app.id}") -%>

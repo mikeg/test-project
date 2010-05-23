@@ -1,3 +1,0 @@
-<% checked = app.has_rle ?  "checked" : "" %>
-<input type="checkbox" onchange="status_report.toogle_status_rle(<%=app.id-%>, this.checked)" <%= checked -%> >
-<%= span_loader("status_rle_loader_#{app.id}") -%>

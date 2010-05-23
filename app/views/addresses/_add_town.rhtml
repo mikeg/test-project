@@ -1,8 +1,0 @@
-<% remote_form_for add_towns_addresses_path(:province_id => @province.id), :method => 'post' do %>
-Town name: <%= text_field_tag "name" %><br/>
-Zip Code: <%= text_field_tag "zip_code" %>
-<%= hidden_field_tag "province_id", @province.id -%>
-<br/>
-<%=submit_tag "Add", :class => "submit_tag"%>
-<%= link_to_remote "cancel", :url => show_towns_addresses_path(:province_id => @province.id) %>
-<% end %>

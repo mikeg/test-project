@@ -1,3 +1,0 @@
-<% checked = app.has_cedula? ? "checked" : "" %>
-<input type="checkbox" onchange="status_report.toogle_status_cedula(<%=app.id-%>, this.checked)" <%= checked -%> >
-<%= span_loader("status_cedula_loader_#{app.id}") -%>

@@ -1,3 +1,0 @@
-<% checked = app.has_tor ? "checked" : "" %>
-<input type="checkbox" onchange="status_report.toogle_status_tor(<%=app.id-%>, this.checked)" <%= checked -%> >
-<%= span_loader("status_tor_loader_#{app.id}") -%>
