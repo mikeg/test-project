@@ -1,0 +1,34 @@
+<div style="clear:both"></div>
+<table cellpadding=2 cellspacing=2 border=1 width="100%" style="border-collapse: collapse">
+  <tr bgcolor="##6699FF">
+    <td width=230>Student Name </td>
+    <td width=70>Year Level</td>
+    <td width=250>Releasing School</td>
+    <td></td>
+  </tr>
+  <%
+  @students.each do |student|
+  %>
+  <tr>
+    <td width="250"><%= student.fullname -%></td>
+    <td><%= student.year_level %></td>
+    <td><%= student.school.name %></td>
+    <td>
+      <div id="accept_div<%= student.id -%>">
+      <%  unless student.released_at.nil? %>
+        <% remote_form_for :form, :url => accept_student_transfer_path(student), 
+                                  :loading => "$('page_loader#{student.id}').show()", 
+                                  :complete => "$('page_loader#{student.id}').hide()", 
+                                  :html => { :method => :put } do |f|%>
+        Released at: <%= student.released_at.strftime("%B %d, %Y")%>
+          <%= submit_tag "Accept"%>
+        <% end %>
+        </div>
+        <%= span_loader("page_loader#{student.id}")%>
+      <% else %>
+       Not yet released.
+      <% end %>
+    </td>
+  </tr>
+  <% end %>
+</table>

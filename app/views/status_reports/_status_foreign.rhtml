@@ -1,0 +1,3 @@
+<% checked = app.is_foreign && app.is_foreign? ? "checked" : "" %>
+<input type="checkbox" onchange="status_report.toogle_status_foreign(<%=app.id-%>, this.checked)" <%= checked -%> >
+<%= span_loader("status_foreign_loader_#{app.id}") -%>

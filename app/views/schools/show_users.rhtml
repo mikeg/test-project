@@ -1,0 +1,26 @@
+<span style="font-size:14px;font-weight:bold"><%= @school.name%> </span><br/><br/>
+<% unless @school_users.empty? %>
+REGISTRAR LIST:    
+<%= link_to "Add", adduser_schools_path(:school_id => params[:id]) %>
+<br/><br/>
+<table cellpadding=2 cellspacing="2" border="1" style="border-collapse: collapse; border-color: ##CCCCCC">
+  <tr>
+    <td>Name</td>
+    <td>username</td>
+    <td>Status</td>
+    <td></td>
+  </tr>
+
+  <% @school_users.each do |u|%>
+  <tr>
+    <td><%= u.fullname %></td>
+    <td><%= u.username %></td>
+    <td><%= u.status_name %></td>
+    <td><%= link_to "Edit" %> <%= link_to "Delete" %></td>
+  </tr>
+  <% end%>
+</table>
+<% else %>
+  No registrars added.
+  <%= link_to "Add", adduser_schools_path(:school_id => params[:id]) %>
+<% end%>

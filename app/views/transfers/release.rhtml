@@ -1,0 +1,11 @@
+<div id="title_header"><h1>Search students from within your school </h1></div>
+<div class="clear"></div>
+<div id="search_school">
+ <% form_tag release_transfers_path, :method => :get do %>
+ Search: <%= text_field_tag "search", params[:search], :size => "50" -%>
+ <%= submit_tag "Search", :class => "submit_tag"%>
+ <% end %>
+
+</div>
+
+<%= render :partial => "release_rows" -%>

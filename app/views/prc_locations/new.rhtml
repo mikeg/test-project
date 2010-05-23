@@ -1,0 +1,24 @@
+<span class="page_title">Add PRC Location</span> <%= span_loader("prc_loader") %>
+<br/><br/>
+
+
+<% form_tag new_prc_location_path, :method => 'post' do %>
+
+<ul style="list-style:none; margin: 0px; padding:0px">
+  <li>Region: </li>
+  <li ><%= text_field_tag "prc[region]", nil, :class => "text_field" %></li>
+  <li>Code: </li>
+  <li ><%= text_field_tag "prc[code]", nil, :class => "text_field" %></li>
+  <li>Is Satellite? : </li>
+  <li><%= radio_button_tag "prc[is_satellite]", 1, true %> Yes
+      <%= radio_button_tag "prc[is_satellite]", 0, false %> No
+    </li>
+
+  <br/><%= submit_tag "Submit",  :class => "submit_tag" %> <%= link_to "cancel", prc_locations_path %></li>
+</ul>
+<% end -%>
+
+<%= observe_field("regions_select", :url => {:action => :update_province_select }, :with => 'region_id', :loading => "$('prc_loader').show()", :complete => "$('prc_loader').hide()") %>
+
+
+<%= observe_field("province_select", :url => {:action => :update_town_select }, :with => 'province_id',  :update => "town_div", :loading => "$('prc_loader').show()", :complete => "$('prc_loader').hide()") %>

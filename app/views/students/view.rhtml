@@ -1,0 +1,11 @@
+<span class="page_title">View Student</span>
+<br/><br/>
+  <%= render :partial => "view_personal" %>
+  <%= render :partial => "view_educational" %>
+  <%= render :partial => "view_exam_history" %>
+
+<div style="margin:5px">
+<% form_tag newapplication_student_path(@student), :method => :get do  %>
+ <%= submit_tag "Create New Application >>" -%>
+<% end %>
+</div>

@@ -1,0 +1,24 @@
+<span class="page_title">Edit Cashier</span>
+<br/><br/>
+<% form_tag cashier_path(@cashier), :method => 'put' do %>
+<ul style="list-style:none; margin: 0px; padding:0px">
+  <li>Firstname: </li>
+  <li ><%= text_field_tag "user[firstname]",@cashier.firstname, :class => "text_field" -%></li>
+  <li >Lastname: </li>
+  <li ><%= text_field_tag "user[lastname]", @cashier.lastname, :class => "text_field" -%></li>
+  <li> Location Handled: </li>
+  <li><%= select_tag "user[location]", options_for_select(@prc_locations, @selected_province), :class => "text_field" %></li>
+  <li>Employee No.: </li>
+  <li><%= text_field_tag "user[employee_no]", @cashier.employee_no, :class => "text_field" %></li>
+  <li>Username: </li>
+  <li><%= text_field_tag "user[username]", @cashier.username, :class => "text_field" %></li>
+  <li>Password: </li>
+  <li><%= password_field_tag "user[password]", @cashier.password, :class => "text_field" %></li>
+  <li>Access status: </li>
+  <li>Enable: <%= radio_button_tag "user[is_active]", "1", (@cashier.is_active? ? true : false) %>
+    Disable: <%= radio_button_tag "user[is_active]", "0", (@cashier.is_active? ? false : true) %>
+    </li>
+  <li>
+  <br/><%= submit_tag "Submit",  :class => "submit_tag" %> <%= link_to "cancel", cashiers_path %></li>
+</ul>
+<% end -%>    

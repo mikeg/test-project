@@ -1,0 +1,66 @@
+<span style="font-weight:bold; font-size:14px; margin-bottom: 50px">Edit new school</span>
+
+<% form_tag school_path(@school), :method => 'put' do %>
+<table>
+  <tr>
+    <td>School name: </td>
+    <td><%= text_field_tag "name", @school.name, :size => "70" %></td>
+  </tr>
+  <tr>
+    <td>PRC School code: </td>
+    <td><%= text_field_tag "prc_school_code", @school.prc_school_code, :size => "30" %></td>
+  </tr>
+  <tr>
+    <td>Status: </td>
+    <td><%= radio_button_tag "status", "1", true %> Active <%= radio_button_tag "status", "0", false %> Closed</td>
+  </tr>
+  <tr>
+    <td>Region: </td>
+    <td><%= select_tag "region", options_for_select(@regions, @school.region_id) %></td>
+  </tr>
+  <tr>
+    <td>Province: </td>
+    <td>
+    <div id="list_province"><%= render :partial => "province_select_edit"%></div>
+    </td>
+  </tr>
+  <tr>
+    <td>Municipality/City: </td>
+    <td>
+        <div id="town_div">
+          <%= render :partial => "town_select_edit"%>
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td>Street Address: </td>
+    <td><%= text_field_tag "street", @school.street_brgy, :class => "text_field" %></td>
+  </tr>
+  <tr>
+    <td>Area Code: </td>
+    <td><%= text_field_tag "areacode", @school.area_code, :class => "text_field" %></td>
+  </tr>
+  <tr>
+    <td>Zip Code: </td>
+    <td><%= text_field_tag "zipcode", @school.zip_code, :class => "text_field" %></td>
+  </tr>
+  <tr>
+    <td>Rurban Code: </td>
+    <td><%= text_field_tag "rurbancode", @school.rurban_code, :class => "text_field" %></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><%= submit_tag "Submit", :class => "submit_tag" %>
+      <%= link_to "Cancel", schools_path %>
+      </td>
+  </tr>
+
+</table>
+  
+<% end -%>  
+
+<%= observe_field("region", :url => {:action => :update_province_select }, :with => 'region_id', :loading => "$('prc_loader').show()", :complete => "$('prc_loader').hide()") %>
+
+
+<%= observe_field("province", :url => {:action => :update_town_select }, :with => 'province_id',  :update => "town_div", :loading => "$('prc_loader').show()", :complete => "$('prc_loader').hide()") %>

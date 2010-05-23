@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head >
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title><%= @page_title -%></title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag "jquery-1.4.2.min" %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "prototype" %>
+    <%= javascript_include_tag "effects" %>
+    <%= javascript_include_tag "controls" %>
+    <%= javascript_include_tag "helpers" %>
+    <%= javascript_include_tag "dragdrop" %>
+</head>
+<body>
+
+<div id="top_banner">
+    <div>
+      <%= image_tag("bongif.gif", :size => "100x100", :align => "left") -%>
+      <div id="logo_text">
+      NURSING SYSTEM <br/>
+      <span>Philippine Nursing Online System </span>
+      </div>
+
+      <div id="top_school" onclick="location.href='<%= chedrecognitions_path %>'">
+        <% unless current_user.school.nil? %>
+          <%= current_user.school.name.titleize %>
+          <div>
+          <%= current_user.school.complete_address.titleize %>
+          </div>
+        <% end %>
+      </div>
+      
+      <div id="top_menu">
+        <%= link_to "Dashboard", dashboard_path -%> |
+        <%= link_to "Log-out", stop_sessions_path -%>
+        <div id="date_today">Today is <%= Time.now.strftime("%a %B %d, %Y") -%> </div>
+      </div>
+    </div>
+</div>
+
+<div id="content_wrapper">
+  <%= render :partial => "globals/sidebar" %>
+
+  <div id="main_content">
+    <div id="notice_or_error">
+      <%= render :partial => "globals/notice_or_error", :locals => {:message => flash[:error], :type => 'error'} if flash[:error] %>
+      <%= render :partial => "globals/notice_or_error", :locals => {:message => flash[:notice], :type => 'notice'} if flash[:notice] %>
+    </div>
+    
+    <%= yield -%>
+  </div>
+</div>
+
+<div id="footer">
+ Copyright 2010 © Board of Nursing. All rights reserved.
+ <%= link_to "Feedback and Comments", new_feedback_path %>
+</div>
+
+</body>
+</html>

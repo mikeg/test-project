@@ -1,0 +1,3 @@
+Province : <%= select_tag "address_province_id", options_for_select(provinces, selected_id), :class => "text_field" %>
+
+<%= observe_field("address_province_id", :url => {:action => :update_town_select_address }, :with => 'province_id',  :loading => "$('prc_loader').show()", :complete => "$('prc_loader').hide()") %>
