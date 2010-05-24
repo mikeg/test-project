@@ -1,0 +1,9 @@
+<div id="add_town" style="margin-bottom: 10px"></div>
+Provinces (<%= @province.name -%>) :
+<%= link_to_remote "add", :url => add_towns_addresses_path(:province_id => @province.id), :method => :get %>
+<br/>
+<ul>
+<% @towns.each do |t| %>
+  <li><%=t.name -%> - <%= t.zip_code%> </li>
+<% end %>
+</ul>

@@ -1,0 +1,26 @@
+<div id="title_header"><h1>RESULTS</h1></div>
+<div style="clear:both"></div>
+<br/>
+<div>
+
+  <table cellpadding=2 cellspacing=2 border=1 width="100%" style="border-collapse: collapse">
+    <tr bgcolor="##6699FF">
+      <td width=250>Student Name </td>
+      <td width=120>Examinee No.</td>
+      <td>Test 1</td>
+      <td>Test 2</td>
+      <td>Test 2</td>
+    </tr>
+    <%
+    @examinees.each do |examinee|
+    %>
+    <tr>
+      <td><%= examinee.student.fullname -%></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <% end %>
+  </table>  
+</div>

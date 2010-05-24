@@ -1,0 +1,34 @@
+#regions{
+  float: left;
+  position: relative;
+  display: block;
+  width: 100px;
+}
+#regions ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#provinces {
+  float: left;
+  position: relative;
+  display: block;
+  width: 200px;
+}
+#provinces ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#towns{
+  float: left;
+  position: relative;
+  display: block;
+  width: 260px;
+}
+#towns ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+

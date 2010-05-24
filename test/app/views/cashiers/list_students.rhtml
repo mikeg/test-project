@@ -1,0 +1,13 @@
+<div id="search_school">
+ <% form_tag list_students_cashiers_path, :method => :get do %>
+ Search: <%= text_field_tag "search", nil, :size => "50" -%>
+ <%= submit_tag "Search", :class => "submit_tag"%>
+ <% end %>
+
+</div>
+
+
+<div>
+  <div id="title_header"><h1>Students </h1></div>
+</div>
+<%= render :partial => "rows" -%>

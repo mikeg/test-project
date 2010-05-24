@@ -1,0 +1,35 @@
+<div>
+  <div id="title_header"><h1>Users </h1></div>
+  <div id="add_school"><%= link_to "Add user >>", new_user_path %> </div>
+</div>
+<div style="clear:both"></div>
+
+<table cellpadding=2 cellspacing=2 border=1 width="100%" style="border-collapse: collapse">
+  <tr bgcolor="##6699FF">
+    <td>Cashier name </td>
+    <td>Role </td>
+    <td>School</td>
+    <td>Location Handled</td>
+    <td>Access</td>
+    <td>Action</td>
+  </tr>
+  <%
+  @users.each do |u|
+    province = Province.find(u.location) rescue nil
+  %>
+  <tr>
+    <td><%= u.fullname.titleize -%></td>
+    <td><%= u.role_code -%></td>
+    <td><%= u.school.name unless u.school.nil? -%></td>
+    <td><%= province.name unless province.nil? -%></td>
+    <td><%= u.status_name -%></td>
+    <td>
+      <div id="actions">
+        <%= link_to "edit", edit_user_path(u) %>
+        <%= link_to "delete", user_path(u), :confirm => "Are you sure you want to delete this?", :method => "delete" %>
+      </div>
+    </td>
+  </tr>
+  <% end %>
+</table>
+</div>

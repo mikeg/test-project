@@ -1,0 +1,3 @@
+<% checked = app.has_stamp? ? "checked" : "" %>
+<input type="checkbox" onchange="status_report.toogle_status_stamp(<%=app.id-%>, this.checked)" <%= checked -%> >
+<%= span_loader("status_stamp_loader_#{app.id}") -%>

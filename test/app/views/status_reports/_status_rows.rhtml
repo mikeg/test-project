@@ -1,0 +1,252 @@
+<div style="clear:both"></div>
+<table cellpadding=2 cellspacing=2 border=1 width="100%" style="border-collapse: collapse">
+  <tr bgcolor="##6699FF">
+    <td width="200">Student Name </td>
+    <td width="50">NAF Form</td>
+    <td width="50">TOR</td>
+    <td width="50">SRLE</td>
+    <td width="50">O.R.D.R Cases</td>
+    <td width="50">NSO Birth Certificate</td>
+    <td width="50">NSO Marriage Contract</td>
+    <td width="50">Foreign</td>
+    <td width="50">Passport Picture</td>
+    <td width="50">Window Envelope</td>
+    <td width="50">Stamp</td>
+    <td width="50">Cedula</td>
+    <td width="50">status</td>
+  </tr>
+  <%
+  @applicants.each do |app|
+  %>
+  <tr>
+    <td><%= app.student.fullname -%></td>
+    <td><div id="naf_span_<%= app.id %>">
+          <%= render :partial => "status_naf" , :locals => {:app => app} %>
+        </div>
+    </td>
+    <td><div id="tor_span_<%= app.id %>">
+          <%= render :partial => "status_tor" , :locals => {:app => app} %>
+        </div></td>
+    <td><div id="rle_span_<%= app.id %>">
+              <%= render :partial => "status_rle" , :locals => {:app => app} %>
+            </div></td>
+    <td><div id="ordr_span_<%= app.id %>">
+                      <%= render :partial => "status_ordr" , :locals => {:app => app} %>
+                    </div></td>
+    <td><div id="nso_span_<%= app.id %>">
+          <%= render :partial => "status_nso" , :locals => {:app => app} %>
+        </div></td>
+    <td><div id="marriage_span_<%= app.id %>">
+        <% if app.student.marital_status.to_s == "married" %>
+            <%= render :partial => "status_marriage" , :locals => {:app => app} %>
+        <% end %>
+        </div></td>
+    <td><div id="foreign_span_<%= app.id %>">
+          <% if app.student.foreign?%>
+          <%= render :partial => "status_foreign" , :locals => {:app => app} %>
+          <% end %>
+        </div></td>
+    <td><div id="passport_span_<%= app.id %>">
+          <%= render :partial => "status_passport" , :locals => {:app => app} %>
+        </div></td>
+    <td><div id="envelope_span_<%= app.id %>">
+          <%= render :partial => "status_envelope" , :locals => {:app => app} %>
+        </div></td>
+    <td><div id="stamp_span_<%= app.id %>">
+          <%= render :partial => "status_stamp" , :locals => {:app => app} %>
+        </div></td>
+    <td><div id="cedula_span_<%= app.id %>">
+          <%= render :partial => "status_cedula" , :locals => {:app => app} %>
+        </div></td>
+    <td> <%= app.examination_type %></td>
+
+  </tr>
+  <% end %>
+</table>
+</div>
+
+<%= javascript_tag(<<-JS
+  status_report = {
+    init: function(){},
+
+    toogle_status_naf: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_naf')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_naf_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_naf_loader_' + id).hide();
+        }
+      });
+    },
+    
+    toogle_status_tor: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_tor')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_tor_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_tor_loader_' + id).hide();
+        }
+      });
+    },
+
+    toogle_status_rle: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_rle')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_rle_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_rle_loader_' + id).hide();
+        }
+      });
+    },
+    
+    toogle_status_ordr: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_ordr')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_ordr_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_ordr_loader_' + id).hide();
+        }
+      });
+    },
+
+    toogle_status_marriage: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_marriage')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_marriage_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_marriage_loader_' + id).hide();
+        }
+      });
+    },
+
+    toogle_status_nso: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_nso')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_nso_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_nso_loader_' + id).hide();
+        }
+      });
+    },
+
+    toogle_status_foreign: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_foreign')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_foreign_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_foreign_loader_' + id).hide();
+        }
+      });
+    },
+    
+    toogle_status_passport: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_passport')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_passport_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_passport_loader_' + id).hide();
+        }
+      });
+    },
+
+    toogle_status_envelope: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_envelope')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_envelope_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_envelope_loader_' + id).hide();
+        }
+      });
+    },
+
+    toogle_status_stamp: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_stamp')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_stamp_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_stamp_loader_' + id).hide();
+        }
+      });
+    },
+
+    toogle_status_cedula: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_cedula')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_cedula_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_cedula_loader_' + id).hide();
+        }
+      });
+    }
+    
+    
+  };
+  Preload.on_ready(status_report.init, [ ], status_report, #{request.xhr?});
+JS
+)%>

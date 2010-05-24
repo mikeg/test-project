@@ -1,0 +1,132 @@
+<div style="width:850px; background-color:#C0C0C0">
+  <div style="background-color:#6699FF; height:25px; padding-top:6px; padding-left:6px"> PERSONAL INFORMATION</div>
+
+  <table border="0" width="800">
+    <tr>
+      <td width="220" align="right">Surname/Family Name :</td>
+      <td><%= text_field_tag "student[lastname]"%></td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Given Name : </td>
+      <td><%= text_field_tag "student[firstname]"%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Middle Name : </td>
+      <td><%= text_field_tag "student[middlename]", nil %>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Date of Birth (mm/dd/yyyy): </td>
+      <td>
+      <%= select_tag "dob_month", options_for_select(Constant.months,nil)%>
+      <%= select_tag "dob_day", options_for_select(Constant.days,nil) %>
+      <%= select_tag "dob_year", options_for_select(Constant.years,nil) %>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Sex: </td>
+      <td><%= radio_button_tag "student[sex]", "male" %>Male
+        <%= radio_button_tag "student[sex]", "female" %>Female
+      </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Year level : </td>
+      <td><%= select_tag "student[year]", options_for_select(Constant::YEAR_LEVELS, nil)%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right" valign="top">Complete mailing address: </td>
+      <td>
+        Region : <%= select_tag "address_region_id", options_for_select(@regions, nil), :class => "text_field" %>
+        <%= span_loader("address_loader") %>
+        <div id="address_province_div">
+          <%= render :partial => "province_select", :locals => { :provinces => @provinces, :selected_id => nil }%>
+        </div>
+        <div id="address_town_div">
+          <%= render :partial => "town_select", :locals => { :towns => @towns , :selected_id => nil } %>
+        </div>
+        <div>Street : <%= text_field_tag "student[street]"%></div>
+      </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Citizenship: </td>
+      <td><%= select_tag "student[country_id]", options_for_select(@countries, @default_country.id), :class => "text_field" %>
+      </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Email Address : </td>
+      <td><%= text_field_tag "student[email]"%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Landline No. (ex. 32, 2534545) : </td>
+      <td>
+        <%= text_field_tag "student[telephone]"%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Mobile No. (ex. 0927 5353434): </td>
+      <td>
+        <%= text_field_tag "student[mobile_no]"%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Civil status: </td>
+      <td><%= select_tag "student[marital_status]", options_for_select(@civilstatus,nil), :class => "text_field" %>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right" valign="top">Place of Birth: </td>
+      <td>
+        Region : <%= select_tag "pob_region_id", options_for_select(@regions, nil), :class => "text_field" %>
+        <%= span_loader("pob_loader") %>
+        <div id="pob_province_div">
+          <%= render :partial => "pob_province_select", :locals => { :provinces => @provinces, :selected_id => nil }%>
+        </div>
+        <div id="pob_town_div">
+          <%= render :partial => "pob_town_select", :locals => { :towns => @towns, :selected_id => nil }%>
+        </div>
+        <div> Street : <%= text_field_tag "student[pob_street]"%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Spouse's Name: </td>
+      <td>
+        <%= text_field_tag "student[spouse]"%>
+        Citizensip : <%= select_tag "student[spouse_citizenship_id]", options_for_select(@countries, @default_country.id)%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Father's Name: </td>
+      <td>
+        <%= text_field_tag "student[father]"%>
+        Citizensip : <%= select_tag "student[father_citizenship_id]", options_for_select(@countries, @default_country.id)%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Mother's Name: </td>
+      <td>
+        <%= text_field_tag "mother"%>
+        Citizensip : <%= select_tag "mother_citizenship", options_for_select(@countries, @default_country.id)%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Have you ever been convicted in a final judgment by any military tribunal or administrative body? </td>
+      <td>
+        <%= radio_button_tag "student[convicted]", 1, false%> Yes
+        <%= radio_button_tag "student[convicted]", 0, true%> No
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">If yes, has submitted a copy of the decision? </td>
+      <td>
+        <%= radio_button_tag "student[convicted_file]", 1, false%> Yes
+        <%= radio_button_tag "student[convicted_file]", 0, true%> No
+        </td>
+    </tr>
+
+  </table>
+
+</div>
+

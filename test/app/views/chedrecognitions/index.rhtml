@@ -1,0 +1,54 @@
+<h1>CHED RECOGNITION/BOARD RESOLUTION</H1>
+<div id="chedreg">
+  <% form_tag chedreg_chedrecognition_path(@school), :method => :post do%>
+    <%= text_field_tag "chedreg", @school.chedreg_boardres, :style => "width:250px" -%>
+    <%= submit_tag "Update"%>
+  <% end %>
+</div>
+
+<br/>
+<h1>SCHOOL INFORMATION</H1>
+<% form_tag chedrecognition_path(@school), :method => :put do %>
+    <table>
+      <tr>
+        <td>School name: </td>
+        <td><%= text_field_tag "school[name]", @school.name, :style => "width:350px" %></td>
+      </tr>
+      <tr>
+        <td>PRC School code: </td>
+        <td><%= text_field_tag "school[prc_school_code]", @school.prc_school_code %></td>
+      </tr>
+      <tr>
+        <td valign="top">School Address: </td>
+        <td>
+          Region : <%= select_tag "region_id", options_for_select(@regions, @school.region_id), :class => "text_field" %>
+          <%= span_loader("address_loader") %>
+          <div id="province_div">
+            <%= render :partial => "province_select", :locals => {:school => @school}%>
+          </div>
+          <div id="town_div">
+            <%= render :partial => "town_select", :locals => {:school => @school}%>
+          </div>
+          <div>Street : <%= text_field_tag "school[street]", @school.street%></div>
+          <div >
+            Zipcode  : <%= text_field_tag "school[zip_code]", @school.zip_code %>
+          </div>
+          <div >
+            Area code  : <%= text_field_tag "school[area_code]", @school.area_code %>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><%= submit_tag "Update"%> </td>
+      </tr>
+
+    </table>
+
+<% end %>
+
+<%= observe_field("region_id", :url => {:action => :update_province_div }, :with => 'region_id', :loading => "$('address_loader').show()", :complete => "$('address_loader').hide()") %>
+
+<%= observe_field("province_id", :url => {:action => :update_town_div }, :with => 'province_id',  :loading => "$('address_loader').show()", :complete => "$('address_loader').hide()") %>
+

@@ -1,0 +1,22 @@
+<div id="title_header"><h1>STUDENT LOCATOR</h1></div>
+
+<div style="clear:both"></div>
+<br/>
+<div>
+  
+  <table cellpadding=2 cellspacing=2 border=1 width="100%" style="border-collapse: collapse">
+    <tr bgcolor="##6699FF">
+      <td>Name </td>
+      <td>Code</td>
+    </tr>
+    <%
+    @test_centers.each do |center|
+    %>
+    <tr>
+      <td><%= center.name %></td>
+      <td><%= center.code %></td>
+    </tr>
+    <% end %>
+  </table>  
+
+</div>

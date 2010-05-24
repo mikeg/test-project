@@ -1,0 +1,3 @@
+<% checked = app.has_passport? ? "checked" : "" %>
+<input type="checkbox" onchange="status_report.toogle_status_passport(<%=app.id-%>, this.checked)" <%= checked -%> >
+<%= span_loader("status_passport_loader_#{app.id}") -%>

@@ -1,0 +1,65 @@
+<div id="sidebar">
+
+<span style="margin-left: 3px">
+Hi <%= current_user.firstname -%>!
+</span>
+<br/>
+
+<div id="menu">
+  <ul>
+<% case current_user.role_code.to_s
+when "admin" %>
+	  <li><%= link_to "School Entry", schools_path %></li>
+		<li><%= link_to "Address Entry", addresses_path %></li>
+		<li><%= link_to "PRC Locations", prc_locations_path %></li>
+		<li><%= link_to "Students", students_path %></li>
+		<li><%= link_to "System Users", users_path %></li>
+<% when "registrar"%>
+  <li><%= link_to "Students", students_path %></li>
+  <li><%= link_to "Applicants", status_reports_path %></li>
+  <li><%= link_to "NLE", "#" %>
+    <div id="submenu">
+      <ul>
+        <li><%= link_to "List of Examinees", list_examinees_nles_path %></li>
+        <li><%= link_to "Paid Examinees", paid_examinees_nles_path %></li>
+        <li><%= link_to "Student Locator", testing_center_nles_path %></li>
+        <li> <%= link_to "Resuls", results_nles_path %></li>
+      </ul>
+    </div>
+    </li>
+  <li><%= link_to "Transfers", "#" %>
+    <div id="submenu">
+      <ul>
+        <li><%= link_to "Accept", accept_transfers_path %></li>
+        <li><%= link_to "Release", release_transfers_path %></li>
+        <li><%= link_to "History", history_transfers_path %></li>
+      </ul>
+    </div>
+  </li>
+  <li><%= link_to "With Foster Students", with_foster_students_path %></li>
+  <li><%= link_to "CHED Recognition", chedrecognitions_path %></li>
+  <% when "foster" %>
+    <li><%= link_to "Students", students_path %></li>
+    <li><%= link_to "Status Report", status_reports_path %></li>
+    <li><%= link_to "NLE", nles_path %>
+      <div id="submenu">
+        <ul>
+          <li><%= link_to "List of Examinees", list_examinees_nles_path %></li>
+          <li><%= link_to "Paid Examinees", paid_examinees_nles_path %></li>
+          <li><%= link_to "Student Locator", testing_center_nles_path %></li>
+          <li> <%= link_to "Resuls", results_nles_path %></li>
+        </ul>
+      </div>
+      </li>
+    <li><%= link_to "CHED Recognition", "#" %></li>
+<% when "cashier" %>
+  <li><%= link_to "Students", list_students_cashiers_path %></li>
+  <li><%= link_to "Payment History", history_cashiers_path  %></li>
+<% when "noa" %>
+  <li><%= link_to "Students", list_students_noas_path %></li>
+  <li><%= link_to "Entry History", history_noas_path %></li>
+<% end %>
+	</ul>
+</div>
+
+</div>
