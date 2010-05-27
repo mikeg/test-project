@@ -9,26 +9,26 @@
     <tr>
       <td width="220" align="right">School Address: </td>
       <td>
-        Region : <%= @student.school.region.name %> <br/>
-        Province: <%= @student.school.province.name %> <br/>
-        Municipality/City/Town : <%= @student.school.town.name %> <br/>
-        Zipcode  : <%= @student.school.zip_code%> <br/>
-        Area code  : <%= @student.school.area_code%> <br/>
-        Rurban code  : <%= @student.school.rurban_code%> <br/>
+        Region : <%= @student.school.region.name rescue '' %> <br/>
+        Province: <%= @student.school.province.name rescue ''%> <br/>
+        Municipality/City/Town : <%= @student.school.town.name rescue '' %> <br/>
+        Zipcode  : <%= @student.school.zip_code rescue ''%> <br/>
+        Area code  : <%= @student.school.area_code rescue ''%> <br/>
+        Rurban code  : <%= @student.school.rurban_code rescue ''%> <br/>
 
         </td>
     </tr>
     <tr>
       <td width="220" align="right">PRC School Code: </td>
-      <td><%= @student.school.prc_school_code %></td>
+      <td><%= @student.school.prc_school_code rescue '' %></td>
     </tr>
     <tr>
       <td width="220" align="right">PRC Course Code: </td>
-      <td><%= @student.school.chedreg_boardres %></td>
+      <td><%= @student.school.chedreg_boardres rescue '' %></td>
     </tr>
     <tr>
       <td width="220" align="right">Degree/Course Obtained: </td>
-      <td><%= h @nursing_course.name %> 
+      <td><%= h @nursing_course.name  rescue ''%> 
         <%= hidden_field_tag "student[course_id]", @nursing_course.id %>
       </td>
     </tr>
@@ -38,9 +38,9 @@
     <tr >
       <td width="220" align="right" valign="top">Review School Attended: </td>
       <td>
-        <%= @student.review_school1 %><br/>
-        <%= @student.review_school2 %><br/>
-        <%= @student.review_school3 %>
+        <%= @student.review_school1  rescue ''%><br/>
+        <%= @student.review_school2  rescue ''%><br/>
+        <%= @student.review_school3  rescue ''%>
         </td>
     </tr>
     <tr style="height: 1px; background-color:#949494">
@@ -50,9 +50,9 @@
     <tr>
       <td width="220" align="right" valign="top">Review Center Attended: </td>
       <td>
-        <%= @student.review_center1 %><br/>
-        <%= @student.review_center2 %><br/>
-        <%= @student.review_center3 %>
+        <%= @student.review_center1  rescue ''%><br/>
+        <%= @student.review_center2  rescue ''%><br/>
+        <%= @student.review_center3  rescue ''%>
         </td>
     </tr>
     
