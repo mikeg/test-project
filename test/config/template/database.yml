@@ -1,0 +1,7 @@
+development:
+  adapter: mysql
+  database: bon_development2
+  username: root
+  password: root
+  port: 8889
+  host: 127.0.0.1
