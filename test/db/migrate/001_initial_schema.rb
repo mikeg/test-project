@@ -195,8 +195,10 @@ class InitialSchema < ActiveRecord::Migration
     create_table "test_centers", :force => true do |t|
       t.column "name", :string
       t.column "code", :string
+      t.column "region_id", :integer
+      t.column "province_id", :integer
+      t.column "town_id", :integer
       t.column "street_brgy", :string
-      t.column "address_id", :integer
       t.column "created_at", :datetime
       t.column "created_by", :integer
       t.column "updated_at", :datetime

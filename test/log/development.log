@@ -11226,3 +11226,63 @@ Rendered students/_student_rows (71.1ms)
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `towns` WHERE (`towns`.`id` = 1) [0m
 Rendered globals/_sidebar (1.3ms)
 Completed in 255ms (View: 109, DB: 40) | 200 OK [http://localhost/students]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestCentersController#index (for 127.0.0.1 at 2010-05-28 01:12:16) [GET]
+  [4;35;1mTestCenter Load (0.5ms)[0m   [0mSELECT * FROM `test_centers` [0m
+Rendering template within layouts/application
+Rendering test_centers/index
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSchool Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `schools`[0m
+  [4;35;1mSchool Load (49.4ms)[0m   [0mSELECT * FROM `schools` WHERE (`schools`.`id` = 0) [0m
+Rendered globals/_sidebar (4.6ms)
+Completed in 217ms (View: 158, DB: 54) | 200 OK [http://localhost/test_centers]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestCentersController#index (for 127.0.0.1 at 2010-05-28 01:12:44) [GET]
+  [4;35;1mTestCenter Load (0.4ms)[0m   [0mSELECT * FROM `test_centers` [0m
+Rendering template within layouts/application
+Rendering test_centers/index
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSchool Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `schools`[0m
+  [4;35;1mSchool Load (0.7ms)[0m   [0mSELECT * FROM `schools` WHERE (`schools`.`id` = 0) [0m
+Rendered globals/_sidebar (0.5ms)
+Completed in 95ms (View: 23, DB: 5) | 200 OK [http://localhost/test_centers]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestCentersController#index (for 127.0.0.1 at 2010-05-28 01:13:29) [GET]
+  [4;35;1mTestCenter Load (0.4ms)[0m   [0mSELECT * FROM `test_centers` [0m
+Rendering template within layouts/application
+Rendering test_centers/index
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+ActionView::TemplateError (undefined local variable or method `new_test_centers_path' for #<ActionView::Base:0x1034b66e0>) on line #2 of app/views/test_centers/index.rhtml:
+1: <span> Test Centers </span>
+2: <span> <%= link_to "Add test center", new_test_centers_path %> </span>
+3: 
+4: <% unless @test_centers.empty? %>
+5: <table border=1 style="border-collapse: collapse">
+
+    app/views/test_centers/index.rhtml:2:in `_run_rhtml_app47views47test_centers47index46rhtml'
+
+Rendered rescues/_trace (109.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TestCentersController#index (for 127.0.0.1 at 2010-05-28 01:13:37) [GET]
+  [4;36;1mTestCenter Load (0.4ms)[0m   [0;1mSELECT * FROM `test_centers` [0m
+Rendering template within layouts/application
+Rendering test_centers/index
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSchool Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `schools`[0m
+  [4;36;1mSchool Load (0.8ms)[0m   [0;1mSELECT * FROM `schools` WHERE (`schools`.`id` = 0) [0m
+Rendered globals/_sidebar (0.5ms)
+Completed in 33ms (View: 22, DB: 6) | 200 OK [http://localhost/test_centers]
