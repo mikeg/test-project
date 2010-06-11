@@ -1,0 +1,31 @@
+<span> Test Centers </span>
+<span> <%= link_to "Add test center", new_test_center_path %> </span>
+
+<% unless @test_centers.empty? %>
+<table border=1 style="border-collapse: collapse">
+  <tr>
+    <td> Name </td>
+    <td> Code </td>
+    <td> Region </td>
+    <td> Province </td>
+    <td> Town </td>
+    <td> Street </td>
+    <td> Status </td>
+    <td></td>
+  </tr>
+  
+  <% @test_centers.each do |center| %>
+  <tr>
+     <td><%= center.name rescue ''%></td>
+     <td><%= center.code rescue ''%></td>
+     <td><%= center.region.name rescue ''%></td>
+     <td><%= center.province.name rescue ''%></td>
+     <td><%= center.town.name rescue ''%></td>
+     <td><%= center.street.name rescue ''%></td>
+     <td><%= center.is_active rescue ''%></td>
+     <td></td>
+  </tr>
+  <% end %>
+</table>
+
+<% end%>
