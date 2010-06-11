@@ -7,6 +7,26 @@ class UsersController < ApplicationController
   def index
     @users = User.find(:all, :conditions => ["role_code !=  'admin'"])
   end
+
+  def update
+    @user = User.find(params[:id])
+    @user.employee_no = params[:user][:employee_no]
+    @user.location = params[:user][:location]
+    @user.username = params[:user][:username]
+    @user.lastname = params[:user][:lastname]
+    @user.is_active = params[:user][:is_active]
+    @user.firstname = params[:user][:firstname]
+    @user.password = params[:user][:password]
+    @user.role_code = params[:role_code]
+    @user.school_id = params[:school_id] unless params[:school_id].nil?
+    @user.updated_by = current_user
+    @user.save
+    redirect_to users_path
+  end
+  
+  def edit
+    @user = User.find(params[:id])
+  end
   
   def new
     if request.post?
