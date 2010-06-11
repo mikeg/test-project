@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_filter :require_user
-  
+    
   before_filter :load_prc_locations, :only => [:new, :edit]
   before_filter :load_roles, :only => [:new, :edit]
 
