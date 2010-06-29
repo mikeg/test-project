@@ -43,6 +43,7 @@
   <%= render :partial => "globals/sidebar" %>
 
   <div id="main_content">
+    <div id="temp_holder"></div>
     <div id="notice_or_error">
       <%= render :partial => "globals/notice_or_error", :locals => {:message => flash[:error], :type => 'error'} if flash[:error] %>
       <%= render :partial => "globals/notice_or_error", :locals => {:message => flash[:notice], :type => 'notice'} if flash[:notice] %>

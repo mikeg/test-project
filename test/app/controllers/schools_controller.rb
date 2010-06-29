@@ -115,8 +115,14 @@ class SchoolsController < ApplicationController
   
   def destroy
     school = School.find(params[:id])
-    school.destroy
-    redirect_to schools_path
+
+    if school.students.empty?
+      school.destroy
+      flash[:notice] = "School successfully deleted."
+    else
+      flash[:error] = "Cannot delete school. School has existing students."
+    end
+      redirect_to schools_path
   end
   
   def edit 
