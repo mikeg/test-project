@@ -76,7 +76,8 @@ ActionController::Routing::Routes.draw do |map|
                                                                          :edit_towns => :get,
                                                                          :add_provinces => :get,
                                                                          :add_regions => :get,
-                                                                         :add_towns => :get}
+                                                                         :add_towns => :get,
+                                                                         :update_region => :get}
   map.resources :users, :controller => "users"
   map.resources :status_reports, :controller => "status_reports", :collection => {:search => :post}
   map.resources :transfers, :controller => "transfers", :collection => { :search => :post, 

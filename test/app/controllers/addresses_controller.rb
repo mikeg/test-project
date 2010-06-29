@@ -1,11 +1,87 @@
 class AddressesController < ApplicationController
   layout 'application'
   protect_from_forgery
+  before_filter :require_user
 
+  def add_regions
+    render :update do |page|
+      page.replace_html("add_region_div", :partial => "add_region")
+      page.visual_effect :highlight, "add_region_div", :duration => 0.5
+    end
+  end
+
+  def save_regions
+    region = Region.find_by_name(params[:region_name].downcase) || Region.new
+    region.name = params[:region_name].downcase
+    region.save
+    regions = Region.find(:all, :order => "name")
+
+    render :update do |page|
+      page.replace_html("add_region_div", :text => "")
+      page.replace_html("all_regions", :partial => "regions", :locals => { :regions => regions })
+      page.visual_effect :highlight, "all_regions", :duration => 0.5
+    end
+  end
+  
+  def delete_region
+    region = Region.find(params[:id])
+    region.destroy
+    render :update do |page|
+      page.replace_html("region_row_#{params[:id]}", :nothing => true)
+      page.replace_html("provinces", "")
+      page.replace_html("towns", "")
+      page.visual_effect :highlight, "region_row_#{params[:id]}", :duration => 0.5
+    end
+  end
+
+  def update_region
+    duplicate_region = Region.find(:all, :conditions => ["name = ? and id != ?", params[:region_name].downcase, params[:id] ])
+
+    if duplicate_region.empty?
+      region = Region.find(params[:id])
+      region.name = params[:region_name]
+      region.save
+
+      render :update do |page|
+        page.replace_html("region_row_#{params[:id]}", :partial => "region_row", :locals => {:region => region})
+        page.visual_effect :highlight, "region_row_#{params[:id]}", :duration => 0.5
+      end
+    else
+      render :update do |page|
+        page << "alert('duplicate region');"
+      end
+    end
+  end
+  
+  def show_region_row
+    region = Region.find(params[:id])
+    render :update do |page|
+      page.replace_html("region_row_#{params[:id]}", :partial => "region_row", :locals => {:region => region})
+      page.visual_effect :highlight, "region_row_#{params[:id]}", :duration => 0.5
+    end
+  end
+  
+  def edit_region
+    region = Region.find(params[:id])
+    render :update do |page|
+      page.replace_html("region_row_#{params[:id]}", :partial => "edit_region", :locals => {:region => region})
+      page.visual_effect :highlight, "region_row_#{params[:id]}", :duration => 0.5
+    end
+  end
   
   def index
-    @regions = Region.find(:all)
-    @provinces = Province.find(:all)
+    @regions = Region.find(:all, :order => "name")
+    @provinces = Province.find(:all, :order => "name")
+  end
+
+  def show_regions
+    regions = Region.find(:all, :order => "name")
+
+    render :update do |page|
+      page.replace_html("add_region_div", "")
+      page.replace_html("all_regions", :partial => 'regions', :locals => { :regions => regions })
+      page.visual_effect :highlight, "all_regions", :duration => 0.5
+    end
   end
 
   def show_provinces

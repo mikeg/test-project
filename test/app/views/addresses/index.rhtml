@@ -1,14 +1,15 @@
 <%= span_loader(:addresses_loader) -%>
-<div id="regions">
+<div id="regions" style="width:200px;padding-top:5px">
   Regions : 
-  <ul>
-  <% @regions.each do |r|%>
-    <li><%= link_to_remote r.name.to_s, :url => show_provinces_addresses_path(:region_id => r.id), :method => :get, :loading => "$('addresses_loader').show()", :complete => "$('addresses_loader').hide()"  %> </li>
-  <% end %>
-  </ul>
+  <%= link_to_remote "add", :url => add_regions_addresses_path, :method => :get %>
+  <div id="add_region_div"></div>
+  <div id="all_regions">
+    <%= render :partial => "regions", :locals => { :regions => @regions }%>
+  </div>
 </div>
 
 <div id="provinces">
 </div>
+
 <div id="towns">
 </div>

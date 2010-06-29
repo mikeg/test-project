@@ -5,9 +5,10 @@
     <td>PRC Code </td>
     <td>Region</td>
     <td>Province</td>
-    <td>Location></td>
+    <td>Location</td>
     <td>Zip Code</td>
     <td>Area Code</td>
+    <td>Rurban Code</td>
     <td>Status</td>
     <td>Action</td>
   </tr>
@@ -29,10 +30,9 @@
         <%= link_to "delete", school_path(school), :confirm => "Are you sure you want to delete this?", :method => "delete" %>
       </div>
     </td>
+    <td><%= school.rurban_code rescue '' -%></td>
   </tr>
   <% end %>
 </table>
-
 <br/><%= will_paginate @schools %>
-
 </div>

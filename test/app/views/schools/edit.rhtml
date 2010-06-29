@@ -12,7 +12,7 @@
   </tr>
   <tr>
     <td>Status: </td>
-    <td><%= radio_button_tag "status", "1", true %> Active <%= radio_button_tag "status", "0", false %> Closed</td>
+    <td><%= radio_button_tag "status", "1", @school.is_active? %> Active <%= radio_button_tag "status", "0", !@school.is_active? %> Closed</td>
   </tr>
   <tr>
     <td>Region: </td>
@@ -21,7 +21,7 @@
   <tr>
     <td>Province: </td>
     <td>
-    <div id="list_province"><%= render :partial => "province_select_edit"%></div>
+    <div id="list_province"><%= render :partial => "province_select_edit" %></div>
     </td>
   </tr>
   <tr>
@@ -35,7 +35,7 @@
   </tr>
   <tr>
     <td>Street Address: </td>
-    <td><%= text_field_tag "street", @school.street_brgy, :class => "text_field" %></td>
+    <td><%= text_field_tag "street", @school.street, :class => "text_field" %></td>
   </tr>
   <tr>
     <td>Area Code: </td>
@@ -63,4 +63,4 @@
 <%= observe_field("region", :url => {:action => :update_province_select }, :with => 'region_id', :loading => "$('prc_loader').show()", :complete => "$('prc_loader').hide()") %>
 
 
-<%= observe_field("province", :url => {:action => :update_town_select }, :with => 'province_id',  :update => "town_div", :loading => "$('prc_loader').show()", :complete => "$('prc_loader').hide()") %>
+<%= observe_field("province", :url => {:action => :update_town_select }, :with => 'province_id', :loading => "$('prc_loader').show()", :complete => "$('prc_loader').hide()") %>

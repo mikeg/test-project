@@ -1,0 +1,9 @@
+<ul>
+<% regions.each do |r|%>
+  <li>
+    <div id="region_row_<%= r.id%>">
+      <%= render :partial => "region_row", :locals => {:region => r} %>
+    </div>
+  </li>
+<% end %>
+</ul>

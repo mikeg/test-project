@@ -1,6 +1,7 @@
 class SchoolsController < ApplicationController
   layout 'application'
   protect_from_forgery
+  before_filter :require_user
 
   def search 
     @schools = School.search(params[:search], params[:page])
@@ -18,20 +19,22 @@ class SchoolsController < ApplicationController
     if request.post?
       school = School.new()
       school.name = params[:name]
-      school.street_brgy = params[:street]
+      school.street = params[:street]
       school.prc_school_code = params[:prc_school_code]
       school.is_active = params[:status]
       school.created_by = current_user.id
-      address = Address.new
-      address.area_code = params[:areacode] 
-      address.zip_code = params[:zipcode]
-      address.rurban_code = params[:rurbancode]
-      school.address = address
 
-      school.address.region = Region.find(params[:region])
-      school.address.province = Province.find(params[:province])
-      school.address.town = Town.find(params[:town])
-      school.address.save
+      school.area_code = params[:areacode] 
+      school.zip_code = params[:zipcode]
+      school.rurban_code = params[:rurbancode]
+
+      region = Region.find(params[:region])
+      province = Province.find(params[:province])
+      town = Town.find(params[:town])
+
+      school.region_id = region.id
+      school.province_id = province.id
+      school.town_id = town.id
       school.save!
       redirect_to schools_path
     else
@@ -60,7 +63,7 @@ class SchoolsController < ApplicationController
     if request.put?
       school = School.find(params[:id])
       school.name = params[:name]
-      school.street_brgy = params[:street]
+      school.street = params[:street]
       school.prc_school_code = params[:prc_school_code]
       school.is_active = params[:status]
 
@@ -126,9 +129,18 @@ class SchoolsController < ApplicationController
       @regions << [ r.name, r.id ]
     end
 
-    provinces = Province.find(:all, :order => "name ASC")
-    provinces.each do |r|
-      @provinces << [ r.name, r.id ]
+#    provinces = Province.find(:all, :order => "name ASC")
+#    provinces.each do |r|
+#      @provinces << [ r.name, r.id ]
+#    end
+
+    unless @school.region_id.nil?
+      provinces = @school.region.provinces
+    else
+      provinces = region.first.provinces
+    end
+    provinces.each do |p|
+      @provinces << [ p.name, p.id ]
     end
 
     towns = Town.find(:all, :order => "name ASC")
@@ -168,7 +180,7 @@ class SchoolsController < ApplicationController
     end
     
     render :update do |page|
-      page.replace_html("town_div", :partial => 'schools/town_select')
+      page.replace_html("town_div", :partial => "schools/town_select")
       page.visual_effect :highlight, "town_div", :duration => 0.5
     end
   
