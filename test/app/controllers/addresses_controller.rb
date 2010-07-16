@@ -34,6 +34,34 @@ class AddressesController < ApplicationController
     end
   end
 
+  def update_province
+    duplicate_province = Province.find(:all, :conditions => ["name = ? and id != ?", params[:name].downcase, params[:id] ])
+
+    if duplicate_province.empty?
+      province = Province.find(params[:id])
+      province.name = params[:name]
+      province.area_code = params[:area_code]
+      province.save
+
+      render :update do |page|
+        page.replace_html("province_row_#{params[:id]}", :partial => "province_row", :locals => {:province => province})
+        page.visual_effect :highlight, "province_row_#{params[:id]}", :duration => 0.5
+      end
+    else
+      render :update do |page|
+        page << "alert('duplicate province');"
+      end
+    end
+  end
+
+  def delete_town
+    town = Town.find(params[:id])
+    town.destroy
+    render :update do |page|
+      page.replace_html("town_row_#{params[:id]}", :nothing => true)
+    end
+  end
+
   def update_region
     duplicate_region = Region.find(:all, :conditions => ["name = ? and id != ?", params[:region_name].downcase, params[:id] ])
 
@@ -52,6 +80,26 @@ class AddressesController < ApplicationController
       end
     end
   end
+
+  def update_town
+    duplicate_town = Town.find(:all, :conditions => ["name = ? and id != ?", params[:name].downcase, params[:id] ])
+
+    if duplicate_town.empty?
+      town = Town.find(params[:id])
+      town.name = params[:name]
+      town.zip_code = params[:zip_code]
+      town.save
+
+      render :update do |page|
+        page.replace_html("town_row_#{params[:id]}", :partial => "town_row", :locals => {:town => town })
+        page.visual_effect :highlight, "town_row_#{params[:id]}", :duration => 0.5
+      end
+    else
+      render :update do |page|
+        page << "alert('duplicate region');"
+      end
+    end
+  end
   
   def show_region_row
     region = Region.find(params[:id])
@@ -60,12 +108,44 @@ class AddressesController < ApplicationController
       page.visual_effect :highlight, "region_row_#{params[:id]}", :duration => 0.5
     end
   end
+
+  def show_province_row
+    province = Province.find(params[:id])
+    render :update do |page|
+      page.replace_html("province_row_#{params[:id]}", :partial => "province_row", :locals => {:province => province })
+      page.visual_effect :highlight, "province_row_#{params[:id]}", :duration => 0.5
+    end
+  end
+
+  def show_town_row
+    town = Town.find(params[:id])
+    render :update do |page|
+      page.replace_html("town_row_#{params[:id]}", :partial => "town_row", :locals => {:town => town })
+      page.visual_effect :highlight, "town_row_#{params[:id]}", :duration => 0.5
+    end
+  end
   
   def edit_region
     region = Region.find(params[:id])
     render :update do |page|
       page.replace_html("region_row_#{params[:id]}", :partial => "edit_region", :locals => {:region => region})
       page.visual_effect :highlight, "region_row_#{params[:id]}", :duration => 0.5
+    end
+  end
+
+  def edit_province
+    province = Province.find(params[:id])
+    render :update do |page|
+      page.replace_html("province_row_#{params[:id]}", :partial => "edit_province", :locals => {:province => province})
+      page.visual_effect :highlight, "province_row_#{params[:id]}", :duration => 0.5
+    end
+  end
+
+  def edit_town
+    town = Town.find(params[:id])
+    render :update do |page|
+      page.replace_html("town_row_#{params[:id]}", :partial => "edit_town", :locals => {:town => town})
+      page.visual_effect :highlight, "town_row_#{params[:id]}", :duration => 0.5
     end
   end
   

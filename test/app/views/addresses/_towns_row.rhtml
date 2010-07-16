@@ -1,9 +1,13 @@
 <div id="add_town" style="margin-bottom: 10px"></div>
-Provinces (<%= @province.name -%>) :
+Towns (<%= @province.name -%>) :
 <%= link_to_remote "add", :url => add_towns_addresses_path(:province_id => @province.id), :method => :get %>
 <br/>
 <ul>
 <% @towns.each do |t| %>
-  <li><%=t.name -%> - <%= t.zip_code%> </li>
+  <li>
+    <div id="town_row_<%= t.id%>">
+      <%= render :partial => "town_row", :locals => {:town => t} %>
+    </div>
+  </li>
 <% end %>
 </ul>

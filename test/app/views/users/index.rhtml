@@ -17,13 +17,14 @@
   <%
   @users.each do |u|
     province = Province.find(u.location) rescue nil
+    location = PrcLocation.find_by_code(u.location) rescue nil
   %>
   <tr>
     <td><%= u.fullname.titleize -%></td>
     <td><%= u.username -%></td>
     <td><%= u.role_code -%></td>
     <td><%= u.school.name unless u.school.nil? -%></td>
-    <td><%= province.name unless province.nil? -%></td>
+    <td><%= location.region unless location.nil? -%></td>
     <td><%= u.status_name -%></td>
     <td>
       <div id="actions">

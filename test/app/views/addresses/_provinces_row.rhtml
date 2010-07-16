@@ -1,10 +1,13 @@
-<div id="add_province" style="margin-bottom: 10px">
-</div>
+<div id="add_province" style="margin-bottom: 10px"></div>
 Provinces (<%= @region.name -%>) :
 <%= link_to_remote "add", :url => add_provinces_addresses_path(:region_id => @region.id), :method => :get %>
 <br/>
 <ul>
 <% @provinces.each do |p| %>
-  <li><%= link_to_remote p.name, :url => show_towns_addresses_path(:province_id => p.id), :method => :get, :loading => "$('addresses_loader').show()", :complete => "$('addresses_loader').hide()"  %> - <%= p.area_code %></li>
+  <li>
+    <div id="province_row_<%= p.id%>">
+      <%= render :partial => "province_row", :locals => {:province => p} %>
+    </div>
+  </li>
 <% end %>
 </ul>

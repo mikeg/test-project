@@ -8,7 +8,6 @@ class SchoolsController < ApplicationController
   end
   
   def index
-    puts params.inspect
     @schools = School.search(params[:search], params[:page])
   end
   
@@ -23,9 +22,6 @@ class SchoolsController < ApplicationController
       school.prc_school_code = params[:prc_school_code]
       school.is_active = params[:status]
       school.created_by = current_user.id
-
-      school.area_code = params[:areacode] 
-      school.zip_code = params[:zipcode]
       school.rurban_code = params[:rurbancode]
 
       region = Region.find(params[:region])
@@ -67,8 +63,8 @@ class SchoolsController < ApplicationController
       school.prc_school_code = params[:prc_school_code]
       school.is_active = params[:status]
 
-      school.area_code = params[:areacode] 
-      school.zip_code = params[:zipcode]
+#      school.area_code = params[:areacode] 
+#      school.zip_code = params[:zipcode]
       school.rurban_code = params[:rurbancode]
 
       school.region = Region.find(params[:region])

@@ -34,20 +34,26 @@
     </td>
   </tr>
   <tr>
-    <td>Street Address: </td>
-    <td><%= text_field_tag "street", @school.street, :class => "text_field" %></td>
-  </tr>
-  <tr>
     <td>Area Code: </td>
-    <td><%= text_field_tag "areacode", @school.area_code, :class => "text_field" %></td>
+    <td>
+      <%= @school.province.area_code rescue '' %>
+    <%#= text_field_tag "areacode", @school.province.area_code, :class => "text_field" %></td>
   </tr>
   <tr>
     <td>Zip Code: </td>
-    <td><%= text_field_tag "zipcode", @school.zip_code, :class => "text_field" %></td>
+    <td>
+      <%= @school.town.zip_code rescue '' %>
+    <%#= text_field_tag "zipcode", @school.town.zip_code, :class => "text_field" %></td>
   </tr>
   <tr>
+    <td>Street Address: </td>
+    <td><%= text_field_tag "street", @school.street, :class => "text_field" %></td>
+  </tr>
+
+  <tr>
     <td>Rurban Code: </td>
-    <td><%= text_field_tag "rurbancode", @school.rurban_code, :class => "text_field" %></td>
+    <td>
+    <%= text_field_tag "rurbancode", @school.rurban_code, :class => "text_field" %></td>
   </tr>
   <tr>
     <td></td>

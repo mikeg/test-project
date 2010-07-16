@@ -64,6 +64,7 @@ class InitialSchema < ActiveRecord::Migration
       t.column "name", :string
       t.column "province_id", :integer, :default => 0, :null => false
       t.column "zip_code", :integer, :null => true
+      t.column "rurban_code", :integer, :null => true
     end
     
     create_table "addresses", :force => true do |t|
