@@ -166,7 +166,7 @@ class AddressesController < ApplicationController
 
   def show_provinces
     @region = Region.find(params[:region_id])
-    @provinces = Province.find(:all, :conditions => ["region_id = ?", params[:region_id]])
+    @provinces = Province.find(:all, :conditions => ["region_id = ?", params[:region_id]], :order => "name")
     render :update do |page|
       page.replace_html("provinces", :partial => 'addresses/provinces_row')
       page.replace_html("towns", "")
@@ -176,7 +176,7 @@ class AddressesController < ApplicationController
 
   def show_towns
     @province = Province.find(params[:province_id])
-    @towns = Town.find(:all, :conditions => ["province_id = ?", params[:province_id]])
+    @towns = Town.find(:all, :conditions => ["province_id = ?", params[:province_id]], :order => "name")
     render :update do |page|
       page.replace_html("towns", :partial => 'addresses/towns_row')
       page.visual_effect :highlight, "towns", :duration => 0.5

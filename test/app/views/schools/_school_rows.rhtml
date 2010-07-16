@@ -1,28 +1,28 @@
 <div style="clear:both"></div>
 <table cellpadding=2 cellspacing=2 border=1 width="100%" style="border-collapse: collapse">
   <tr bgcolor="##6699FF">
-    <td>School Name </td>
-    <td>PRC Code </td>
-    <td>Region</td>
-    <td>Province</td>
-    <td>Location</td>
-    <td>Area Code</td>
-    <td>Zip Code</td>
-    <td>Rurban Code</td>
+    <td width="300">School Name </td>
+    <td wdith="40">PRC Code </td>
+    <td width="60">Region</td>
+    <td width="90">Province</td>
+    <td width="90">Location</td>
+    <td width="40">Area Code</td>
+    <td width="40">Zip Code</td>
+    <td width="55">Rurban Code</td>
     <td>Status</td>
-    <td>Action</td>
+    <td width="30">Action</td>
   </tr>
   <%
   @schools.each do |school|
   %>
   <tr>
-    <td><%= link_to school.name, edit_school_path(school) -%></td>
+    <td><%= link_to truncate(school.name.titleize,:length => 48), edit_school_path(school), :title => school.name.titleize -%></td>
     <td><%= school.prc_school_code -%></td>
     <td><%= school.region.name unless school.region.nil? -%></td>
-    <td><%= school.province.name unless school.province.nil? -%></td>
-    <td><%= school.town.name unless school.town.nil? -%></td>
-    <td><%= school.province.area_code unless school.province.area_code.nil? -%></td>
-    <td><%= school.town.zip_code unless school.town.zip_code.nil? -%></td>
+    <td><%= truncate(school.province.name, :length => 13) unless school.province.nil? -%></td>
+    <td><%= truncate(school.town.name, :length => 13) unless school.town.nil? -%></td>
+    <td><%= school.province.area_code rescue '' -%></td>
+    <td><%= school.town.zip_code rescue '' -%></td>
     <td><%= school.rurban_code rescue '' -%></td>    
     <td>
       <div id="actions">

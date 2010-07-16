@@ -156,11 +156,11 @@ class SchoolsController < ApplicationController
 
     @region = Region.find(params[:region_id])
 
-    @region.provinces.each do |p|
+    @region.provinces.find(:all, :order => "name").each do |p|
       @provinces << [p.name, p.id]
     end
 
-    @region.provinces.first.towns.each do |t|
+    @region.provinces.first.towns.find(:all, :order => "name").each do |t|
       @towns << [t.name, t.id]
     end
     
@@ -176,8 +176,8 @@ class SchoolsController < ApplicationController
   def update_town_select
     @towns = []
     @province = Province.find(params[:province_id])
-
-    @province.towns.each do |t|
+    towns = @province.towns.find(:all, :order => "name")
+    towns.each do |t|
       @towns << [t.name, t.id]
     end
     
