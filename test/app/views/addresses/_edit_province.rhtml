@@ -1,0 +1,6 @@
+<% remote_form_for(province, :url => {:action => "update_province", :id => province.id }, :method => :get) do |f|%>
+<%= text_field_tag "name", province.name, :style => "width:100px" %>
+<%= text_field_tag "area_code", province.area_code, :style => "width:100px" %>
+<%= submit_tag "Save"%>
+<%= link_to_remote "cancel", :url => { :action => "show_province_row", :id => province.id } %>
+<% end %>
