@@ -1,6 +1,16 @@
 class PrcLocationsController < ApplicationController
   before_filter :require_user
 
+  def update
+    @location = PrcLocation.find(params[:id])
+    @location.update_attributes(params[:prc])
+    redirect_to prc_locations_path
+  end
+  
+  def edit
+    @location = PrcLocation.find(params[:id])
+  end
+  
   def index
     @prc = PrcLocation.find(:all)
   end

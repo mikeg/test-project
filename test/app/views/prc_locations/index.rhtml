@@ -8,6 +8,7 @@
   <tr bgcolor="##6699FF">
     <td>Region </td>
     <td>Code</td>
+    <td>Satellite</td>
     <td>Action</td>
   </tr>
   <%
@@ -16,6 +17,7 @@
   <tr>
     <td><%= p.region -%></td>
     <td><%= p.code -%></td>
+    <td><%= p.is_satellite? ? "Yes" : '' -%></td>
     <td>
       <div id="actions">
         <%= link_to "edit", edit_prc_location_path(p) %>

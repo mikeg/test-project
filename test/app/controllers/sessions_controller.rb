@@ -17,10 +17,15 @@ class SessionsController < ApplicationController
   end
 
   def authenticate
-    @user = User.find(:first, :conditions => ["is_active='1' and username=? and password=?", params[:user]['username'], params[:user]['password']]) rescue nil
+    @user = User.find(:first, :conditions => ["username=? and password=?", params[:user]['username'], params[:user]['password']]) rescue nil
     unless @user.nil?
-      create_session
-      redirect_to dashboard_path
+      if @user.is_active?
+        create_session
+        redirect_to dashboard_path
+      else
+        flash[:error] = "Account Temporarily On-Hold. Please contact BoN Administrator. Thank You."
+        redirect_to index_sessions_path
+      end
     else
       flash[:error] = "Invalid login"
       redirect_to index_sessions_path

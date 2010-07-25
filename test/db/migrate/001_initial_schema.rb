@@ -319,6 +319,8 @@ class InitialSchema < ActiveRecord::Migration
     
     create_table "review_schools", :force => true do |t|
       t.column "name", :string
+      t.column "address", :string
+      t.column "code", :string
     end
 
     create_table "review_centers", :force => true do |t|

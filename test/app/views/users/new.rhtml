@@ -15,9 +15,9 @@
     </div>
     </li>
 
-  <li> Location Handled: </li>
+  <li> PRC Location Handled: </li>
   <li><%= select_tag "user[location]", options_for_select(@prc_locations,nil), :class => "text_field" %>
-      <%= link_to "add_new", new_prc_location_path%></li>
+      <%#= link_to "add_new", new_prc_location_path%></li>
   <li>Employee No.: </li>
   <li><%= text_field_tag "user[employee_no]",nil, :class => "text_field" %></li>
   <li>Username: </li>
