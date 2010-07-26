@@ -1,6 +1,6 @@
 class TestCentersController < ApplicationController
   
   def index
-    @test_centers = TestCenter.find(:all)
+    @test_centers = ReviewSchool.find_paginated(params[:page])
   end
 end
