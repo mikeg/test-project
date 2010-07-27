@@ -4,12 +4,12 @@
 </div>
 <div style="clear:both"></div>
 
-<table cellpadding=2 cellspacing=2 border=1 width="95%" style="border-collapse: collapse">
+<table cellpadding=2 cellspacing=2 border=1 style="border-collapse: collapse">
   <tr bgcolor="##6699FF">
-    <td>Region </td>
-    <td>Code</td>
-    <td>Satellite</td>
-    <td>Action</td>
+    <td width="200">Region </td>
+    <td width="50">Code</td>
+    <td width="100">Satellite</td>
+    <td width="100">Action</td>
   </tr>
   <%
   @prc.each do |p|
@@ -27,4 +27,6 @@
   </tr>
   <% end %>
 </table>
+
+<%= will_paginate @prc%>
 </div>

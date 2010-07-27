@@ -5,9 +5,10 @@
 <% unless @test_centers.empty? %>
 <table border=1 style="border-collapse: collapse">
   <tr>
-    <td width="380"> Name </td>
+    <td width="360"> Name </td>
     <td width="70"> Code </td>
-    <td width="450"> Address </td>
+    <td width="400"> Address </td>
+    <td width="80"> </td>
   </tr>
   
   <% @test_centers.each do |center| %>
@@ -15,6 +16,7 @@
      <td><%= center.name rescue ''%></td>
      <td><%= center.code rescue ''%></td>
      <td><%= center.address rescue ''%></td>
+    <td><%= link_to "Edit", edit_test_center_path(center)%> <%= link_to "Delete", test_center_path(center), :confirm => "Are you sure you want to delete this?", :method => 'delete'%></td>     
   </tr>
   <% end %>
 </table>

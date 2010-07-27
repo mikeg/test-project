@@ -12,7 +12,7 @@ class PrcLocationsController < ApplicationController
   end
   
   def index
-    @prc = PrcLocation.find(:all)
+    @prc = PrcLocation.find_paginated(params[:page])
   end
   
   def destroy
