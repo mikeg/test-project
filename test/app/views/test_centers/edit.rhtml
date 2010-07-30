@@ -1,0 +1,22 @@
+Add Review School
+<% form_tag test_center_path(@test_center), :method => :put do -%>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td><%= text_field_tag "rschool[name]", @test_center.name %></td>
+  </tr>
+  <tr>
+    <td>Code </td>
+    <td><%= text_field_tag "rschool[code]", @test_center.code %></td>
+  </tr>
+  <tr>
+    <td>Address</td>
+    <td><%= text_field_tag "rschool[address]", @test_center.address %></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><%= submit_tag "Submit" %> <%= link_to "Cancel", test_centers_path %>
+</table>
+  
+<% end -%>
