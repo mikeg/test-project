@@ -92,6 +92,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :provinces, :controller => "provinces"
   map.resources :towns, :controller => "towns"
   map.resources :test_centers, :controller => "test_centers"
+  map.resources :review_centers, :controller => "review_centers"  
 
   # See how all your routes lay out with "rake routes"
 
