@@ -1,0 +1,18 @@
+Edit Review Center
+<% form_tag review_center_path(@review_center), :method => :put do -%>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td><%= text_field_tag "rcenter[name]", @review_center.name %></td>
+  </tr>
+  <tr>
+    <td>Address</td>
+    <td><%= text_field_tag "rcenter[address]", @review_center.address %></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><%= submit_tag "Submit" %> <%= link_to "Cancel", review_centers_path %>
+</table>
+  
+<% end -%>
