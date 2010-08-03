@@ -1,5 +1,24 @@
 <span> Review Centers </span>
 
+<span> <%= link_to "Add review center", new_review_center_path %> </span>
 <br/><br/>
 
-under construction...
+<% unless @review_centers.empty? %>
+<table border=1 style="border-collapse: collapse">
+  <tr>
+    <td width="360"> Name </td>
+    <td width="400"> Address </td>
+    <td width="80"> </td>
+  </tr>
+  
+  <% @review_centers.each do |center| %>
+  <tr>
+     <td><%= center.name rescue ''%></td>
+     <td><%= center.address rescue ''%></td>
+    <td><%= link_to "Edit", edit_review_center_path(center)%> <%= link_to "Delete", review_center_path(center), :confirm => "Are you sure you want to delete this?", :method => 'delete'%></td>     
+  </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @review_centers %>
+<% end%>

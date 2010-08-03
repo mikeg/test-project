@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 2) do
+ActiveRecord::Schema.define(:version => 3) do
 
   create_table "addresses", :force => true do |t|
     t.integer "region_id"
@@ -237,6 +237,7 @@ ActiveRecord::Schema.define(:version => 2) do
 
   create_table "review_centers", :force => true do |t|
     t.string "name"
+    t.string "address"
   end
 
   create_table "review_schools", :force => true do |t|
