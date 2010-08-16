@@ -18,8 +18,8 @@
     <div>
       <%= image_tag("bongif.gif", :size => "100x100", :align => "left") -%>
       <div id="logo_text">
-      NURSING SYSTEM <br/>
-      <span>Philippine Nursing Online System </span>
+        NURSING SYSTEM <br/>
+        <span>Philippine Nursing Online System </span>
       </div>
 
       <div id="top_school" onclick="location.href='<%= chedrecognitions_path %>'">
@@ -48,7 +48,6 @@
       <%= render :partial => "globals/notice_or_error", :locals => {:message => flash[:error], :type => 'error'} if flash[:error] %>
       <%= render :partial => "globals/notice_or_error", :locals => {:message => flash[:notice], :type => 'notice'} if flash[:notice] %>
     </div>
-    
     <%= yield -%>
   </div>
 </div>

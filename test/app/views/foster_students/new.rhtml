@@ -1,0 +1,56 @@
+<span class="page_title">Add Student</span>
+<br/><br/>
+<% form_tag new_foster_student_path, :method => 'post' do %>
+  <%= render :partial => "naf" %>
+  <%= render :partial => "personal" %>
+  <%= render :partial => "educational" %>
+  <br/>
+  <%= submit_tag "Submit",  :class => "submit_tag" %> <%= link_to "cancel", students_path %>
+<% end -%>
+
+<%= observe_field("address_region_id", :url => {:action => :update_province_select_address }, :with => 'region_id', :loading => "$('address_loader').show()", :complete => "$('address_loader').hide()") %>
+
+<%= observe_field("pob_region_id", :url => {:action => :update_province_select_pob }, :with => 'region_id', :loading => "$('pob_loader').show()", :complete => "$('pob_loader').hide()") %>
+
+<script>
+function check_duplicate_studentx(){
+  var firstname = $j("#student_firstname").val();
+  var lastname = $j("#student_lastname").val();
+  var month = $j("#dob_month").val();
+  var day = $j("#dob_day").val();
+  var year = $j("#dob_year").val();
+  var dob = year + "-" + month + "-" + day;
+  data  = { firstname: firstname, lastname: lastname, dob: dob };
+  $j.post("/foster_students/check_duplicate_student", { firstname: firstname, lastname: lastname, dob: dob }, null, "script");
+  return false;
+  
+//  $j.ajax({
+//    type: 'POST',
+//    url: "/students/check_duplicate_student",
+//    data: data,
+//    success: function(html){
+//      alert('test');
+//    }
+//  });
+
+}
+
+
+$j(document).ready(function() {
+
+  $j("#dob_year").blur(function() {
+    var firstname = $j("#student_firstname").val();
+    var lastname = $j("#student_lastname").val();
+    var month = $j("#dob_month").val();
+    var day = $j("#dob_day").val();
+    var year = $j("#dob_year").val();
+    var dob = year + "-" + month + "-" + day;
+    data  = { firstname: firstname, lastname: lastname, dob: dob };
+    $j.post("/foster_students/check_duplicate_student", { firstname: firstname, lastname: lastname, dob: dob }, null, "jsonp");
+
+  });
+
+});
+
+
+</script>

@@ -1,0 +1,11 @@
+<%= render :partial => "search" -%>
+<div>
+  <div id="title_header"><h1>Students </h1></div>
+  <% if ["registrar", "foster"].include?(current_user.role_code) -%>
+  <div id="add_school">
+    <%= link_to "Add new entry >>", new_foster_student_path %> |
+    <%= link_to "Add Repeater/Conditioned >>", repeater_foster_students_path %>
+  </div> 
+  <% end -%>
+</div>
+<%= render :partial => "student_rows" -%>

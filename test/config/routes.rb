@@ -58,6 +58,14 @@ ActionController::Routing::Routes.draw do |map|
                                                                :search_student => :get},
                                                       :member => {:perrc => :put }
   map.resources :fosters, :controller => "fosters"
+  map.resources :foster_students, :controller => "foster_students", :member => { :view => :get,
+                                                                   :newapplication => :get
+                                                                 }, 
+                                                      :collection => {:search => :post,
+                                                                      :with_foster => :get,
+                                                                      :repeater => :get,
+                                                                      :new_application => :get}
+
   map.resources :students, :controller => "students", :member => { :view => :get,
                                                                    :newapplication => :get
                                                                  }, 
@@ -71,6 +79,12 @@ ActionController::Routing::Routes.draw do |map|
                                                                :testing_center => :get,
                                                                :results => :get},
                                               :member => { :update_special_order => :put }
+  map.resources :foster_nles, :controller => "foster_nles", :collection => { :list_examinees => :get,
+                                                               :paid_examinees => :get,
+                                                               :testing_center => :get,
+                                                               :results => :get},
+                                              :member => { :update_special_order => :put }
+
   map.resources :addresses, :controller => "addresses", :collection => { :show_provinces => :get, 
                                                                          :show_towns => :get,
                                                                          :edit_towns => :get,
@@ -80,6 +94,7 @@ ActionController::Routing::Routes.draw do |map|
                                                                          :update_region => :get}
   map.resources :users, :controller => "users"
   map.resources :status_reports, :controller => "status_reports", :collection => {:search => :post}
+  map.resources :foster_status_reports, :controller => "foster_status_reports", :collection => {:search => :post}
   map.resources :transfers, :controller => "transfers", :collection => { :search => :post, 
                                                                          :accept => :get,
                                                                          :release => :get,

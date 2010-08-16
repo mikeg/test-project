@@ -37,6 +37,14 @@ class Student < ActiveRecord::Base
     end
   end
 
+  def self.foster_search(search, page, foster)
+    paginate :per_page => 20,
+             :page => page,
+             :conditions => ['( firstname like ? or lastname like ? or middlename like ?)', "%#{search}%", "%#{search}%", "%#{search}%"],
+             :order => "lastname"
+  end
+
+
   def self.search_tobe_released(search, page, school)
        paginate :per_page => 20,
                 :page => page,
@@ -58,7 +66,7 @@ class Student < ActiveRecord::Base
     dob       = param[:dob]
     find(:all, :conditions => ["LCASE(firstname) like ? and LCASE(lastname) like ? and date_of_birth = ?",  firstname, lastname, dob] )
   end
-  
+
   def repeater?
     ex = Examinee.find(:first, :conditions => ["student_id = ?", self.id], :order => "examination_schedule_id DESC" ) rescue nil
     return false if  ex.nil?

@@ -1,0 +1,26 @@
+<div style="clear:both"></div>
+<table cellpadding=2 cellspacing=2 border=1 width="100%" style="border-collapse: collapse">
+  <tr bgcolor="##6699FF">
+    <td>Student Name </td>
+    <td>School</td>
+    <td>Gender</td>
+    <td>Region</td>
+    <td>Province</td>
+    <td>Town</td>
+  </tr>
+  <%
+  @students.each do |student|
+  %>
+  <tr>
+    <td><%= link_to student.fullname, view_foster_student_path(student) -%></td>
+    <td><%#= student.name %></td>
+    <td><%= student.sex %></td>
+    <td><%= student.region.name %></td>
+    <td><%= student.province.name %></td>
+    <td><%= student.town.name %></td>
+  </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @students %>
+</div>

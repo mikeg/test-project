@@ -1,0 +1,3 @@
+<% checked = app.has_nso ? "checked" : "" %>
+<input type="checkbox" onchange="status_report.toogle_status_nso(<%=app.id-%>, this.checked)" <%= checked -%> >
+<%= span_loader("status_nso_loader_#{app.id}") -%>

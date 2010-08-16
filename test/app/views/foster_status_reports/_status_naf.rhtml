@@ -1,0 +1,9 @@
+<% 
+if app.is_approved
+  checked = "checked"
+else
+  checked = ""
+end
+%>
+<input type="checkbox" onchange="status_report.toogle_status_naf(<%=app.id-%>, this.checked)" <%= checked -%> >
+<%= span_loader("status_naf_loader_#{app.id}") -%>

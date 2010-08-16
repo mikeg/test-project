@@ -12,7 +12,7 @@
   %>
   <tr>
     <td><%= h app.student.fullname -%></td>
-    <td><%= h app.student.school.name -%></td>
+    <td><%= h app.student.school.name rescue ""-%></td>
     <td><%= h price.amount.to_s -%></td>
     <td>
       <div id="payment_div<%= app.id -%>">

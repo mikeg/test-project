@@ -12,7 +12,7 @@
   %>
   <tr>
     <td><%= payment.student.fullname -%></td>
-    <td><%= payment.student.school.name -%></td>
+    <td><%= payment.student.school.name rescue "" -%></td>
     <td><%= payment.price.amount %></td>
     <td><%= payment.or_number %></td>
     <td><%= payment.created_at.strftime("%B %d, %Y") %></td>

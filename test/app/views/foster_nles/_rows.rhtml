@@ -1,0 +1,27 @@
+<div style="clear:both"></div>
+
+
+<table cellpadding=2 cellspacing=2 border=1 width="100%" style="border-collapse: collapse">
+  <tr bgcolor="##6699FF">
+    <td>Student Name </td>
+    <td>Special Order</td>
+
+  </tr>
+  <%
+  @applications.each do |app|
+  %>
+  <tr>
+    <td width="250"><%= app.student.fullname -%></td>
+    <td>
+    <div id="special_order_div<%= app.id -%>">
+      <% remote_form_for :form, :url => update_special_order_nle_path(app), :loading => "$('special_order_loader#{app.id}').show()", :complete => "$('special_order_loader#{app.id}').hide()", :html => { :method => :put } do |f|%>
+        <%= text_field_tag "special_order", app.special_order %>
+        <%= submit_tag "Update"%>
+      <% end %>
+    </div>
+    <%= span_loader("special_order_loader#{app.id}")%>
+    </td>
+  </tr>
+  <% end %>
+</table>
+

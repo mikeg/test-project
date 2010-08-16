@@ -1,0 +1,3 @@
+if @students.length  > 0
+  page << "alert('Student name already exists')"
+end

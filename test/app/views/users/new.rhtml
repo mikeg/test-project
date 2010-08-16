@@ -10,14 +10,11 @@
 
   <li> Role: </li>
   <li><%= select_tag "role_code", options_for_select(@roles,nil), :class => "text_field" %>
-    <div id="schools_div">
-      
-    </div>
+    <div id="schools_div"></div>
     </li>
 
-  <li> PRC Location Handled: </li>
-  <li><%= select_tag "user[location]", options_for_select(@prc_locations,nil), :class => "text_field" %>
-      <%#= link_to "add_new", new_prc_location_path%></li>
+  <li><span id="prc_location">PRC Location Handled: </span></li>
+  <li><%= select_tag "user[location]", options_for_select(@prc_locations,nil), :class => "text_field" %></li>
   <li>Employee No.: </li>
   <li><%= text_field_tag "user[employee_no]",nil, :class => "text_field" %></li>
   <li>Username: </li>
@@ -34,3 +31,17 @@
 <% end -%>
 
 <%= observe_field("role_code", :url => {:action => :update_schools_div }, :with => 'role_code', :loading => "$('schools_loader').show()", :complete => "$('schools_loader').hide()") %>
+
+
+<script>
+  $j("#role_code").change(function() {
+    var role = $j("#role_code").val();
+    if (role == "foster") {
+      $j("#user_location").hide();
+      $j("#prc_location").hide();
+    }else{
+      $j("#user_location").show();
+      $j("#prc_location").show();
+    }
+  });
+</script>

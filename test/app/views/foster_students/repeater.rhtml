@@ -1,12 +1,12 @@
 <h5>Add a Repeater or Conditioned:</h5>
 
 <div id="search_school">
- <% form_tag repeater_students_path, :method => :get do %>
+ <% form_tag repeater_foster_students_path, :method => :get do %>
  Search a student: <%= text_field_tag "search", params[:search], :size => "40" -%>
  <%= submit_tag "Search", :class => "submit_tag"%>
  <% end %>
 
-<% if @students.empty?%>
+<% if params[:search] && @students.empty?%>
  <div class="notice">
    No data result for your request.
  </di>
@@ -30,8 +30,8 @@ unless @students.empty?
    @students.each do |student|
    %>
    <tr>
-     <td><%= link_to student.fullname, view_student_path(student) -%></td>
-     <td><%= student.school.name %></td>
+     <td><%= link_to student.fullname, view_foster_student_path(student) -%></td>
+     <td><%= student.school.name rescue ''%></td>
      <td><%= student.sex %></td>
      <td><%= student.region.name %></td>
      <td><%= student.province.name %></td>
