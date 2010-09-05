@@ -1,0 +1,16 @@
+<h1>Examination Schedules</h1>
+<%= link_to "Set new schedule", new_exam_schedule_path%>
+<br/><br/>
+<table cellpadding=2 cellspacing=2 border=0>
+
+  <% @exam_schedules.each do |exam| %>
+  <tr>
+    <td width="250"><%= exam.course.name.titleize %></td>
+    <td width="150"><%= exam.schedule %></td>
+    <td>
+      <%= link_to "Edit", edit_exam_schedule_path(exam) %>
+       | 
+      <%= link_to "Delete", exam_schedule_path(exam), :method => :delete, :confirm => "Are you sure you want to delete this?" %></td>
+  </tr>
+  <% end  %>
+</table>

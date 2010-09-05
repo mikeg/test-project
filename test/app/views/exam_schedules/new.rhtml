@@ -1,0 +1,35 @@
+<h1>Add new schedule </h1>
+
+<% form_tag exam_schedules_path, :method => :post do -%>
+  Course: <%= select_tag "course_id", options_for_select(@courses, [@nursing.name,@nursing.id])%>
+  <br/>
+  Date: <input type="text" id="date" name="date" class="date_input">
+  <br/>
+  <%= submit_tag "Add"%>
+<% end -%>
+
+<script type="text/javascript">
+$j(function()
+{
+  $j("#date").date_input();
+});
+
+$j.extend(DateInput.DEFAULT_OPTS, {
+  stringToDate: function(string) {
+    var matches;
+    if (matches = string.match(/^(\d{4,4})-(\d{2,2})-(\d{2,2})$/)) {
+      return new Date(matches[1], matches[2] - 1, matches[3]);
+    } else {
+      return null;
+    };
+  },
+  
+  dateToString: function(date) {
+    var month = (date.getMonth() + 1).toString();
+    var dom = date.getDate().toString();
+    if (month.length == 1) month = "0" + month;
+    if (dom.length == 1) dom = "0" + dom;
+    return date.getFullYear() + "-" + month + "-" + dom;
+  }
+});
+</script>

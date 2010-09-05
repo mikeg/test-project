@@ -1,0 +1,8 @@
+Region: <%= school.region.name.titleize rescue ''%> <br/>
+Province: <%= school.province.name.titleize rescue ''%><br/>
+Municipality/City/Town: <%= school.town.name.titleize rescue ''%><br/>
+Zipcode: <%= school.town.zip_code rescue ''%> <br/>
+Area Code: <%= school.province.area_code rescue ''%> <br/>
+Rurban code: <%= school.town.rurban_code rescue ''%>
+<br/>
+PRC School Code: <%= school.prc_school_code rescue ''%> <br/>
