@@ -4,13 +4,27 @@ class FosterNlesController < ApplicationController
   before_filter :require_user
 
   def index
+    redirect_to list_examinees_foster_nles_path
   end
 
   def show
   end
 
   def list_examinees
-    @applications = Applicant.find(:all, :conditions => ["special_order IS NULL AND is_completed = ?", true])
+    if current_user.role_code == 'registrar'
+      if params[:so].to_s == "1"
+        @applications = Applicant.find(:all, :conditions => ["school_iid = ? AND is_completed = ?", current_user.id, true])
+      else
+        @applications = Applicant.find(:all, :conditions => ["school_id = ? AND special_order IS NULL AND is_completed = ?", current_user.id, true])
+      end
+    else
+      # lets assume its a foster
+      if params[:so].to_s == "1"
+        @applications = Applicant.find(:all, :conditions => ["foster_id = ? AND is_completed = ?", current_user.id, true])
+      else
+        @applications = Applicant.find(:all, :conditions => ["foster_id = ? AND special_order IS NULL AND is_completed = ?", current_user.id, true])
+      end
+    end
   end
 
   def paid_examinees

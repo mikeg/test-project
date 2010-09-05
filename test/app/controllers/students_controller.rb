@@ -15,6 +15,10 @@ class StudentsController < ApplicationController
     end
   end
 
+  def with_foster
+    #TODO
+  end
+  
   def newapplication
     @student = Student.find(params[:id])
     preload_form_data
@@ -79,6 +83,12 @@ class StudentsController < ApplicationController
       student.review_school1 = params[:review_school1]
       student.review_school2 = params[:review_school2]
       student.review_school3 = params[:review_school3]
+      
+      # 032:2554645
+      student.telephone = "#{params[:telno_code]}:#{params[:telno_number]}"
+      # 0919:5657898
+      student.mobile_no = "#{params[:mobile_network]}:#{params[:mobile_number]}"
+      
 
       duplicates = Student.check_duplicate(current_user.school, { :firstname => student.firstname, :lastname => student.lastname, :dob => student.date_of_birth.to_date.to_s})
       if duplicates.length > 0
@@ -257,8 +267,8 @@ class StudentsController < ApplicationController
   def update_province_select_address
     @region, @provinces, @towns = [], [], []
     @region = Region.find(params[:region_id])
-    @region.provinces.each do |p|
-      @provinces << [p.name, p.id]
+    @region.provinces.find(:all, :order => "name asc").each do |p|
+      @provinces << [p.name.titleize, p.id]
     end
 
     @region.provinces.first.towns.each do |t|
@@ -276,8 +286,8 @@ class StudentsController < ApplicationController
   def update_town_select_address
     @towns = []
     @province = Province.find(params[:province_id])
-    @province.towns.each do |t|
-      @towns << [t.name, t.id]
+    @province.towns.find(:all, :order => "name asc").each do |t|
+      @towns << [t.name.titleize, t.id]
     end
     render :update do |page|
       page.replace_html("address_town_div", :partial => 'students/town_select', :locals => { :towns => @towns, :selected_id => nil })
@@ -288,12 +298,12 @@ class StudentsController < ApplicationController
   def update_province_select_pob
     @region, @pob_provinces, @pob_towns = [], [], []
     @region = Region.find(params[:region_id])
-    @region.provinces.each do |p|
-      @pob_provinces << [p.name, p.id]
+    @region.provinces.find(:all, :order => "name asc").each do |p|
+      @pob_provinces << [p.name.titleize, p.id]
     end
 
-    @region.provinces.first.towns.each do |t|
-      @pob_towns << [t.name, t.id]
+    @region.provinces.first.towns.find(:all, :order => "name asc").each do |t|
+      @pob_towns << [t.name.titleize, t.id]
     end
 
     render :update do |page|
@@ -307,8 +317,8 @@ class StudentsController < ApplicationController
   def update_town_select_pob
     @pob_towns = []
     @province = Province.find(params[:province_id])
-    @province.towns.each do |t|
-      @pob_towns << [t.name, t.id]
+    @province.towns.find(:all, :order => "name asc").each do |t|
+      @pob_towns << [t.name.titleize, t.id]
     end
     render :update do |page|
       page.replace_html("pob_town_div", :partial => 'students/pob_town_select', :locals => { :towns => @pob_towns, :selected_id => nil})
@@ -319,12 +329,12 @@ class StudentsController < ApplicationController
   def update_province_select_school
     @region, @provinces, @towns = [], [], []
     @region = Region.find(params[:region_id])
-    @region.provinces.each do |p|
-      @provinces << [p.name, p.id]
+    @region.provinces.find(:all, :order => "name asc").each do |p|
+      @provinces << [p.name.titleize, p.id]
     end
 
-    @region.provinces.first.towns.each do |t|
-      @towns << [t.name, t.id]
+    @region.provinces.first.towns.find(:all, :order => "name asc").each do |t|
+      @towns << [t.name.titleize, t.id]
     end
 
     render :update do |page|
@@ -338,8 +348,8 @@ class StudentsController < ApplicationController
   def update_town_select_school
     @towns = []
     @province = Province.find(params[:province_id])
-    @province.towns.each do |t|
-      @towns << [t.name, t.id]
+    @province.towns.find(:all, :order => "name asc").each do |t|
+      @towns << [t.name.titleize, t.id]
     end
     render :update do |page|
       page.replace_html("school_town_div", :partial => 'students/school_town_select')
@@ -389,18 +399,18 @@ class StudentsController < ApplicationController
   def preload_form_data
     @regions, @provinces, @towns, @countries, @civilstatus, @courses = [], [], [], [], [], []
     
-    regions = Region.find(:all)
+    regions = Region.find(:all, :order => "name asc")
     regions.each do |r|
-      @regions << [r.name, r.id]
+      @regions << [r.name.titleize, r.id]
     end
     
     unless regions.first.provinces.empty?
-      regions.first.provinces.each do |p|
-        @provinces << [p.name, p.id]
+      regions.first.provinces.find(:all, :order => "name asc").each do |p|
+        @provinces << [p.name.titleize, p.id]
       end
       unless regions.first.provinces.first.towns.empty?
-        regions.first.provinces.first.towns.each do |t|
-          @towns << [t.name, t.id]
+        regions.first.provinces.first.towns.find(:all, :order => "name asc").each do |t|
+          @towns << [t.name.titleize, t.id]
         end unless regions.first.provinces
       end
     end
@@ -453,5 +463,6 @@ class StudentsController < ApplicationController
       @courses << [c.name, c.id]
     end
   end
-
+  
+  
 end

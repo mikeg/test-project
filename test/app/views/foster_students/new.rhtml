@@ -12,6 +12,10 @@
 
 <%= observe_field("pob_region_id", :url => {:action => :update_province_select_pob }, :with => 'region_id', :loading => "$('pob_loader').show()", :complete => "$('pob_loader').hide()") %>
 
+
+<%= observe_field("school_id", :url => {:action => :update_school_info }, :with => 'school_id', :loading => "$('school_loader').show()", :complete => "$('school_loader').hide()") %>
+
+
 <script>
 function check_duplicate_studentx(){
   var firstname = $j("#student_firstname").val();

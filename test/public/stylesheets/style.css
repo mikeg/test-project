@@ -59,3 +59,11 @@ body {
 .clear {
   clear:both
 }
+
+.active_so_link  {
+  background-color: #6699FF;
+  padding: 5px;
+}
+.inactive_so_link  {
+  padding: 5px;
+}

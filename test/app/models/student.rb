@@ -6,6 +6,11 @@ class Student < ActiveRecord::Base
   belongs_to :country
 #  belongs_to :examinee
 
+  
+  def self.with_foster(school, page)
+    #TODO: get students with foster
+  end
+
   def self.find_repeater(search, page, school=nil)
 
     students = unless school.nil?

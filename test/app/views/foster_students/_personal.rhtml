@@ -62,13 +62,15 @@
     <tr>
       <td width="220" align="right">Landline No. (ex. 32, 2534545) : </td>
       <td>
-        <%= text_field_tag "student[telephone]"%>
+        <%= text_field_tag "telno_code", "", :size => "4", :maxlength => 3 %>
+        <%= text_field_tag "telno_number", "", :size => "10", :maxlength => 7 %>
         </td>
     </tr>
     <tr>
       <td width="220" align="right">Mobile No. (ex. 0927 5353434): </td>
       <td>
-        <%= text_field_tag "student[mobile_no]"%>
+        <%= text_field_tag "mobile_network", "", :size => "4", :maxlength => 4 %>
+        <%= text_field_tag "mobile_number", "", :size => "10", :maxlength => 7 %>
         </td>
     </tr>
     <tr>
@@ -90,7 +92,7 @@
         <div> Street : <%= text_field_tag "student[pob_street]"%>
         </td>
     </tr>
-    <tr>
+    <tr id="spouse_row" style="display:none">
       <td width="220" align="right">Spouse's Name: </td>
       <td>
         <%= text_field_tag "student[spouse]"%>
@@ -118,7 +120,7 @@
         <%= radio_button_tag "student[convicted]", 0, true%> No
         </td>
     </tr>
-    <tr>
+    <tr  id="yes_convicted" style="display: none">
       <td width="220" align="right">If yes, has submitted a copy of the decision? </td>
       <td>
         <%= radio_button_tag "student[convicted_file]", 1, false%> Yes
@@ -130,3 +132,23 @@
 
 </div>
 
+
+<script>
+$j("#student_marital_status").change(function() {
+  var val = $j("#student_marital_status").val();
+  if (val == "married") {
+    $j("#spouse_row").show();
+  }else{
+    $j("#spouse_row").hide();
+  }
+});
+
+$j("#student_convicted_1").change(function() {
+  $j("#yes_convicted").show();
+});
+
+$j("#student_convicted_0").change(function() {
+  $j("#yes_convicted").hide();
+});
+
+</script>

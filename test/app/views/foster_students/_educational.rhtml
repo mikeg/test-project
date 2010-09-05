@@ -3,10 +3,16 @@
 
   <table border="0" width="100%">
     <tr>
-      <td width="220" align="right">Name of school: </td>
-      <td><%= current_user.fullname %></td>
+      <td width="220" valign="top" align="right">Name of school: </td>
+      <td>
+      <%#= current_user.fullname %>
+      <%= select_tag "school_id", options_for_select(@schools) -%>
+      <div id="school_info_div" style="clear:both">
+      </div>
+      </td>
     </tr>
-    <tr>
+
+<!--    <tr>
       <td width="220" align="right">School Address: </td>
       <td>
         Region : <%#= current_user.school.region.name unless current_user.school.region.nil?%>
@@ -25,17 +31,12 @@
         <div >
           Rurban code  : <%#= current_user.school.rurban_code%>
         </div>
-
         </td>
     </tr>
-    <tr>
-      <td width="220" align="right">PRC School Code: </td>
-      <td><%#= current_user.school.prc_school_code %></td>
-    </tr>
-    <tr>
-      <td width="220" align="right">PRC Course Code: </td>
-      <td><%= %></td>
-    </tr>
+-->
+
+    
+    
     <tr>
       <td width="220" align="right">Degree/Course Obtained: </td>
       <td><%= h @nursing_course.name %> 

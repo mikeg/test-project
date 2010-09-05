@@ -38,9 +38,9 @@
     <tr >
       <td width="220" align="right" valign="top">Review School Attended: </td>
       <td>
-        <%= @student.review_school1  rescue ''%><br/>
-        <%= @student.review_school2  rescue ''%><br/>
-        <%= @student.review_school3  rescue ''%>
+        <%= ReviewSchool.find(@student.review_school1).name.titleize  rescue ''%><br/>
+        <%= ReviewSchool.find(@student.review_school2).name.titleize  rescue ''%><br/>
+        <%= ReviewSchool.find(@student.review_school3).name.titleize  rescue ''%>
         </td>
     </tr>
     <tr style="height: 1px; background-color:#949494">
@@ -50,9 +50,9 @@
     <tr>
       <td width="220" align="right" valign="top">Review Center Attended: </td>
       <td>
-        <%= @student.review_center1  rescue ''%><br/>
-        <%= @student.review_center2  rescue ''%><br/>
-        <%= @student.review_center3  rescue ''%>
+        <%= ReviewCenter.find(@student.review_center1).name.titleize  rescue ''%><br/>
+        <%= ReviewCenter.find(@student.review_center2).name.titleize  rescue ''%><br/>
+        <%= ReviewCenter.find(@student.review_center3).name.titleize  rescue ''%>
         </td>
     </tr>
     

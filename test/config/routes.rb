@@ -59,7 +59,7 @@ ActionController::Routing::Routes.draw do |map|
                                                       :member => {:perrc => :put }
   map.resources :fosters, :controller => "fosters"
   map.resources :foster_students, :controller => "foster_students", :member => { :view => :get,
-                                                                   :newapplication => :get
+                                                                   :newapplication => :post
                                                                  }, 
                                                       :collection => {:search => :post,
                                                                       :with_foster => :get,
@@ -92,6 +92,7 @@ ActionController::Routing::Routes.draw do |map|
                                                                          :add_regions => :get,
                                                                          :add_towns => :get,
                                                                          :update_region => :get}
+  map.resources :exam_schedules, :controller => "exam_schedules", :member => { :edit => :get }
   map.resources :users, :controller => "users"
   map.resources :status_reports, :controller => "status_reports", :collection => {:search => :post}
   map.resources :foster_status_reports, :controller => "foster_status_reports", :collection => {:search => :post}
@@ -102,6 +103,7 @@ ActionController::Routing::Routes.draw do |map|
                                                         :member => { :accept_student => :put,
                                                                      :release_student => :put }
   map.resources :chedrecognitions, :controller => "chedrecognitions", :member => {:chedreg => :post}
+  map.resources :foster_chedrecognitions, :controller => "foster_chedrecognitions", :member => {:chedreg => :post}
 
   map.resources :regions, :controller => "regions"
   map.resources :provinces, :controller => "provinces"

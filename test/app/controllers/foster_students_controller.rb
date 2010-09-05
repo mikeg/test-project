@@ -3,7 +3,7 @@ class FosterStudentsController < ApplicationController
   protect_from_forgery
   before_filter :require_user
 
-  before_filter :load_schools_select, :only => [:update_degree]
+  before_filter :load_schools_select, :only => [:update_degree, :new]
   before_filter :load_courses_select, :only => [:update_degree]
 
   
@@ -74,6 +74,9 @@ class FosterStudentsController < ApplicationController
       student.review_school1 = params[:review_school1]
       student.review_school2 = params[:review_school2]
       student.review_school3 = params[:review_school3]
+      # 032:2554645
+      student.telephone = "#{params[:telno_code]}:#{params[:telno_number]}"
+      student.mobile_no = "#{params[:mobile_network]}:#{params[:mobile_number]}"
       
       if params[:student][:firstname].blank?
         flash[:error] = "Given name is required."
@@ -261,12 +264,12 @@ class FosterStudentsController < ApplicationController
   def update_province_select_address
     @region, @provinces, @towns = [], [], []
     @region = Region.find(params[:region_id])
-    @region.provinces.each do |p|
-      @provinces << [p.name, p.id]
+    @region.provinces.find(:all, :order => "name ASC").each do |p|
+      @provinces << [p.name.titleize, p.id]
     end
 
-    @region.provinces.first.towns.each do |t|
-      @towns << [t.name, t.id]
+    @region.provinces.first.towns.find(:all, :order => "name ASC").each do |t|
+      @towns << [t.name.titleize, t.id]
     end unless @region.provinces.empty?
 
     render :update do |page|
@@ -280,8 +283,8 @@ class FosterStudentsController < ApplicationController
   def update_town_select_address
     @towns = []
     @province = Province.find(params[:province_id])
-    @province.towns.each do |t|
-      @towns << [t.name, t.id]
+    @province.towns.find(:all, :order => "name asc").each do |t|
+      @towns << [t.name.titleize, t.id]
     end
     render :update do |page|
       page.replace_html("address_town_div", :partial => 'students/town_select', :locals => { :towns => @towns, :selected_id => nil })
@@ -386,6 +389,15 @@ class FosterStudentsController < ApplicationController
       end
     end
   end
+
+  def update_school_info
+    school = School.find(params[:school_id])
+
+    render :update do |page|
+      page.replace_html("school_info_div", :partial => 'foster_students/school_info', :locals => {:school => school})
+      page.visual_effect :highlight, "school_info_div", :duration => 1
+    end
+  end
   
   
   private
@@ -393,14 +405,17 @@ class FosterStudentsController < ApplicationController
   def preload_form_data
     @regions, @provinces, @towns, @countries, @civilstatus, @courses = [], [], [], [], [], []
     
-    regions = Region.find(:all)
+    regions = Region.find(:all, :order => "name asc")
     regions.each do |r|
-      @regions << [r.name, r.id]
+      @regions << [r.name.titleize, r.id]
     end
     
     unless regions.first.provinces.empty?
-      regions.first.provinces.each do |p|
-        @provinces << [p.name, p.id]
+      provs = regions.first.provinces.map(&:id)
+      provs_ids = provs.map(&:id)
+      provinces = Province.find(:all, :conditions => ["id IN (?)", provs_ids], :order => "name ASC")
+      provinces.each do |p|
+        @provinces << [p.name.titleize, p.id]
       end
       unless regions.first.provinces.first.towns.empty?
         regions.first.provinces.first.towns.each do |t|
@@ -413,10 +428,11 @@ class FosterStudentsController < ApplicationController
   
     countries = Country.find(:all, :order => "name ASC")
     countries.each do |c|
-      @countries << [c.name, c.id]
+      @countries << [c.name.titleize, c.id]
     end
     
     civilstatus = CivilStatus.find(:all, :order => "name ASC")
+    @civilstatus << ["Choose below"]
     civilstatus.each do |c|
       @civilstatus << [c.name, c.code]
     end
@@ -457,5 +473,6 @@ class FosterStudentsController < ApplicationController
       @courses << [c.name, c.id]
     end
   end
+
 
 end

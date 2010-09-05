@@ -1,4 +1,13 @@
 <div>
   <div id="title_header"><h1>LIST OF EXAMINEES </h1></div>
 </div>
+<div style="clear:both; margin-bottom: 4px">
+<%
+  active_link = params[:so].nil? ? "inactive_so_link" : "active_so_link"
+  inactive_link = params[:so].nil? ? "active_so_link" : "inactive_so_link" 
+%>
+<%= link_to "WITHOUT SPECIAL ORDER", list_examinees_foster_nles_path, :class => "#{inactive_link}" %>
+<%= link_to "WITH SPECIAL ORDER", list_examinees_foster_nles_path(:so => 1), :class => "#{active_link}"%>  
+</div>
+
 <%= render :partial => "rows" -%>
