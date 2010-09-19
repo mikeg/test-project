@@ -26,6 +26,12 @@ class UsersController < ApplicationController
   
   def edit
     @user = User.find(params[:id])
+
+    @schools = []
+    School.find(:all, :order => "name").each do |s|
+      @schools << [s.name, s.id]
+    end
+    
   end
   
   def new

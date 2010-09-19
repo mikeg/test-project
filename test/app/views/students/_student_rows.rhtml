@@ -13,7 +13,7 @@
   %>
   <tr>
     <td><%= link_to student.fullname, view_student_path(student) -%></td>
-    <td><%= student.school.name %></td>
+    <td><%= student.school.name rescue '' %></td>
     <td><%= student.sex %></td>
     <td><%= student.region.name %></td>
     <td><%= student.province.name %></td>

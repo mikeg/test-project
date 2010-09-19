@@ -11,13 +11,12 @@
   <li> Role: </li>
   <li><%= select_tag "role_code", options_for_select(@roles, @user.role_code), :class => "text_field" %>
     <div id="schools_div">
-      
+      <%= render :partial => "users/schools_select" -%>
     </div>
     </li>
 
   <li> PRC Location Handled: </li>
-  <li><%= select_tag "user[location]", options_for_select(@prc_locations, @user.location), :class => "text_field" %>
-      <%#= link_to "add_new", new_prc_location_path%></li>
+  <li><%= select_tag "user[location]", options_for_select(@prc_locations, @user.location), :class => "text_field" %></li>
   <li>Employee No.: </li>
   <li><%= text_field_tag "user[employee_no]", @user.employee_no, :class => "text_field" %></li>
   <li>Username: </li>
