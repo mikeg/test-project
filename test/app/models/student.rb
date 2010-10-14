@@ -9,6 +9,11 @@ class Student < ActiveRecord::Base
   
   def self.with_foster(school, page)
     #TODO: get students with foster
+    Student.paginate(
+               :per_page => 20,
+               :page => page,
+               :conditions => ['foster_id IS NOT NULL AND school_id = ? ', school.id],
+               :order => "lastname asc")
   end
 
   def self.find_repeater(search, page, school=nil)
@@ -17,13 +22,13 @@ class Student < ActiveRecord::Base
     Student.paginate(
                :per_page => 20,
                :page => page,
-               :conditions => ['school_id = ? and ( firstname like ? or lastname like ? or middlename like ?)', school.id, "%#{search}%", "%#{search}%", "%#{search}%"],
+               :conditions => ['foster_id IS NULL AND school_id = ? and ( firstname like ? or lastname like ? or middlename like ?)', school.id, "%#{search}%", "%#{search}%", "%#{search}%"],
                :order => "lastname")
     else
     Student.paginate(
                :per_page => 20,
                :page => page,
-               :conditions => ['firstname like ? or lastname like ? or middlename like ?', "%#{search}%", "%#{search}%", "%#{search}%"],
+               :conditions => ['foster_id IS NULL AND firstname like ? or lastname like ? or middlename like ?', "%#{search}%", "%#{search}%", "%#{search}%"],
                :order => "lastname")
     end
   end
@@ -32,12 +37,12 @@ class Student < ActiveRecord::Base
     unless school.nil?
       paginate :per_page => 20,
                :page => page,
-               :conditions => ['school_id = ? and ( firstname like ? or lastname like ? or middlename like ?)', school.id, "%#{search}%", "%#{search}%", "%#{search}%"],
+               :conditions => ['foster_id IS NULL AND school_id = ? and ( firstname like ? or lastname like ? or middlename like ?)', school.id, "%#{search}%", "%#{search}%", "%#{search}%"],
                :order => "lastname"
     else
       paginate :per_page => 20,
                :page => page,
-               :conditions => ['firstname like ? or lastname like ? or middlename like ?', "%#{search}%", "%#{search}%", "%#{search}%"],
+               :conditions => ['foster_id IS NULL AND firstname like ? or lastname like ? or middlename like ?', "%#{search}%", "%#{search}%", "%#{search}%"],
                :order => "lastname"
     end
   end
@@ -45,7 +50,7 @@ class Student < ActiveRecord::Base
   def self.foster_search(search, page, foster)
     paginate :per_page => 20,
              :page => page,
-             :conditions => ['( firstname like ? or lastname like ? or middlename like ?)', "%#{search}%", "%#{search}%", "%#{search}%"],
+             :conditions => [' foster_id IS NOT NULL AND  ( firstname like ? or lastname like ? or middlename like ?)', "%#{search}%", "%#{search}%", "%#{search}%"],
              :order => "lastname"
   end
 

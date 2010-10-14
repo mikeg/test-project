@@ -73,7 +73,15 @@ class FosterStudentsController < ApplicationController
       student.review_center3 = params[:review_center3]
       student.review_school1 = params[:review_school1]
       student.review_school2 = params[:review_school2]
+      student.school_id = params[:school_id]
+      
+      if params[:school_id].blank?
+        flash[:error] = "Please select a school."
+        redirect_to new_foster_student_path and return
+      end
+      
       student.review_school3 = params[:review_school3]
+      student.school_id = params[:schoold_id]
       # 032:2554645
       student.telephone = "#{params[:telno_code]}:#{params[:telno_number]}"
       student.mobile_no = "#{params[:mobile_network]}:#{params[:mobile_number]}"
@@ -295,12 +303,12 @@ class FosterStudentsController < ApplicationController
   def update_province_select_pob
     @region, @pob_provinces, @pob_towns = [], [], []
     @region = Region.find(params[:region_id])
-    @region.provinces.each do |p|
-      @pob_provinces << [p.name, p.id]
+    @region.provinces.find(:all, :order => "name asc").each do |p|
+      @pob_provinces << [p.name.titleize, p.id]
     end
 
-    @region.provinces.first.towns.each do |t|
-      @pob_towns << [t.name, t.id]
+    @region.provinces.first.towns.find(:all, :order => "name asc").each do |t|
+      @pob_towns << [t.name.titleize, t.id]
     end
 
     render :update do |page|
@@ -314,8 +322,8 @@ class FosterStudentsController < ApplicationController
   def update_town_select_pob
     @pob_towns = []
     @province = Province.find(params[:province_id])
-    @province.towns.each do |t|
-      @pob_towns << [t.name, t.id]
+    @province.towns.find(:all, :order => "name asc").each do |t|
+      @pob_towns << [t.name.titleize, t.id]
     end
     render :update do |page|
       page.replace_html("pob_town_div", :partial => 'students/pob_town_select', :locals => { :towns => @pob_towns, :selected_id => nil})

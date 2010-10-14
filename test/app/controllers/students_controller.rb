@@ -17,6 +17,7 @@ class StudentsController < ApplicationController
 
   def with_foster
     #TODO
+    @foster_students = Student.with_foster(current_user.school, params[:page])
   end
   
   def newapplication

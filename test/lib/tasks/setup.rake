@@ -1,4 +1,115 @@
 namespace :setup do 
+  
+  task :patch_regions => :environment do 
+    puts "Patching missing provinces..."
+    
+    region = Region.find_by_name("region iii")
+    Province.create(:name => "aurora", :region_id => region.id, :area_code => 42)
+
+    region = Region.find_by_name("region viii")
+    Province.create(:name => "biliran", :region_id => region.id, :area_code => 53)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "caloocan city", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("region xi")
+    Province.create(:name => "compostela valley", :region_id => region.id, :area_code => nil)
+
+    region = Region.find_by_name("region vi")
+    Province.create(:name => "guimaras", :region_id => region.id, :area_code => 33)
+
+    region = Region.find_by_name("region vi")
+    Province.create(:name => "iloilo province", :region_id => region.id, :area_code => 33)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "las pinas", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("region viii")
+    Province.create(:name => "leyte province", :region_id => region.id, :area_code => 53)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "makati city", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "malabon", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "marikina", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "mandaluyong city", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("region v")
+    Province.create(:name => "masbate province", :region_id => region.id, :area_code => 56)
+
+    region = Region.find_by_name("region iv")
+    Province.create(:name => "mindoro occidental", :region_id => region.id, :area_code => 43)
+
+    region = Region.find_by_name("region iv")
+    Province.create(:name => "mindoro oriental", :region_id => region.id, :area_code => 43)
+
+    region = Region.find_by_name("car")
+    Province.create(:name => "mountain province", :region_id => region.id, :area_code => 74)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "muntinlupa", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "navotas", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "paranaque", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "pasay city", :region_id => region.id, :area_code => 2)
+    
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "pasig city", :region_id => region.id, :area_code => 2)
+    
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "pateros", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "quezon city", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("region iv")
+    Province.create(:name => "quezon province", :region_id => region.id, :area_code => 42)
+
+    region = Region.find_by_name("region iv")
+    Province.create(:name => "rizal province", :region_id => region.id, :area_code => 42)
+
+    region = Region.find_by_name("region iv")
+    Province.create(:name => "romblon province", :region_id => region.id, :area_code => 42)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "san juan", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("region xii")
+    Province.create(:name => "saranggani", :region_id => region.id, :area_code => 83)
+
+    region = Region.find_by_name("region vii")
+    Province.create(:name => "siquijor", :region_id => region.id, :area_code => 35)
+
+    region = Region.find_by_name("region v")
+    Province.create(:name => "sorsogon province", :region_id => region.id, :area_code => 56)
+
+    region = Region.find_by_name("armm")
+    Province.create(:name => "sulu province", :region_id => region.id, :area_code => 56)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "taguig", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("ncr")
+    Province.create(:name => "valenzuela", :region_id => region.id, :area_code => 2)
+
+    region = Region.find_by_name("region viii")
+    Province.create(:name => "western samar", :region_id => region.id, :area_code => 56)
+    
+    
+    puts "done..."
+  end
+  
+  
   task :update_builtin_data => :environment do
     roles = [ [ "admin", "Administrator"],
               [ "registrar", "School Registrar"],
