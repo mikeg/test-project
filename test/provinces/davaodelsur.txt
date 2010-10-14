@@ -1,0 +1,75 @@
+<tr> 
+<td>8001</td> 
+<td>Santa Cruz</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8002</td> 
+<td>Digos</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8003</td> 
+<td>Matanao</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8004</td> 
+<td>Magsaysay</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8005</td> 
+<td>Bansalan</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8006</td> 
+<td>Hagunoy</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8007</td> 
+<td>Padada</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8008</td> 
+<td>Kiblawan</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8009</td> 
+<td>Sulop</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8010</td> 
+<td>Malalag</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8011</td> 
+<td>Santa Maria</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8012</td> 
+<td>Malita</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8013</td> 
+<td>Don Marcelino</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8014</td> 
+<td>Jose Abad Santos</td> 
+<td>Davao del Sur</td> 
+</tr> 
+<tr> 
+<td>8015</td> 
+<td>Sarangani</td> 
+<td>Davao del Sur</td> 
+</tr>

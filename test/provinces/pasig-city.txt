@@ -1,0 +1,65 @@
+<tr> 
+<td>1600</td> 
+<td>Pasig PO</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1601</td> 
+<td>San Joaquin</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1602</td> 
+<td>Pingabuhatan</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1603</td> 
+<td>Kapitolyo</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1604</td> 
+<td>Ugong</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1605</td> 
+<td>Ortigas PO</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1606</td> 
+<td>Caniogan</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1607</td> 
+<td>Maybunga</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1608</td> 
+<td>Sta. Lucia</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1609</td> 
+<td>Rosario</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1610</td> 
+<td>Santolan</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1611</td> 
+<td>Manggahan</td> 
+<td>Pasig City</td> 
+</tr> 
+<tr> 
+<td>1612</td> 
+<td>Green park</td> 
+<td>Pasig City</td> 
+</tr>

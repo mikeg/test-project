@@ -1,0 +1,140 @@
+<tr> 
+<td>8400</td> 
+<td>Surigao City</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8401</td> 
+<td>San Francisco</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8402</td> 
+<td>Malimano</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8403</td> 
+<td>Tagana-an</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8404</td> 
+<td>Sison</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8405</td> 
+<td>Placer</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8406</td> 
+<td>Tubod</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8407</td> 
+<td>Mainit</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8408</td> 
+<td>Bacuag</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8409</td> 
+<td>Gigaquit</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8410</td> 
+<td>Claver</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8411</td> 
+<td>Cagdianao</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8412</td> 
+<td>Dinagat</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8413</td> 
+<td>Basilisa (Rizal)</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8414</td> 
+<td>Libjo (Albor)</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8415</td> 
+<td>Loreto</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8416</td> 
+<td>Socorro</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8417</td> 
+<td>Dapa</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8418</td> 
+<td>Del Carmen</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8419</td> 
+<td>Gen. Luna</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8420</td> 
+<td>Pilar</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8421</td> 
+<td>San Isidro</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8422</td> 
+<td>Santa Monica</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8423</td> 
+<td>San Benito</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8424</td> 
+<td>Burgos</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8425</td> 
+<td>Alegria</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8426</td> 
+<td>Tubajon</td> 
+<td>Surigao del Norte</td> 
+</tr> 
+<tr> 
+<td>8427</td> 
+<td>San Jose</td> 
+<td>Surigao del Norte</td> 
+</tr>

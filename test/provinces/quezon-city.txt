@@ -1,0 +1,795 @@
+<tr> 
+<td>800</td> 
+<td>Social Security System</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>801</td> 
+<td>Camp Crame</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>802</td> 
+<td>Camp Aguinaldo</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>810</td> 
+<td>Araneta Center</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>820</td> 
+<td>Bureau of Internal Revenue</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>830</td> 
+<td>Nat&#8217;l Irrigation Adm.</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>840</td> 
+<td>V. Luna Hospital</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>850</td> 
+<td>Phil. Heart Center</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>860</td> 
+<td>Quezon City Hall</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>870</td> 
+<td>Veterans Hospital</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>880</td> 
+<td>Commission on Audit</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1100</td> 
+<td>Project 6</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1100</td> 
+<td>Central</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1100</td> 
+<td>Pinahan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1100</td> 
+<td>Quezon City CPO</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1101</td> 
+<td>Krus na Ligas</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1101</td> 
+<td>San Vicente</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1101</td> 
+<td>Diliman</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1101</td> 
+<td>Old Capitol Site</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1101</td> 
+<td>Sikatuna Village</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1101</td> 
+<td>University of the Phils. PO</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1101</td> 
+<td>Teacher&#8217;s Village</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1101</td> 
+<td>Malaya</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1101</td> 
+<td>Botocan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1101</td> 
+<td>UP Village</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1102</td> 
+<td>Amihan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1102</td> 
+<td>E. Rodriguez</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1102</td> 
+<td>Duyan-duyan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1102</td> 
+<td>Kamias</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1102</td> 
+<td>Claro</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1102</td> 
+<td>Silangan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1102</td> 
+<td>Quirino Dist.(Project 2 &amp; 3)</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1103</td> 
+<td>Paligsahan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1103</td> 
+<td>Sacred Heart</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1103</td> 
+<td>Roxas District</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1103</td> 
+<td>Kamuning</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1103</td> 
+<td>Obrero</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1103</td> 
+<td>Langing Handa</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1103</td> 
+<td>South Triangle</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1104</td> 
+<td>West Triangle</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1104</td> 
+<td>Talayan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1104</td> 
+<td>Mariblo</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1104</td> 
+<td>Damayan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1104</td> 
+<td>Nayon Kaunlaran</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1104</td> 
+<td>Paraiso</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1104</td> 
+<td>PhilAm</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1104</td> 
+<td>Sta. Cruz</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>Veterans Village</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>Bungad</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>Bagong Pagasa</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>Katipunan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>Alicia</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>Paltok</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>Del Monte</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>San Antonio</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>Project 7</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>R.Magsaysay</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1105</td> 
+<td>Sto. Cristo</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1106</td> 
+<td>Bahay Toro</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1106</td> 
+<td>Balintawak</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1106</td> 
+<td>Baesa</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1106</td> 
+<td>Apolonio Samson</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1106</td> 
+<td>Unang Sigaw</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1106</td> 
+<td>Project 8</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1106</td> 
+<td>Balumbato</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1107</td> 
+<td>Pasong Tamo</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1107</td> 
+<td>New Era</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1108</td> 
+<td>Pansol</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1108</td> 
+<td>Loyola Heights</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Project 4</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Tagumpay</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>marilag</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Dioquino Zobel</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Blue Ridge</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Socorro</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Bayanihan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Masagana</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Milagrosa</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Escopa</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Bagong Buhay</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Mangga</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Villa Maria Clara</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>San Roque</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1109</td> 
+<td>Cubao</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1110</td> 
+<td>Libis</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1110</td> 
+<td>Talampas</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1110</td> 
+<td>Camp Aguinaldo</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1110</td> 
+<td>Bagong Bayan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1110</td> 
+<td>White Plains</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1110</td> 
+<td>St. Ignatius</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1110</td> 
+<td>Cogong Norte</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1111</td> 
+<td>Immaculate Concepcion</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1111</td> 
+<td>Bagong Lipunan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1111</td> 
+<td>Pinagkaisahan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1111</td> 
+<td>Kaunlaran</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1111</td> 
+<td>St. Martin de Porres</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1111</td> 
+<td>Crame</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1112</td> 
+<td>Kalusugan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1112</td> 
+<td>Kristong Hari</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1112</td> 
+<td>Horseshoe</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1112</td> 
+<td>Valencia</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1112</td> 
+<td>Damayan Lagi</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1112</td> 
+<td>Mariana</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1113</td> 
+<td>Dona Imelda</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1113</td> 
+<td>San Isidro</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1113</td> 
+<td>Don Manuel</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1113</td> 
+<td>Dona Aurora</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1113</td> 
+<td>Tatalon</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1113</td> 
+<td>Dona Josefa</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1113</td> 
+<td>Santol</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1113</td> 
+<td>Sto. Nino</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>Sta. Teresita</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>Matalahib</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>Lourdes</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>Maharlika</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>La Loma</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>Sienna</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>Gintong Silahis</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>Paang Bundok</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>San Isidro Labrador</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>St. Peter</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1114</td> 
+<td>Salvacion</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1115</td> 
+<td>Manresa</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1115</td> 
+<td>San Jose</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1115</td> 
+<td>Masambong</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1115</td> 
+<td>Balingasa</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1115</td> 
+<td>Pag0ibig sa Nayon</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1115</td> 
+<td>Damar</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1116</td> 
+<td>Tandang Sora</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1116</td> 
+<td>Talipapa</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1116</td> 
+<td>Sauyo</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1116</td> 
+<td>San Bartolome</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1116</td> 
+<td>Sangandaan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1116</td> 
+<td>Bagbag</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1117</td> 
+<td>Sta. Monica</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1117</td> 
+<td>Gulod</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1117</td> 
+<td>San Agustin</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1117</td> 
+<td>Capri</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1117</td> 
+<td>Sta. Lucia</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1118</td> 
+<td>Fairview</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1118</td> 
+<td>Pasong Putik</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1119</td> 
+<td>Payatas</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1119</td> 
+<td>Bagong Silangan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1119</td> 
+<td>Matandang Balara</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1120</td> 
+<td>Violago Homes</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1120</td> 
+<td>BF Homes</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1121</td> 
+<td>Fairview North</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1121</td> 
+<td>Commonwealth</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1122</td> 
+<td>Fairview South</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1123</td> 
+<td>Damong Maliit</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1123</td> 
+<td>Novaliches Proper</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1124</td> 
+<td>Kaligayahan</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1125</td> 
+<td>Dona Faustina Subd.</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1125</td> 
+<td>Nagkakaisang Nayon</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1126</td> 
+<td>Capitol Hills/Park</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1126</td> 
+<td>Batasan Hills</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1127</td> 
+<td>Holy Spirit</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1128</td> 
+<td>Culiat</td> 
+<td>Quezon City</td> 
+</tr> 
+<tr> 
+<td>1128</td> 
+<td>Vasra</td> 
+<td>Quezon City</td> 
+</tr>

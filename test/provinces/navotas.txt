@@ -1,0 +1,35 @@
+<tr> 
+<td>1409</td> 
+<td>Kaunlaran Village</td> 
+<td>Navotas</td> 
+</tr> 
+<tr> 
+<td>1411</td> 
+<td>Fish Market</td> 
+<td>Navotas</td> 
+</tr> 
+<tr> 
+<td>1412</td> 
+<td>Isla de Cocomo</td> 
+<td>Navotas</td> 
+</tr> 
+<tr> 
+<td>1413</td> 
+<td>Kapitbahayan East</td> 
+<td>Navotas</td> 
+</tr> 
+<tr> 
+<td>1485</td> 
+<td>Navotas</td> 
+<td>Navotas</td> 
+</tr> 
+<tr> 
+<td>1489</td> 
+<td>Tangos</td> 
+<td>Navotas</td> 
+</tr> 
+<tr> 
+<td>1490</td> 
+<td>Tanza</td> 
+<td>Navotas</td> 
+</tr>

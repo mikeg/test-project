@@ -1,0 +1,170 @@
+<tr> 
+<td>3100</td> 
+<td>Cabanatuan City</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3101</td> 
+<td>Santa Rosa</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3102</td> 
+<td>San Leonardo</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3103</td> 
+<td>Penaranda</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3104</td> 
+<td>Gen. Tinio</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3105</td> 
+<td>Gapan</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3106</td> 
+<td>San Isidro</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3107</td> 
+<td>Cabiao</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3108</td> 
+<td>San Antonio</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3109</td> 
+<td>Jaen</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3110</td> 
+<td>Zaragosa</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3111</td> 
+<td>Aliaga</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3112</td> 
+<td>Licab</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3113</td> 
+<td>Quezon</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3114</td> 
+<td>Talavera</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3115</td> 
+<td>Guimba</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3116</td> 
+<td>Nampicuan</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3117</td> 
+<td>Cuyapo</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3118</td> 
+<td>Talugtog</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3119</td> 
+<td>Munoz</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3120</td> 
+<td>Central Luzon State University (CLSU)</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3121</td> 
+<td>San Jose City</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3122</td> 
+<td>Lupao</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3123</td> 
+<td>Carrangalan</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3124</td> 
+<td>Pantabangan</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3125</td> 
+<td>Gen. M. Natividad</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3126</td> 
+<td>Llanera</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3127</td> 
+<td>Rizal</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3128</td> 
+<td>Bongabon</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3129</td> 
+<td>Laur</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3130</td> 
+<td>Fort Magsaysay</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3131</td> 
+<td>Gabaldon</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3132</td> 
+<td>Palayan City</td> 
+<td>Nueva Ecija</td> 
+</tr> 
+<tr> 
+<td>3133</td> 
+<td>Santo Domingo</td> 
+<td>Nueva Ecija</td> 
+</tr>

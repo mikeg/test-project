@@ -1,0 +1,65 @@
+<tr> 
+<td>8501</td> 
+<td>San Francisco</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8502</td> 
+<td>Bayugan</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8503</td> 
+<td>Sibagat</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8504</td> 
+<td>Rosario</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8505</td> 
+<td>Trento</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8506</td> 
+<td>Bunawan</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8507</td> 
+<td>Loreto</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8508</td> 
+<td>La Paz</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8509</td> 
+<td>Veruela</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8510</td> 
+<td>Talacogon</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8511</td> 
+<td>San Luis</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8512</td> 
+<td>Santa Josefa</td> 
+<td>Agusan del Sur</td> 
+</tr> 
+<tr> 
+<td>8513</td> 
+<td>Esperanza</td> 
+<td>Agusan del Sur</td> 
+</tr>

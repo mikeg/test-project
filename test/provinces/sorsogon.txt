@@ -1,0 +1,80 @@
+<tr> 
+<td>4700</td> 
+<td>Sorsogon</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4701</td> 
+<td>Bacon</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4702</td> 
+<td>Casiguran</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4703</td> 
+<td>Juban</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4704</td> 
+<td>Bulusan</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4705</td> 
+<td>Magallanes</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4706</td> 
+<td>Bulan</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4707</td> 
+<td>Irosin</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4708</td> 
+<td>Matnog</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4709</td> 
+<td>Sta. Magdalena</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4710</td> 
+<td>Gubat</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4711</td> 
+<td>Prieto Diaz</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4712</td> 
+<td>Barcelona</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4713</td> 
+<td>Castilla</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4714</td> 
+<td>Pilar</td> 
+<td>Sorsogon Province</td> 
+</tr> 
+<tr> 
+<td>4715</td> 
+<td>Donsol</td> 
+<td>Sorsogon Province</td> 
+</tr>

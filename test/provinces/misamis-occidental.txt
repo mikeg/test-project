@@ -1,0 +1,80 @@
+<tr> 
+<td>7200</td> 
+<td>Ozamis City</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7201</td> 
+<td>Clarin</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7202</td> 
+<td>Tudela</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7203</td> 
+<td>Sinabacan</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7204</td> 
+<td>Jimenez</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7205</td> 
+<td>Panaon</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7206</td> 
+<td>Aloran</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7207</td> 
+<td>Oroquieta City</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7208</td> 
+<td>Lopez Jaena</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7209</td> 
+<td>Plaridel</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7210</td> 
+<td>Calamba</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7211</td> 
+<td>Baliangao</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7212</td> 
+<td>Sapang Dalaga</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7213</td> 
+<td>Concepcion</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7214</td> 
+<td>Tangub City</td> 
+<td>Misamis Occidental</td> 
+</tr> 
+<tr> 
+<td>7215</td> 
+<td>Bonifacio</td> 
+<td>Misamis Occidental</td> 
+</tr>

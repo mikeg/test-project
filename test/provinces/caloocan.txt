@@ -1,0 +1,70 @@
+<tr> 
+<td>1400</td> 
+<td>Caloocan City CPO</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1401</td> 
+<td>Baesa</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1402</td> 
+<td>Sta. Quiteria</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1403</td> 
+<td>Grace Park East</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1404</td> 
+<td>San Jose</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1405</td> 
+<td>1st Ave. to 7th Ave-West</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1406</td> 
+<td>Grace Park West</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1407</td> 
+<td>University Hills</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1408</td> 
+<td>Sangandaan</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1409</td> 
+<td>Kaunlaran Village</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1410</td> 
+<td>Maypajo</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1411</td> 
+<td>Fish Market</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1412</td> 
+<td>Isla de Cocomo</td> 
+<td>Caloocan City</td> 
+</tr> 
+<tr> 
+<td>1413</td> 
+<td>Kapitbahayan East</td> 
+<td>Caloocan City</td> 
+</tr>

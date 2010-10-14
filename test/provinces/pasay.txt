@@ -1,0 +1,50 @@
+<tr> 
+<td>1300</td> 
+<td>Pasay City CPO-Malibay</td> 
+<td>Pasay City</td> 
+</tr> 
+<tr> 
+<td>1301</td> 
+<td>Domestic Airport PO</td> 
+<td>Pasay City</td> 
+</tr> 
+<tr> 
+<td>1302</td> 
+<td>San Rafael</td> 
+<td>Pasay City</td> 
+</tr> 
+<tr> 
+<td>1303</td> 
+<td>San Roque</td> 
+<td>Pasay City</td> 
+</tr> 
+<tr> 
+<td>1304</td> 
+<td>Santa Clara</td> 
+<td>Pasay City</td> 
+</tr> 
+<tr> 
+<td>1305</td> 
+<td>San Jose</td> 
+<td>Pasay City</td> 
+</tr> 
+<tr> 
+<td>1306</td> 
+<td>San Isidro</td> 
+<td>Pasay City</td> 
+</tr> 
+<tr> 
+<td>1307</td> 
+<td>PICC (Reclamation Area)</td> 
+<td>Pasay City</td> 
+</tr> 
+<tr> 
+<td>1308</td> 
+<td>Manila Bay (Reclamation)</td> 
+<td>Pasay City</td> 
+</tr> 
+<tr> 
+<td>1309</td> 
+<td>Villamor Airbase</td> 
+<td>Pasay City</td> 
+</tr>

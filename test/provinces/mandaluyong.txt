@@ -1,0 +1,35 @@
+<tr> 
+<td>1550</td> 
+<td>Mandaluyong CPO</td> 
+<td>Mandaluyong City</td> 
+</tr> 
+<tr> 
+<td>1551</td> 
+<td>Vergara</td> 
+<td>Mandaluyong City</td> 
+</tr> 
+<tr> 
+<td>1552</td> 
+<td>Shaw Boulevard</td> 
+<td>Mandaluyong City</td> 
+</tr> 
+<tr> 
+<td>1553</td> 
+<td>Phil. Nat&#8217;l. Mental Hospital</td> 
+<td>Mandaluyong City</td> 
+</tr> 
+<tr> 
+<td>1554</td> 
+<td>East EDSA</td> 
+<td>Mandaluyong City</td> 
+</tr> 
+<tr> 
+<td>1555</td> 
+<td>Wack Wack Golf</td> 
+<td>Mandaluyong City</td> 
+</tr> 
+<tr> 
+<td>1556</td> 
+<td>Greenhills South</td> 
+<td>Mandaluyong City</td> 
+</tr>

@@ -1,0 +1,215 @@
+<tr> 
+<td>4300</td> 
+<td>Quezon Capitol</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4301</td> 
+<td>Lucena City</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4302</td> 
+<td>Pagbilao</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4303</td> 
+<td>Padre Burgos</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4304</td> 
+<td>Agbangan</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4305</td> 
+<td>Unisan</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4306</td> 
+<td>Plaridel</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4307</td> 
+<td>Gumaca</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4308</td> 
+<td>Pitogo</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4309</td> 
+<td>Macalelon</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4310</td> 
+<td>General Luna</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4311</td> 
+<td>Catanauan</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4312</td> 
+<td>Mulanay</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4313</td> 
+<td>San Narciso</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4314</td> 
+<td>San Andres</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4315</td> 
+<td>San Francisco</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4316</td> 
+<td>Lopez</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4317</td> 
+<td>Hondagua</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4318</td> 
+<td>Calauag</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4319</td> 
+<td>Guinayangan</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4320</td> 
+<td>Buenavista</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4321</td> 
+<td>Tagkawayan</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4322</td> 
+<td>Sariaya</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4323</td> 
+<td>Candelaria</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4324</td> 
+<td>San Antonio</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4325</td> 
+<td>Tiaong</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4326</td> 
+<td>Dolores</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4327</td> 
+<td>Tayabas</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4328</td> 
+<td>Lucban</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4329</td> 
+<td>Sampaloc</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4330</td> 
+<td>Mauban</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4331</td> 
+<td>Atimonan</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4332</td> 
+<td>Quezon</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4333</td> 
+<td>Alabat</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4334</td> 
+<td>Perez</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4335</td> 
+<td>Real</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4336</td> 
+<td>Infanta</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4337</td> 
+<td>Panukulan</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4338</td> 
+<td>General Nakar</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4339</td> 
+<td>Polilio</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4340</td> 
+<td>Burdeos</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4341</td> 
+<td>Patnanongan</td> 
+<td>Quezon Province</td> 
+</tr> 
+<tr> 
+<td>4342</td> 
+<td>Jomalig</td> 
+<td>Quezon Province</td> 
+</tr>

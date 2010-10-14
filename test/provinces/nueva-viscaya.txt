@@ -1,0 +1,75 @@
+<tr> 
+<td>3700</td> 
+<td>Bayombong</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3701</td> 
+<td>Ambaguio</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3702</td> 
+<td>Bambang</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3703</td> 
+<td>Kasibu</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3704</td> 
+<td>Aritao</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3705</td> 
+<td>Sta. Fe (Imugan)</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3706</td> 
+<td>Dupax del Norte</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3707</td> 
+<td>Dupax del Sur</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3708</td> 
+<td>Kayapa</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3709</td> 
+<td>Solano</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3710</td> 
+<td>Villa Verde (Ibung)</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3711</td> 
+<td>Bagabag</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3712</td> 
+<td>Diadi</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3713</td> 
+<td>Quezon</td> 
+<td>Nueva Vizcaya</td> 
+</tr> 
+<tr> 
+<td>3714</td> 
+<td>Alfonso Castaneda</td> 
+<td>Nueva Vizcaya</td> 
+</tr>

@@ -1,0 +1,55 @@
+<tr> 
+<td>9500</td> 
+<td>Gen. Santos City</td> 
+<td>South Cotabato</td> 
+</tr> 
+<tr> 
+<td>9504</td> 
+<td>Polomolok</td> 
+<td>South Cotabato</td> 
+</tr> 
+<tr> 
+<td>9505</td> 
+<td>Tupi</td> 
+<td>South Cotabato</td> 
+</tr> 
+<tr> 
+<td>9506</td> 
+<td>Koronadal</td> 
+<td>South Cotabato</td> 
+</tr> 
+<tr> 
+<td>9507</td> 
+<td>Tampacan</td> 
+<td>South Cotabato</td> 
+</tr> 
+<tr> 
+<td>9508</td> 
+<td>Nurallah</td> 
+<td>South Cotabato</td> 
+</tr> 
+<tr> 
+<td>9509</td> 
+<td>Sto. Nino</td> 
+<td>South Cotabato</td> 
+</tr> 
+<tr> 
+<td>9510</td> 
+<td>Tantangan</td> 
+<td>South Cotabato</td> 
+</tr> 
+<tr> 
+<td>9511</td> 
+<td>Banga</td> 
+<td>South Cotabato</td> 
+</tr> 
+<tr> 
+<td>9512</td> 
+<td>Surallah</td> 
+<td>South Cotabato</td> 
+</tr> 
+<tr> 
+<td>9513</td> 
+<td>T&#8217;boli</td> 
+<td>South Cotabato</td> 
+</tr>

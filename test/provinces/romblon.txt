@@ -1,0 +1,85 @@
+<tr> 
+<td>5500</td> 
+<td>Romblon</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5501</td> 
+<td>San Agustin</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5502</td> 
+<td>Imelda</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5503</td> 
+<td>Calatrava</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5504</td> 
+<td>San Andres</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5505</td> 
+<td>Odiongan</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5506</td> 
+<td>Ferrol</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5507</td> 
+<td>Looc</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5508</td> 
+<td>Sta. Fe</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5509</td> 
+<td>Alcantara</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5510</td> 
+<td>San Jose</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5511</td> 
+<td>Magdiwang</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5512</td> 
+<td>Cajidiocan</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5513</td> 
+<td>San Fernando</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5514</td> 
+<td>Corcuera</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5515</td> 
+<td>Banton (Jones)</td> 
+<td>Romblon Province</td> 
+</tr> 
+<tr> 
+<td>5516</td> 
+<td>Concepcion</td> 
+<td>Romblon Province</td> 
+</tr>

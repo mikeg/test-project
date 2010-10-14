@@ -1,0 +1,115 @@
+<tr> 
+<td>2900</td> 
+<td>Laoag City</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2901</td> 
+<td>San Nicolas</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2902</td> 
+<td>Paoay</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2903</td> 
+<td>Currimao</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2904</td> 
+<td>Badoc</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2905</td> 
+<td>Pinili</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2906</td> 
+<td>Batac</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2907</td> 
+<td>Marcos</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2908</td> 
+<td>Espiritu</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2909</td> 
+<td>Nueva Era</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2910</td> 
+<td>Solsona</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2911</td> 
+<td>Carasi</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2912</td> 
+<td>Piddig</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2913</td> 
+<td>Dingras</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2914</td> 
+<td>Sarrat</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2915</td> 
+<td>Vintar</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2916</td> 
+<td>Bacarra</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2917</td> 
+<td>Pasuquin</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2918</td> 
+<td>Burgos</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2919</td> 
+<td>Pagudpud</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2920</td> 
+<td>Bangui</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2921</td> 
+<td>Dumalneg</td> 
+<td>Ilocos Norte</td> 
+</tr> 
+<tr> 
+<td>2922</td> 
+<td>Adams</td> 
+<td>Ilocos Norte</td> 
+</tr>

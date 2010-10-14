@@ -1,0 +1,95 @@
+<tr> 
+<td>8301</td> 
+<td>San Miguel</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8302</td> 
+<td>Tago</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8303</td> 
+<td>Bayabas</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8304</td> 
+<td>Cagwait</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8305</td> 
+<td>San Agustin</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8306</td> 
+<td>Marihatag</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8307</td> 
+<td>Lianga</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8308</td> 
+<td>Tagbina</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8309</td> 
+<td>Barobo</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8310</td> 
+<td>Hinatuan</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8311</td> 
+<td>Bislig</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8312</td> 
+<td>Lingig</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8313</td> 
+<td>Cortez</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8314</td> 
+<td>Lanuza</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8315</td> 
+<td>Carmen</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8316</td> 
+<td>Madrid</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8317</td> 
+<td>Cantillan</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8318</td> 
+<td>Carrascal</td> 
+<td>Surigao del Sur</td> 
+</tr> 
+<tr> 
+<td>8319</td> 
+<td>Malixi</td> 
+<td>Surigao del Sur</td> 
+</tr>

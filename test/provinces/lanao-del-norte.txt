@@ -1,0 +1,120 @@
+<tr> 
+<td>9200</td> 
+<td>Iligan City</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9201</td> 
+<td>Linamon</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9202</td> 
+<td>Kauswagan</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9203</td> 
+<td>Matungao</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9204</td> 
+<td>Poona Piagapo</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9205</td> 
+<td>Bacolod</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9206</td> 
+<td>Maigo</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9207</td> 
+<td>Kolambugan</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9208</td> 
+<td>Pantao Ragat</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9209</td> 
+<td>Tubod</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9210</td> 
+<td>Baroy</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9211</td> 
+<td>Lala</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9212</td> 
+<td>Salvador</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9213</td> 
+<td>Sapad</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9214</td> 
+<td>Kapatagan</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9215</td> 
+<td>Karomatan</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9216</td> 
+<td>Nunungan</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9217</td> 
+<td>Baloi</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9218</td> 
+<td>Pantar</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9219</td> 
+<td>Munai</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9220</td> 
+<td>Tangkal</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9221</td> 
+<td>Magsaysay</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9222</td> 
+<td>Tagoloan</td> 
+<td>Lanao del Norte</td> 
+</tr> 
+<tr> 
+<td>9223</td> 
+<td>Sultan Nage Di Maporo</td> 
+<td>Lanao del Norte</td> 
+</tr>

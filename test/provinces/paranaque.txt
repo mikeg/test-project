@@ -1,0 +1,125 @@
+<tr> 
+<td>1700</td> 
+<td>Paranaque CPO</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1701</td> 
+<td>Tambo</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1702</td> 
+<td>Baclaran</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1703</td> 
+<td>Marina Subd. (Reclamation)</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1704</td> 
+<td>Sto.Nino</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1705</td> 
+<td>Ninoy Aquino Int&#8217;l Airport</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1706</td> 
+<td>Pulo</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1707</td> 
+<td>San Antonio Valley 11&amp; 12</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1708</td> 
+<td>Multinational Village</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1709</td> 
+<td>Merville Park</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1709</td> 
+<td>Moonwalk</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1709</td> 
+<td>South Admiral Village</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1710</td> 
+<td>Executive Heights Subd.</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1711</td> 
+<td>Better Living Subdivision</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1712</td> 
+<td>Miramar Subdivision</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1713</td> 
+<td>United Paranque Subd.</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1714</td> 
+<td>Ireneville II</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1714</td> 
+<td>Aeropark Subdivision</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1715</td> 
+<td>San Antonio Valley 1</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1716</td> 
+<td>Maywood Village II</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1717</td> 
+<td>Manila Memorial Park</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1718</td> 
+<td>Bf Homes 2</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1719</td> 
+<td>Maywood I</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1719</td> 
+<td>Ireneville Subdivision I &amp; III</td> 
+<td>Paranaque</td> 
+</tr> 
+<tr> 
+<td>1720</td> 
+<td>BF Homes 1</td> 
+<td>Paranaque</td> 
+</tr>

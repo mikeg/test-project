@@ -1,0 +1,130 @@
+<tr> 
+<td>6700</td> 
+<td>Catbalogan</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6701</td> 
+<td>Jiabong</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6702</td> 
+<td>Motiong</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6703</td> 
+<td>Wright</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6704</td> 
+<td>Tarangnan</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6705</td> 
+<td>Pagsanjan</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6706</td> 
+<td>Gandara</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6707</td> 
+<td>San Jorge</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6708</td> 
+<td>Matuguinao</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6709</td> 
+<td>Sta. Margarita</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6710</td> 
+<td>Calbayog City</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6711</td> 
+<td>Sto. Nino</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6712</td> 
+<td>Tagapulan</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6713</td> 
+<td>Hinbangan</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6714</td> 
+<td>San Sebastian</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6715</td> 
+<td>Calbiga</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6716</td> 
+<td>Pinabacdao</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6717</td> 
+<td>Villareal</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6718</td> 
+<td>Sta. Rita</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6719</td> 
+<td>Talarora</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6720</td> 
+<td>Basey</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6721</td> 
+<td>Marabut</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6722</td> 
+<td>Daram</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6723</td> 
+<td>San Jose de Bauan</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6724</td> 
+<td>Almagro</td> 
+<td>Western Samar</td> 
+</tr> 
+<tr> 
+<td>6725</td> 
+<td>Zumarraga</td> 
+<td>Western Samar</td> 
+</tr>

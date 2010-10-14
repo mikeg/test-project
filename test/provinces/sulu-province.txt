@@ -1,0 +1,85 @@
+<tr> 
+<td>7400</td> 
+<td>Jolo</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7401</td> 
+<td>Patikul</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7402</td> 
+<td>Panamao</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7403</td> 
+<td>Talipao</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7404</td> 
+<td>Luuk</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7405</td> 
+<td>Pata</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7406</td> 
+<td>Tongkil</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7407</td> 
+<td>Indanan</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7408</td> 
+<td>Parang</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7409</td> 
+<td>Maimbung</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7410</td> 
+<td>Tapul</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7411</td> 
+<td>Lugus</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7412</td> 
+<td>Siasi</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7413</td> 
+<td>Marungas</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7414</td> 
+<td>Panguntaran</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7415</td> 
+<td>Panglima Estino</td> 
+<td>Sulu Province</td> 
+</tr> 
+<tr> 
+<td>7416</td> 
+<td>Kalingalan Kalauang</td> 
+<td>Sulu Province</td> 
+</tr>

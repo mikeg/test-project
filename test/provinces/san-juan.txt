@@ -1,0 +1,20 @@
+<tr> 
+<td>1500</td> 
+<td>San Juan CPO</td> 
+<td>San Juan</td> 
+</tr> 
+<tr> 
+<td>1502</td> 
+<td>Greenhills PO</td> 
+<td>San Juan</td> 
+</tr> 
+<tr> 
+<td>1503</td> 
+<td>Greenhills North</td> 
+<td>San Juan</td> 
+</tr> 
+<tr> 
+<td>1504</td> 
+<td>Eisenhower-Crame</td> 
+<td>San Juan</td> 
+</tr>

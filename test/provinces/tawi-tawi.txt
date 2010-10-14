@@ -1,0 +1,50 @@
+<tr> 
+<td>7500</td> 
+<td>Bongao</td> 
+<td>Tawi-tawi</td> 
+</tr> 
+<tr> 
+<td>7501</td> 
+<td>Balimbing</td> 
+<td>Tawi-tawi</td> 
+</tr> 
+<tr> 
+<td>7502</td> 
+<td>Tandu Bas</td> 
+<td>Tawi-tawi</td> 
+</tr> 
+<tr> 
+<td>7503</td> 
+<td>Sapa-sapa</td> 
+<td>Tawi-tawi</td> 
+</tr> 
+<tr> 
+<td>7504</td> 
+<td>South Ubian</td> 
+<td>Tawi-tawi</td> 
+</tr> 
+<tr> 
+<td>7505</td> 
+<td>Simunol</td> 
+<td>Tawi-tawi</td> 
+</tr> 
+<tr> 
+<td>7506</td> 
+<td>Sitangkai</td> 
+<td>Tawi-tawi</td> 
+</tr> 
+<tr> 
+<td>7507</td> 
+<td>Taganak (Turtle Island)</td> 
+<td>Tawi-tawi</td> 
+</tr> 
+<tr> 
+<td>7508</td> 
+<td>Cagayan de Sulu</td> 
+<td>Tawi-tawi</td> 
+</tr> 
+<tr> 
+<td>7509</td> 
+<td>Languyan</td> 
+<td>Tawi-tawi</td> 
+</tr>

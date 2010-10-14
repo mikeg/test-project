@@ -1,0 +1,70 @@
+<tr> 
+<td>1850</td> 
+<td>San Mateo</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1860</td> 
+<td>Montalban (Rodriguez)</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1870</td> 
+<td>Antipolo</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1880</td> 
+<td>Teresa</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1900</td> 
+<td>Cainta</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1910</td> 
+<td>Pililia</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1920</td> 
+<td>Taytay</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1930</td> 
+<td>Angono</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1940</td> 
+<td>Binangonan</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1950</td> 
+<td>Cardona</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1960</td> 
+<td>Morong</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1970</td> 
+<td>Baras</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1980</td> 
+<td>Tanay</td> 
+<td>Rizal Province</td> 
+</tr> 
+<tr> 
+<td>1990</td> 
+<td>Jala-jala</td> 
+<td>Rizal Province</td> 
+</tr>

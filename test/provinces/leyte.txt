@@ -1,0 +1,215 @@
+<tr> 
+<td>6500</td> 
+<td>Tacloban City</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6501</td> 
+<td>Palo</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6502</td> 
+<td>Tanauan</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6503</td> 
+<td>Tolosa</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6504</td> 
+<td>Tabontabon</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6505</td> 
+<td>Dulag</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6506</td> 
+<td>Julita</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6507</td> 
+<td>Mayorga</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6508</td> 
+<td>La Paz</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6509</td> 
+<td>MacArthur</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6510</td> 
+<td>Abuyog</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6511</td> 
+<td>Javier</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6512</td> 
+<td>Mahaplag</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6513</td> 
+<td>Santa Fe</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6514</td> 
+<td>Pastrana</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6515</td> 
+<td>Dagami</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6516</td> 
+<td>Burauen</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6517</td> 
+<td>Alangalang</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6518</td> 
+<td>San Miguel</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6519</td> 
+<td>Barugo</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6520</td> 
+<td>Babatngon</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6521</td> 
+<td>Baybay</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6522</td> 
+<td>Inopacan</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6523</td> 
+<td>Hindang</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6524</td> 
+<td>Hilongos</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6525</td> 
+<td>Bato</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6526</td> 
+<td>Matalom</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6527</td> 
+<td>Jaro</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6528</td> 
+<td>Tunga</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6529</td> 
+<td>Carigara</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6530</td> 
+<td>Capoocan</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6531</td> 
+<td>Kananga</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6532</td> 
+<td>Matag-ob</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6533</td> 
+<td>Leyte</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6534</td> 
+<td>Calubian</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6535</td> 
+<td>San Isidro</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6536</td> 
+<td>Tabango</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6537</td> 
+<td>Villaba</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6538</td> 
+<td>Palompon</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6539</td> 
+<td>Isabel</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6540</td> 
+<td>Merida</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6541</td> 
+<td>Ormoc City</td> 
+<td>Leyte Province</td> 
+</tr> 
+<tr> 
+<td>6542</td> 
+<td>Albuera</td> 
+<td>Leyte Province</td> 
+</tr>

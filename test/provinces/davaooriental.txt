@@ -1,0 +1,50 @@
+<tr> 
+<td>8201</td> 
+<td>Tarragona</td> 
+<td>Davao Oriental</td> 
+</tr> 
+<tr> 
+<td>8202</td> 
+<td>Manay</td> 
+<td>Davao Oriental</td> 
+</tr> 
+<tr> 
+<td>8203</td> 
+<td>Caraga</td> 
+<td>Davao Oriental</td> 
+</tr> 
+<tr> 
+<td>8204</td> 
+<td>Baganga</td> 
+<td>Davao Oriental</td> 
+</tr> 
+<tr> 
+<td>8205</td> 
+<td>Cateel</td> 
+<td>Davao Oriental</td> 
+</tr> 
+<tr> 
+<td>8206</td> 
+<td>Boston</td> 
+<td>Davao Oriental</td> 
+</tr> 
+<tr> 
+<td>8207</td> 
+<td>Lopon</td> 
+<td>Davao Oriental</td> 
+</tr> 
+<tr> 
+<td>8208</td> 
+<td>Banaybanay</td> 
+<td>Davao Oriental</td> 
+</tr> 
+<tr> 
+<td>8209</td> 
+<td>San Isidro</td> 
+<td>Davao Oriental</td> 
+</tr> 
+<tr> 
+<td>8210</td> 
+<td>Gov. Generoso</td> 
+<td>Davao Oriental</td> 
+</tr>

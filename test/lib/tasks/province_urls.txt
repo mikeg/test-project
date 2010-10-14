@@ -1,0 +1,93 @@
+#http://philpost.gov.ph/web/abra-zipcode/>Abra
+#http://philpost.gov.ph/web/agusan-del-norte-zipcode/>Agusan del Norte
+#http://philpost.gov.ph/web/agusan-del-sur-zipcode/>Agusan del Sur
+#http://philpost.gov.ph/web/aklan-zipcode/>Aklan
+#http://philpost.gov.ph/web/albay-zipcode/>Albay
+#http://philpost.gov.ph/web/antique-zipcode/>Antique
+#http://philpost.gov.ph/web/aurora-zipcode/>Aurora
+#http://philpost.gov.ph/web/basilan-zipcode/>Basilan
+#http://philpost.gov.ph/web/bataan-zipcode/>Bataan
+#http://philpost.gov.ph/web/batanes-zipcode/>Batanes
+#http://philpost.gov.ph/web/batangas-zipcode/>Batangas
+#http://philpost.gov.ph/web/benguet-zipcode/>Benguet
+#http://philpost.gov.ph/web/biliran-zipcode/>Biliran
+#http://philpost.gov.ph/web/bohol-zipcode/>Bohol
+#http://philpost.gov.ph/web/bukidnon-zipcode/>Bukidnon
+#http://philpost.gov.ph/web/bulacan-zipcode/>Bulacan
+#http://philpost.gov.ph/web/cagayan-zipcode/>Cagayan
+#http://philpost.gov.ph/web/caloocan-city-zipcode/>Caloocan City
+#http://philpost.gov.ph/web/camarines-norte-zipcode/>Camarines Norte
+#http://philpost.gov.ph/web/camarines-sur-zipcode/>Camarines Sur
+#http://philpost.gov.ph/web/camiguin-zipcode/>Camiguin
+#http://philpost.gov.ph/web/capiz-zipcode/>Capiz
+#http://philpost.gov.ph/web/catanduanes-zipcode/>Catanduanes
+#http://philpost.gov.ph/web/cavite-zipcode/>Cavite
+#http://philpost.gov.ph/web/cebu-zipcode/>Cebu
+#http://philpost.gov.ph/web/compostela-valley-zipcode/>Compostela Valley
+#http://philpost.gov.ph/web/davao-del-norte-zipcode/>Davao del Norte
+#http://philpost.gov.ph/web/davao-del-sur-zipcode/>Davao del Sur
+#http://philpost.gov.ph/web/davao-oriental-zipcode/>Davao Oriental
+#http://philpost.gov.ph/web/eastern-samar-zipcode/>Eastern Samar
+#http://philpost.gov.ph/web/guimaras-zipcode/>Guimaras
+#http://philpost.gov.ph/web/ifugao-zipcode/>Ifugao
+#http://philpost.gov.ph/web/ilocos-norte-zipcode/>Ilocos Norte
+#http://philpost.gov.ph/web/ilocos-sur-zipcode/>Ilocos Sur
+#http://philpost.gov.ph/web/iloilo-province-zipcode/>Iloilo Province
+#http://philpost.gov.ph/web/isabela-zipcode/>Isabela
+#http://philpost.gov.ph/web/kalinga-apayao-zipcode/>Kalinga-Apayao
+#http://philpost.gov.ph/web/la-union-zipcode/>La Union
+#http://philpost.gov.ph/web/laguna-zipcode/>Laguna
+#http://philpost.gov.ph/web/lanao-del-norte-zipcode/>Lanao del Norte
+#http://philpost.gov.ph/web/lanao-del-sur-zipcode/>Lanao del Sur
+#http://philpost.gov.ph/web/las-pinas-zipcode/>Las Pinas
+#http://philpost.gov.ph/web/leyte-zipcode/>Leyte
+#http://philpost.gov.ph/web/maguindanao-zipcode/>Maguindanao
+#http://philpost.gov.ph/web/makati-city-zipcode/>Makati City 
+#http://philpost.gov.ph/web/malabon-zipcode/>Malabon
+#http://philpost.gov.ph/web/mandaluyong-city-zipcode/>Mandaluyong City
+#http://philpost.gov.ph/web/marikina-zipcode/>Marikina
+#http://philpost.gov.ph/web/marinduque-zipcode/>Marinduque
+#http://philpost.gov.ph/web/masbate-zipcode/>Masbate
+#http://philpost.gov.ph/web/metro-manila-zipcode/>Metro Manila
+#http://philpost.gov.ph/web/mindoro-occidental-zipcode/>Mindoro Occidental
+#http://philpost.gov.ph/web/mindoro-oriental-zipcode/>Mindoro Oriental
+#http://philpost.gov.ph/web/misamis-occidental-zipcode/>Misamis Occidental
+#http://philpost.gov.ph/web/misamis-oriental-zipcode/>Misamis Oriental
+#http://philpost.gov.ph/web/mountain-province-zipcode/>Mountain Province
+#http://philpost.gov.ph/web/muntinlupa-zipcode/>Muntinlupa
+#http://philpost.gov.ph/web/navotas-zipcode/>Navotas
+#http://philpost.gov.ph/web/negros-occidental-zipcode/>Negros Occidental
+#http://philpost.gov.ph/web/negros-oriental-zipcode/>Negros Oriental
+#http://philpost.gov.ph/web/north-cotabato-zipcode/>North Cotabato
+#http://philpost.gov.ph/web/northern-samar-zipcode/>Northern Samar
+#http://philpost.gov.ph/web/nueva-ecija-zipcode/>Nueva Ecija
+#http://philpost.gov.ph/web/nueva-vizcaya-zipcode/>Nueva Vizcaya
+#http://philpost.gov.ph/web/palawan-zipcode/>Palawan
+#http://philpost.gov.ph/web/pampanga-zipcode/>Pampanga
+#http://philpost.gov.ph/web/pangasinan-zipcode/>Pangasinan
+#http://philpost.gov.ph/web/paranaque-zipcode/>Paranaque
+#http://philpost.gov.ph/web/pasay-zipcode/>Pasay
+#http://philpost.gov.ph/web/pasig-city-zipcode/>Pasig City
+#http://philpost.gov.ph/web/pateros-zipcode/>Pateros
+#http://philpost.gov.ph/web/quezon-city-zipcode/>Quezon City
+#http://philpost.gov.ph/web/quezon-province-zipcode/>Quezon Province
+#http://philpost.gov.ph/web/quirino-province-zipcode/>Quirino Province
+#http://philpost.gov.ph/web/rizal-province-zipcode/>Rizal Province
+#http://philpost.gov.ph/web/romblon-zipcode/>Romblon
+#http://philpost.gov.ph/web/san-juan-zipcode/>San Juan
+#http://philpost.gov.ph/web/saranggani-zipcode/>Saranggani
+#http://philpost.gov.ph/web/siquijor-zipcode/>Siquijor
+#http://philpost.gov.ph/web/sorsogon-zipcode/>Sorsogon
+#http://philpost.gov.ph/web/south-cotabato-zipcode/>South Cotabato
+#http://philpost.gov.ph/web/sultan-kudarat-zipcode/>Sultan Kudarat
+#http://philpost.gov.ph/web/sulu-province-zipcode/>Sulu Province
+#http://philpost.gov.ph/web/surigao-del-norte-zipcode/>Surigao del Norte
+#http://philpost.gov.ph/web/surigao-del-sur-zipcode/>Surigao del Sur
+#http://philpost.gov.ph/web/taguig/>Taguig
+#http://philpost.gov.ph/web/tarlac/>Tarlac
+#http://philpost.gov.ph/web/tawi-tawi-zipcode/>Tawi-Tawi
+#http://philpost.gov.ph/web/valenzuela-zipcode/>Valenzuela
+#http://philpost.gov.ph/web/western-samar-zipcode/>Western Samar
+#http://philpost.gov.ph/web/zambales-zipcode/>Zambales
+#http://philpost.gov.ph/web/zamboanga-del-norte-zipcode/>Zamboanga del Norte
+#http://philpost.gov.ph/web/zamboanga-del-sur-zipcode/>Zamboanga del Sur

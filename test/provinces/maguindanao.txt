@@ -1,0 +1,100 @@
+<tr> 
+<td>9600</td> 
+<td>Cotabato City</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9601</td> 
+<td>Datu Odin Sinsuat (Dinaig)</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9602</td> 
+<td>Upi</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9603</td> 
+<td>South Upi</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9604</td> 
+<td>Parang</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9605</td> 
+<td>Sultan Kudarat</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9606</td> 
+<td>Kabuntulan</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9607</td> 
+<td>Datu Piang</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9608</td> 
+<td>Maganoy</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9609</td> 
+<td>Ampatuan</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9610</td> 
+<td>Pagalungan</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9611</td> 
+<td>Sultan sa Barongis</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9612</td> 
+<td>Talayan</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9613</td> 
+<td>Matanog</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9614</td> 
+<td>Barira</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9615</td> 
+<td>Buldon</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9616</td> 
+<td>Buluan</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9617</td> 
+<td>Datu Paglas</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9618</td> 
+<td>Gen. S.K. Datun</td> 
+<td>Maguindanao</td> 
+</tr> 
+<tr> 
+<td>9619</td> 
+<td>Sharif Aguak</td> 
+<td>Maguindanao</td> 
+</tr>

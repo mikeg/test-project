@@ -1,0 +1,55 @@
+<tr> 
+<td>1770</td> 
+<td>Muntinlupa CPO</td> 
+<td>Muntinlupa</td> 
+</tr> 
+<tr> 
+<td>1771</td> 
+<td>Bule/Cupang</td> 
+<td>Muntinlupa</td> 
+</tr> 
+<tr> 
+<td>1772</td> 
+<td>Bayanan/Putatan</td> 
+<td>Muntinlupa</td> 
+</tr> 
+<tr> 
+<td>1773</td> 
+<td>Tunasan</td> 
+<td>Muntinlupa</td> 
+</tr> 
+<tr> 
+<td>1774</td> 
+<td>Suasana Heights</td> 
+<td>Muntinlupa</td> 
+</tr> 
+<tr> 
+<td>1775</td> 
+<td>Pearl Heights</td> 
+<td>Muntinlupa</td> 
+</tr> 
+<tr> 
+<td>1776</td> 
+<td>Poblacion</td> 
+<td>Muntinlupa</td> 
+</tr> 
+<tr> 
+<td>1777</td> 
+<td>Pleasant Village</td> 
+<td>Muntinlupa</td> 
+</tr> 
+<tr> 
+<td>1780</td> 
+<td>Ayala Alabang Subdivision</td> 
+<td>Muntinlupa</td> 
+</tr> 
+<tr> 
+<td>1781</td> 
+<td>Filinvest Corp. City</td> 
+<td>Muntinlupa</td> 
+</tr> 
+<tr> 
+<td>1799</td> 
+<td>Ayala Albang P.O. Boxes</td> 
+<td>Muntinlupa</td> 
+</tr>

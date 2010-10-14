@@ -1,0 +1,125 @@
+<tr> 
+<td>9001</td> 
+<td>Tagoloan</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9002</td> 
+<td>Villanueva</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9003</td> 
+<td>Jasaan</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9004</td> 
+<td>Claveria</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9005</td> 
+<td>Balingasag</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9006</td> 
+<td>Lagonglong</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9007</td> 
+<td>Salay</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9008</td> 
+<td>Binuangan</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9009</td> 
+<td>Subongcogon</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9010</td> 
+<td>Kinogitan</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9011</td> 
+<td>Balinguan</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9012</td> 
+<td>Talisayan</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9013</td> 
+<td>Medina</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9014</td> 
+<td>Gingoog City</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9015</td> 
+<td>Magsaysay</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9016</td> 
+<td>Opol</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9017</td> 
+<td>El Salvador</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9018</td> 
+<td>Alubijid</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9019</td> 
+<td>Laguidingan</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9020</td> 
+<td>Gitagum</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9021</td> 
+<td>Libertad</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9022</td> 
+<td>Initao</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9023</td> 
+<td>Naawan</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9024</td> 
+<td>manticao</td> 
+<td>Misamis Oriental</td> 
+</tr> 
+<tr> 
+<td>9025</td> 
+<td>Lugait</td> 
+<td>Misamis Oriental</td> 
+</tr>

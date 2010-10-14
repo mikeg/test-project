@@ -1,0 +1,115 @@
+<tr> 
+<td>6800</td> 
+<td>Borongan</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6801</td> 
+<td>Balangkayan</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6802</td> 
+<td>Maydulong</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6803</td> 
+<td>Llorente</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6804</td> 
+<td>Hernani</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6805</td> 
+<td>Gen. MacArthur</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6806</td> 
+<td>Can-avid</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6807</td> 
+<td>Salcedo</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6808</td> 
+<td>Mercedes</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6809</td> 
+<td>Guiuan</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6810</td> 
+<td>Quinapundan</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6811</td> 
+<td>Giporlos</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6812</td> 
+<td>Balangiga</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6813</td> 
+<td>Lawa-an</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6814</td> 
+<td>San Julian</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6815</td> 
+<td>Sulat</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6816</td> 
+<td>Taft</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6817</td> 
+<td>Dolores</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6818</td> 
+<td>Oras</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6819</td> 
+<td>Jipapad</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6820</td> 
+<td>Maslog</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6821</td> 
+<td>San Policarpio</td> 
+<td>Eastern Samar</td> 
+</tr> 
+<tr> 
+<td>6822</td> 
+<td>Arteche</td> 
+<td>Eastern Samar</td> 
+</tr>

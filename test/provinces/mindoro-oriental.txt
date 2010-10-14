@@ -1,0 +1,70 @@
+<tr> 
+<td>5201</td> 
+<td>Baco</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5202</td> 
+<td>San Teodoro</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5203</td> 
+<td>Puerto Galera</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5204</td> 
+<td>Naujan</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5205</td> 
+<td>Victoria</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5206</td> 
+<td>Pola</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5207</td> 
+<td>Socorro</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5208</td> 
+<td>Pinamalayan</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5209</td> 
+<td>Gloria</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5210</td> 
+<td>Bansud</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5211</td> 
+<td>Bongabon</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5212</td> 
+<td>Roxas</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5213</td> 
+<td>mansalay</td> 
+<td>Mindoro Oriental</td> 
+</tr> 
+<tr> 
+<td>5214</td> 
+<td>Bulalacao</td> 
+<td>Mindoro Oriental</td> 
+</tr>

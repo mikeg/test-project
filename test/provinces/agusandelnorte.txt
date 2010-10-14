@@ -1,0 +1,65 @@
+<tr> 
+<td class="hzipcode"><strong>ZipCode</strong></td> 
+<td class="hzipcode"><strong>Location</strong></td> 
+<td class="hzipcode"><strong>Area</strong></td> 
+</tr> 
+<tr> 
+<td>8600</td> 
+<td>Butuan City</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8601</td> 
+<td>Buenavista</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8602</td> 
+<td>Nasipit</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8603</td> 
+<td>Carmen</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8604</td> 
+<td>Magallanes</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8605</td> 
+<td>Cabadbaran</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8606</td> 
+<td>Tubay</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8607</td> 
+<td>Jabonga</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8608</td> 
+<td>Santiago</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8609</td> 
+<td>Kitcharao</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8610</td> 
+<td>La Nieves</td> 
+<td>Agusan del Norte</td> 
+</tr> 
+<tr> 
+<td>8611</td> 
+<td>Remedios T. Romualdez</td> 
+<td>Agusan del Norte</td> 
+</tr>

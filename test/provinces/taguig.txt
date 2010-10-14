@@ -1,0 +1,40 @@
+<tr> 
+<td>1630</td> 
+<td>Bicutan Western</td> 
+<td>Taguig</td> 
+</tr> 
+<tr> 
+<td>1631</td> 
+<td>Bicutan</td> 
+<td>Taguig</td> 
+</tr> 
+<tr> 
+<td>1632</td> 
+<td>Bicutan Lower</td> 
+<td>Taguig</td> 
+</tr> 
+<tr> 
+<td>1633</td> 
+<td>Bicutan Upper</td> 
+<td>Taguig</td> 
+</tr> 
+<tr> 
+<td>1634</td> 
+<td>Nichols-McKinley</td> 
+<td>Taguig</td> 
+</tr> 
+<tr> 
+<td>1636</td> 
+<td>Bay Breeze Exec. Village</td> 
+<td>Taguig</td> 
+</tr> 
+<tr> 
+<td>1637</td> 
+<td>Tuktukan</td> 
+<td>Taguig</td> 
+</tr> 
+<tr> 
+<td>1638</td> 
+<td>Ligid</td> 
+<td>Taguig</td> 
+</tr>

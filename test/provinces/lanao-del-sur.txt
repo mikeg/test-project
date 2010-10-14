@@ -1,0 +1,190 @@
+<tr> 
+<td>9300</td> 
+<td>Malabang</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9301</td> 
+<td>Sultan Gumander</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9302</td> 
+<td>Balabagan</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9303</td> 
+<td>Maragong</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9304</td> 
+<td>Tubaran</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9305</td> 
+<td>Butig</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9306</td> 
+<td>Lumbayanague</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9307</td> 
+<td>Lumbatan</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9308</td> 
+<td>Macador Andong</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9309</td> 
+<td>Bayang</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9310</td> 
+<td>Binidayan</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9311</td> 
+<td>Ganassi</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9312</td> 
+<td>Pagayawan</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9313</td> 
+<td>Pualas</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9314</td> 
+<td>Madamba</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9315</td> 
+<td>Madalum</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9316</td> 
+<td>Bacolod Grande</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9317</td> 
+<td>Tugaya</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9318</td> 
+<td>Balindong</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9319</td> 
+<td>Calanogas</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9320</td> 
+<td>Bumbaran</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9321</td> 
+<td>Tagoloan &#8211; II</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9700</td> 
+<td>Marawi City</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9701</td> 
+<td>Saguiaran</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9702</td> 
+<td>Mulondo</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9703</td> 
+<td>Lumba Bayabao</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9704</td> 
+<td>Tamparan</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9705</td> 
+<td>Poona Bayabao</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9706</td> 
+<td>Masiu</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9708</td> 
+<td>Bubong</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9709</td> 
+<td>Kapai</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9710</td> 
+<td>Piagapo</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9711</td> 
+<td>Marantao</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9712</td> 
+<td>Taraka</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9713</td> 
+<td>Ramain-Ditsaan</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9714</td> 
+<td>Buadiposo Buntong</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9715</td> 
+<td>Maguing</td> 
+<td>Lanao del Sur</td> 
+</tr> 
+<tr> 
+<td>9716</td> 
+<td>Wao</td> 
+<td>Lanao del Sur</td> 
+</tr>

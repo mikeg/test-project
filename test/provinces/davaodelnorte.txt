@@ -1,0 +1,60 @@
+<tr> 
+<td>8100</td> 
+<td>Tagum</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8101</td> 
+<td>Carmen</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8102</td> 
+<td>Asuncion</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8103</td> 
+<td>San Vicente</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8104</td> 
+<td>New Corella</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8105</td> 
+<td>Panabo</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8112</td> 
+<td>Santo Tomas</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8113</td> 
+<td>Kapalong</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8116</td> 
+<td>San Mariano</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8118</td> 
+<td>Babak</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8119</td> 
+<td>Samal</td> 
+<td>Davao del Norte</td> 
+</tr> 
+<tr> 
+<td>8120</td> 
+<td>Kaputian</td> 
+<td>Davao del Norte</td> 
+</tr>

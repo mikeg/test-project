@@ -1,0 +1,60 @@
+<tr> 
+<td>9800</td> 
+<td>Takurong</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9801</td> 
+<td>Columbio</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9802</td> 
+<td>Mariano Marcos</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9803</td> 
+<td>Lutayan</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9804</td> 
+<td>Pres. Quirino</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9805</td> 
+<td>Isulan</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9806</td> 
+<td>Esperanza (Ampatuan)</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9807</td> 
+<td>Lebak (Salaman)</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9808</td> 
+<td>Kalamansig</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9809</td> 
+<td>Palimbang</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9810</td> 
+<td>Bagumbayan</td> 
+<td>Sultan Kudarat</td> 
+</tr> 
+<tr> 
+<td>9811</td> 
+<td>Sen. Ninoy Aquino</td> 
+<td>Sultan Kudarat</td> 
+</tr>

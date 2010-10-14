@@ -1,0 +1,120 @@
+<tr> 
+<td>1420</td> 
+<td>Kaybiga/Deparo</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1421</td> 
+<td>Bagumbong/Pagasa</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1422</td> 
+<td>Novaliches North</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1423</td> 
+<td>Lilles Ville Subdivision</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1424</td> 
+<td>Capitol Parkland Subdivision</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1425</td> 
+<td>Amparo Subdivision</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1426</td> 
+<td>Bankers Village</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1427</td> 
+<td>Victory Heights</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1427</td> 
+<td>Tala Leprosarium</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1428</td> 
+<td>Bagong Silang</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1740</td> 
+<td>Las Pinas CPO</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1741</td> 
+<td>Remarville Subdivision</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1742</td> 
+<td>Pulang Lupa</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1742</td> 
+<td>Zapote</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1743</td> 
+<td>Cut-Cut</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1744</td> 
+<td>Manuyo</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1745</td> 
+<td>Gathchalian Subdivision</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1746</td> 
+<td>Verdant Acres Subdivision</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1747</td> 
+<td>&#8220;Talon, Moonwalk&#8221;</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1748</td> 
+<td>Manila Doctors Village</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1749</td> 
+<td>Angela Village</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1750</td> 
+<td>Almanza</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1751</td> 
+<td>T.S. Cruz Subdivision</td> 
+<td>Las Pinas</td> 
+</tr> 
+<tr> 
+<td>1752</td> 
+<td>Soldiers Hills Subdivision</td> 
+<td>Las Pinas</td> 
+</tr>

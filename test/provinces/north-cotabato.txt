@@ -1,0 +1,90 @@
+<tr> 
+<td>9400</td> 
+<td>Kidapawan</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9401</td> 
+<td>Makilala</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9402</td> 
+<td>M&#8217;lang</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9403</td> 
+<td>Tulunan</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9404</td> 
+<td>Magpet</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9405</td> 
+<td>Pres. Roxas</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9406</td> 
+<td>Matalam</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9407</td> 
+<td>Kabacan</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9408</td> 
+<td>Carmen</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9409</td> 
+<td>Pikit</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9410</td> 
+<td>Midsayap</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9411</td> 
+<td>Libungan</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9412</td> 
+<td>Pigkawayan</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9413</td> 
+<td>Alamada</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9414</td> 
+<td>Antipas</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9415</td> 
+<td>Aleosan</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9416</td> 
+<td>Banisilan</td> 
+<td>North Cotabato</td> 
+</tr> 
+<tr> 
+<td>9417</td> 
+<td>Arakan</td> 
+<td>North Cotabato</td> 
+</tr>

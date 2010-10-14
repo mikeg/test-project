@@ -1,0 +1,120 @@
+<tr> 
+<td>6400</td> 
+<td>Catarman</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6401</td> 
+<td>Bobon</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6402</td> 
+<td>San Jose</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6403</td> 
+<td>Lope de Vega</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6404</td> 
+<td>Lavezares</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6405</td> 
+<td>Allen</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6406</td> 
+<td>Victoria</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6407</td> 
+<td>San Antonio</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6408</td> 
+<td>Capul</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6409</td> 
+<td>San Isidro</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6410</td> 
+<td>Biri</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6411</td> 
+<td>Laoang</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6412</td> 
+<td>Maranas</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6413</td> 
+<td>Pambujan</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6414</td> 
+<td>Silvino Lubos</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6415</td> 
+<td>San Roque</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6416</td> 
+<td>Rosario</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6417</td> 
+<td>Mondragon</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6418</td> 
+<td>Catubig</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6419</td> 
+<td>San Vicente</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6420</td> 
+<td>La Navas</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6421</td> 
+<td>Palapag</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6422</td> 
+<td>Gamay</td> 
+<td>Northern Samar</td> 
+</tr> 
+<tr> 
+<td>6423</td> 
+<td>Lapineg</td> 
+<td>Northern Samar</td> 
+</tr>

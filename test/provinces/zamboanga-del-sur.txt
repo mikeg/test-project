@@ -1,0 +1,215 @@
+<tr> 
+<td>7001</td> 
+<td>Ipil</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7002</td> 
+<td>Roseller Lim</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7003</td> 
+<td>Titay</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7004</td> 
+<td>Naga</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7005</td> 
+<td>Kabalasan</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7006</td> 
+<td>Siay</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7007</td> 
+<td>Imelda</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7008</td> 
+<td>Payao</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7009</td> 
+<td>Buug</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7010</td> 
+<td>Mabuhay</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7011</td> 
+<td>Bayog</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7012</td> 
+<td>Talusan</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7013</td> 
+<td>Kumalarang</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7014</td> 
+<td>Lakewood</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7015</td> 
+<td>Dumalinao</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7016</td> 
+<td>Pagadian City</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7017</td> 
+<td>Labangan</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7018</td> 
+<td>Tungawan</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7019</td> 
+<td>Tukuran</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7020</td> 
+<td>Aurora</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7021</td> 
+<td>Midsalip</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7022</td> 
+<td>Don Mariano Marcos</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7023</td> 
+<td>Molave</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7024</td> 
+<td>Ramon Magsaysay</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7025</td> 
+<td>Tambulig</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7026</td> 
+<td>Mahayag</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7027</td> 
+<td>Josefina</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7028</td> 
+<td>Dumingag</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7029</td> 
+<td>San Miguel</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7030</td> 
+<td>Dinas</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7031</td> 
+<td>San Pablo</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7032</td> 
+<td>Dimataling</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7033</td> 
+<td>Pitogo</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7034</td> 
+<td>Tabina</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7035</td> 
+<td>Margo sa Tubig</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7036</td> 
+<td>Vicencio Sagun</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7037</td> 
+<td>Lapuyan</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7038</td> 
+<td>Malangas</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7039</td> 
+<td>Diplahan</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7040</td> 
+<td>Alicia</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7041</td> 
+<td>Olutanga</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7042</td> 
+<td>Guipos</td> 
+<td>Zamboanga del Sur</td> 
+</tr> 
+<tr> 
+<td>7043</td> 
+<td>Tigbad</td> 
+<td>Zamboanga del Sur</td> 
+</tr>

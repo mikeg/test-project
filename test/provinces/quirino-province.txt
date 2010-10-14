@@ -1,0 +1,30 @@
+<tr> 
+<td>3400</td> 
+<td>Cabarruguis</td> 
+<td>Quirino Province</td> 
+</tr> 
+<tr> 
+<td>3401</td> 
+<td>Diffun</td> 
+<td>Quirino Province</td> 
+</tr> 
+<tr> 
+<td>3402</td> 
+<td>Saguday</td> 
+<td>Quirino Province</td> 
+</tr> 
+<tr> 
+<td>3403</td> 
+<td>Aglipay</td> 
+<td>Quirino Province</td> 
+</tr> 
+<tr> 
+<td>3404</td> 
+<td>Maddela</td> 
+<td>Quirino Province</td> 
+</tr> 
+<tr> 
+<td>3405</td> 
+<td>Nagtipunan (Abbag)</td> 
+<td>Quirino Province</td> 
+</tr>

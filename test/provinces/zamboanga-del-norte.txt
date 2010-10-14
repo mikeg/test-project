@@ -1,0 +1,125 @@
+<tr> 
+<td>7100</td> 
+<td>Dipolog City</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7101</td> 
+<td>Dapitan City</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7102</td> 
+<td>Roxas</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7103</td> 
+<td>Sibutad</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7104</td> 
+<td>Rizal</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7105</td> 
+<td>Pinan</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7106</td> 
+<td>Polanco</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7107</td> 
+<td>Mutia</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7108</td> 
+<td>Sergio Osmena</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7109</td> 
+<td>Katipunan</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7110</td> 
+<td>Manukan</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7111</td> 
+<td>Jose Dalman (Ponot)</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7112</td> 
+<td>Sindangan (Leon B. Postigo)</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7113</td> 
+<td>Siayan</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7114</td> 
+<td>Salug</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7115</td> 
+<td>Liloy</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7116</td> 
+<td>Tampilisan</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7117</td> 
+<td>Labason</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7118</td> 
+<td>Gutalac</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7119</td> 
+<td>La Libertad</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7120</td> 
+<td>Siocon</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7121</td> 
+<td>Siraway</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7122</td> 
+<td>Sibuco</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7123</td> 
+<td>Baliguian</td> 
+<td>Zamboanga del Norte</td> 
+</tr> 
+<tr> 
+<td>7124</td> 
+<td>Kalawit</td> 
+<td>Zamboanga del Norte</td> 
+</tr>

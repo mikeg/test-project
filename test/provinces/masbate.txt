@@ -1,0 +1,110 @@
+<tr> 
+<td>5400</td> 
+<td>Masbate</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5401</td> 
+<td>Mobo</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5402</td> 
+<td>Uson</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5403</td> 
+<td>Dimasalang</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5404</td> 
+<td>Palanas</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5405</td> 
+<td>Cataingan</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5406</td> 
+<td>Pio V. Corpuz</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5407</td> 
+<td>Esperanza</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5408</td> 
+<td>Placer</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5409</td> 
+<td>Cawayan</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5410</td> 
+<td>Milagros</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5411</td> 
+<td>Mandaon</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5412</td> 
+<td>Balud</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5413</td> 
+<td>Baleno</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5414</td> 
+<td>Aroroy</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5415</td> 
+<td>Batuan</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5416</td> 
+<td>San Fernando</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5417</td> 
+<td>San Jacinto</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5418</td> 
+<td>Montreal</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5419</td> 
+<td>Claveria</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5420</td> 
+<td>San Pascual</td> 
+<td>Masbate Province</td> 
+</tr> 
+<tr> 
+<td>5421</td> 
+<td>Buenavista</td> 
+<td>Masbate Province</td> 
+</tr>

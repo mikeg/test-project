@@ -1,0 +1,220 @@
+<tr> 
+<td>5000</td> 
+<td>Iloilo City</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5001</td> 
+<td>Pavia</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5002</td> 
+<td>Santa Barbara</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5003</td> 
+<td>Leganes</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5004</td> 
+<td>Zarraga</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5005</td> 
+<td>New Lucena</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5006</td> 
+<td>Dumangas</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5007</td> 
+<td>Barotac Nuevo</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5008</td> 
+<td>Pototan</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5009</td> 
+<td>Anilao</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5010</td> 
+<td>Banate</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5011</td> 
+<td>Barotac Viejo</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5012</td> 
+<td>Ajuy</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5013</td> 
+<td>Concepcion</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5014</td> 
+<td>Sara</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5015</td> 
+<td>San Dionisio</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5016</td> 
+<td>Batad</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5017</td> 
+<td>Estancia</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5018</td> 
+<td>Balasan</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5019</td> 
+<td>Carles</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5020</td> 
+<td>Oton</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5021</td> 
+<td>Tigbauan</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5022</td> 
+<td>Guimbal</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5023</td> 
+<td>Miagao</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5024</td> 
+<td>San Joaquin</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5025</td> 
+<td>San Miguel</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5026</td> 
+<td>Leon</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5027</td> 
+<td>Tubungan</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5028</td> 
+<td>Alimodian</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5029</td> 
+<td>Igbaras</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5030</td> 
+<td>Maasin</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5031</td> 
+<td>Cabatuan</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5032</td> 
+<td>Mina</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5033</td> 
+<td>Badiangan</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5034</td> 
+<td>Janiuay</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5035</td> 
+<td>Dingle</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5036</td> 
+<td>San Enrique</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5037</td> 
+<td>Passi</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5038</td> 
+<td>Duenas</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5039</td> 
+<td>San Rafael</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5040</td> 
+<td>Calinog</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5041</td> 
+<td>Bingawan</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5042</td> 
+<td>Lambunao</td> 
+<td>Iloilo Province</td> 
+</tr> 
+<tr> 
+<td>5043</td> 
+<td>Lemery</td> 
+<td>Iloilo Province</td> 
+</tr>

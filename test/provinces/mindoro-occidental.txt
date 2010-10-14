@@ -1,0 +1,60 @@
+<tr> 
+<td>5100</td> 
+<td>San Jose</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5101</td> 
+<td>Magsaysay</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5102</td> 
+<td>Calintaan</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5103</td> 
+<td>Rizal</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5104</td> 
+<td>Sablayan</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5105</td> 
+<td>Santa Cruz</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5106</td> 
+<td>Mamburao</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5107</td> 
+<td>Paluan</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5108</td> 
+<td>Abra de Ilog</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5109</td> 
+<td>Lubang</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5110</td> 
+<td>Tilik</td> 
+<td>Mindoro Occidental</td> 
+</tr> 
+<tr> 
+<td>5111</td> 
+<td>Looc</td> 
+<td>Mindoro Occidental</td> 
+</tr>

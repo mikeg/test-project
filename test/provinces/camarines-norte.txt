@@ -1,0 +1,65 @@
+<tr> 
+<td>4600</td> 
+<td>Daet</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4601</td> 
+<td>Mercedez</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4602</td> 
+<td>Talisay</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4603</td> 
+<td>Vinzons</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4604</td> 
+<td>Labo</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4605</td> 
+<td>Paracale</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4606</td> 
+<td>Jose Panganiban</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4607</td> 
+<td>Capalonga</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4608</td> 
+<td>Basud</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4609</td> 
+<td>San Vicente</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4610</td> 
+<td>Imelda</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4611</td> 
+<td>Santa Elena</td> 
+<td>Camarines Norte</td> 
+</tr> 
+<tr> 
+<td>4612</td> 
+<td>Tulay na Lupa</td> 
+<td>Camarines Norte</td> 
+</tr>

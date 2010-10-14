@@ -1,0 +1,50 @@
+<tr> 
+<td>2616</td> 
+<td>Bontoc</td> 
+<td>Mountain Province</td> 
+</tr> 
+<tr> 
+<td>2617</td> 
+<td>Sadanga</td> 
+<td>Mountain Province</td> 
+</tr> 
+<tr> 
+<td>2618</td> 
+<td>Besao</td> 
+<td>Mountain Province</td> 
+</tr> 
+<tr> 
+<td>2619</td> 
+<td>Sagada</td> 
+<td>Mountain Province</td> 
+</tr> 
+<tr> 
+<td>2620</td> 
+<td>Tadian</td> 
+<td>Mountain Province</td> 
+</tr> 
+<tr> 
+<td>2621</td> 
+<td>Bauko</td> 
+<td>Mountain Province</td> 
+</tr> 
+<tr> 
+<td>2622</td> 
+<td>Sabangan</td> 
+<td>Mountain Province</td> 
+</tr> 
+<tr> 
+<td>2623</td> 
+<td>Barlig</td> 
+<td>Mountain Province</td> 
+</tr> 
+<tr> 
+<td>2624</td> 
+<td>Natonin</td> 
+<td>Mountain Province</td> 
+</tr> 
+<tr> 
+<td>2625</td> 
+<td>Paracelis</td> 
+<td>Mountain Province</td> 
+</tr>
