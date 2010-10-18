@@ -1,0 +1,3 @@
+<% checked = app.student.convicted_file? ? "checked" : "" %>
+<input type="checkbox" onchange="status_report.toogle_status_convicted(<%= app.student.convicted_file? -%>, this.checked)" <%= checked -%> >
+<%= span_loader("status_convicted_loader_#{app.id}") -%>
