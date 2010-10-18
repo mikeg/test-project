@@ -31,6 +31,12 @@
     </tr>
     <% end %>
   </table>
+  
+<% elsif @applicants.length > 0 %>  
+  <% @applicants.each do |app|%>
+  Exam Schedule: <%= app.examination_schedule.schedule %>
+  <% end %>
+  
 <% else %>
 No NLE taken yet.
 <% end %>

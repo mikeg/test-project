@@ -67,7 +67,8 @@ ActionController::Routing::Routes.draw do |map|
                                                                       :new_application => :get}
 
   map.resources :students, :controller => "students", :member => { :view => :get,
-                                                                   :newapplication => :get
+                                                                   :newapplication => :get,
+                                                                   :update => :post
                                                                  }, 
                                                       :collection => {:search => :post,
                                                                       :with_foster => :get,

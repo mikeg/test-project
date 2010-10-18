@@ -22,13 +22,17 @@ class Student < ActiveRecord::Base
     Student.paginate(
                :per_page => 20,
                :page => page,
-               :conditions => ['foster_id IS NULL AND school_id = ? and ( firstname like ? or lastname like ? or middlename like ?)', school.id, "%#{search}%", "%#{search}%", "%#{search}%"],
+               :conditions => ["foster_id IS NULL \
+                 AND school_id = ? \
+                 AND year = 'graduate'
+                 AND ( firstname like ? or lastname like ? or middlename like ?)", \
+                   school.id, "%#{search}%", "%#{search}%", "%#{search}%"],
                :order => "lastname")
     else
     Student.paginate(
                :per_page => 20,
                :page => page,
-               :conditions => ['foster_id IS NULL AND firstname like ? or lastname like ? or middlename like ?', "%#{search}%", "%#{search}%", "%#{search}%"],
+               :conditions => ["year = 'graduate' AND foster_id IS NULL AND (firstname like ? or lastname like ? or middlename like ?)", "%#{search}%", "%#{search}%", "%#{search}%"],
                :order => "lastname")
     end
   end
@@ -74,7 +78,12 @@ class Student < ActiveRecord::Base
     firstname = param[:firstname].downcase
     lastname  = param[:lastname].downcase
     dob       = param[:dob]
-    find(:all, :conditions => ["LCASE(firstname) like ? and LCASE(lastname) like ? and date_of_birth = ?",  firstname, lastname, dob] )
+    student_id = param[:student_id]
+    if student_id.blank?
+      find(:all, :conditions => ["LCASE(firstname) like ? and LCASE(lastname) like ? and date_of_birth = ?",  firstname, lastname, dob] )
+    else
+      find(:all, :conditions => ["LCASE(firstname) like ? and LCASE(lastname) like ? and date_of_birth = ? and id != ? ",  firstname, lastname, dob, student_id] )
+    end
   end
 
   def repeater?
@@ -96,8 +105,13 @@ class Student < ActiveRecord::Base
   end
   
   def fullname
+    "#{self.lastname}, #{self.firstname} #{self.middlename}".titleize
+  end
+
+  def fullname_firstname_first
     "#{self.firstname} #{self.middlename} #{self.lastname}".titleize
   end
+
   
   def year_level
     level = case self.year.to_s

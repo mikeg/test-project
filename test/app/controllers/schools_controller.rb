@@ -41,15 +41,15 @@ class SchoolsController < ApplicationController
       
       regions = Region.find(:all, :order => "name ASC")
       regions.each do |r|
-        @regions << [ r.name, r.id ]
+        @regions << [ r.name.titleize, r.id ]
       end
 
       regions.first.provinces.each do |r|
-        @provinces << [ r.name, r.id ]
+        @provinces << [ r.name.titleize, r.id ]
       end unless regions.first.provinces.empty?
 
       regions.first.provinces.first.towns.each do |r|
-        @towns << [ r.name, r.id ]
+        @towns << [ r.name.titleize, r.id ]
       end unless regions.first.provinces.first.nil?
     end
         
@@ -128,7 +128,7 @@ class SchoolsController < ApplicationController
     @towns = []
     regions = Region.find(:all, :order => "name ASC")
     regions.each do |r|
-      @regions << [ r.name, r.id ]
+      @regions << [ r.name.titleize, r.id ]
     end
 
 #    provinces = Province.find(:all, :order => "name ASC")
@@ -142,12 +142,12 @@ class SchoolsController < ApplicationController
       provinces = region.first.provinces
     end
     provinces.each do |p|
-      @provinces << [ p.name, p.id ]
+      @provinces << [ p.name.titleize, p.id ]
     end
 
     towns = Town.find(:all, :order => "name ASC")
     towns.each do |r|
-      @towns << [ r.name, r.id ]
+      @towns << [ r.name.titleize, r.id ]
     end
   end
 
@@ -157,11 +157,11 @@ class SchoolsController < ApplicationController
     @region = Region.find(params[:region_id])
 
     @region.provinces.find(:all, :order => "name").each do |p|
-      @provinces << [p.name, p.id]
+      @provinces << [p.name.titleize.titleize, p.id]
     end
 
     @region.provinces.first.towns.find(:all, :order => "name").each do |t|
-      @towns << [t.name, t.id]
+      @towns << [t.name.titleize.titleize, t.id]
     end
     
     render :update do |page|
@@ -178,7 +178,7 @@ class SchoolsController < ApplicationController
     @province = Province.find(params[:province_id])
     towns = @province.towns.find(:all, :order => "name")
     towns.each do |t|
-      @towns << [t.name, t.id]
+      @towns << [t.name.titleize, t.id]
     end
     
     render :update do |page|

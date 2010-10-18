@@ -6,7 +6,12 @@ class StudentsController < ApplicationController
   before_filter :load_schools_select, :only => [:update_degree]
   before_filter :load_courses_select, :only => [:update_degree]
 
-  
+  before_filter :load_courses, :only => [:edit]
+  before_filter :load_countries, :only => [:edit]
+  before_filter :load_civil_statuses, :only => [:edit]
+  before_filter :load_review_schools, :only => [:edit]
+  before_filter :load_review_centers, :only => [:edit]
+
   def index
     if current_user.role_code == "registrar"
       @students = Student.search(params[:search], params[:page], current_user.school)
@@ -14,6 +19,87 @@ class StudentsController < ApplicationController
       @students = Student.search(params[:search], params[:page])
     end
   end
+  
+  def edit
+    @student = Student.find(params[:id])
+    @regions, @provinces, @towns, @pob_provinces, @pob_towns = [], [], [], [], []
+    @nursing_course = Course.find_by_abbrev("BSN")
+    @default_country = Country.find_by_code("PH")
+    
+    region = Region.find(@student.region_id)
+    province = Province.find(@student.province_id)
+    pob_province = Province.find(@student.pob_province_id)
+    town = Town.find(@student.town_id)
+    pob_town = Town.find(@student.pob_town_id)
+    
+    regions = Region.find(:all)
+    regions.each do |r|
+      @regions << [r.name.titleize, r.id]
+    end
+    
+    unless region.provinces.empty?
+      region.provinces.find(:all, :order => "name asc").each do |p|
+        @provinces << [p.name.titleize, p.id]
+      end
+      province.towns.find(:all, :order => "name asc").each do |t|
+        @towns << [t.name.titleize, t.id]
+      end
+    end
+
+    unless region.provinces.empty?
+      region.provinces.find(:all, :order => "name asc").each do |p|
+        @pob_provinces << [p.name.titleize, p.id]
+      end
+      pob_province.towns.find(:all, :order => "name asc").each do |t|
+        @pob_towns << [t.name.titleize, t.id]
+      end
+    end
+  end
+  
+  def update
+    @student = Student.find(params[:student_id])
+    @student.region_id = params[:address_region_id]
+    @student.province_id = params[:address_province_id]
+    @student.town_id = params[:address_town_id]
+    @student.date_of_birth = "#{params[:dob_year]}-#{params[:dob_month]}-#{params[:dob_day]}".to_date
+    @student.pob_region_id = params[:pob_region_id]
+    @student.pob_province_id = params[:pob_province_id]
+    @student.pob_town_id = params[:pob_town_id]
+    @student.school_id = current_user.school_id
+    
+    @student.pob_street = params[:student][:pob_street]
+    @student.spouse_citizenship_id = params[:student][:spouse_citizenship_id]
+    @student.convicted_file = params[:student][:convicted_file]
+    @student.mother = params[:student][:mother]
+    @student.middlename = params[:student][:middlename]
+    @student.country_id = params[:student][:country_id]
+    @student.lastname = params[:student][:lastname]
+    @student.street = params[:student][:street]
+    @student.father_citizenship_id = params[:student][:father_citizenship_id]
+    @student.sex = params[:student][:sex]
+    @student.firstname = params[:student][:firstname]
+    @student.year = params[:student][:year]
+    @student.convicted = params[:student][:convicted]
+    @student.marital_status = params[:student][:marital_status]
+    @student.mother_citizenship_id = params[:student][:mother_citizenship_id]
+    @student.email = params[:student][:email]
+    @student.spouse = params[:student][:spouse]
+    @student.father = params[:student][:father]
+        
+    # 032:2554645
+    @student.telephone = "#{params[:telno_code]}:#{params[:telno_number]}"
+    # 0919:5657898
+    @student.mobile_no = "#{params[:mobile_network]}:#{params[:mobile_number]}"
+    if @student.save
+      flash[:notice] = "Successfully updated."
+      redirect_to students_path
+    else
+      flash[:error] = "Something went wrong..."
+      redirect_to edit_student_path(@student)
+    end
+
+  end
+  
 
   def with_foster
     #TODO
@@ -48,10 +134,9 @@ class StudentsController < ApplicationController
     end
 
     app = Applicant.find(:first, :conditions => ["student_id = ? and examination_schedule_id = ?", @student.id, current_examination_schedule.id]) rescue nil
-    puts app.inspect
+
 
     if app
-      puts "pass"
       flash[:error] = "Has existing application filed already."
       redirect_to students_path
     end
@@ -60,6 +145,7 @@ class StudentsController < ApplicationController
   def view
     preload_form_data
     @student = Student.find(params[:id])
+    @applicants = Applicant.find(:all, :conditions => ["student_id = ?", @student.id])
     @exams = Examinee.find(:all, :conditions => ["student_id = ?", @student.id])
   end
   
@@ -397,6 +483,46 @@ class StudentsController < ApplicationController
   
   private
 
+  def load_countries
+    @countries = []
+    countries = Country.find(:all, :order => "name ASC")
+    countries.each do |c|
+      @countries << [c.name, c.id]
+    end
+  end
+
+  def load_civil_statuses
+    @civilstatus = []
+    civilstatus = CivilStatus.find(:all, :order => "name ASC")
+    civilstatus.each do |c|
+      @civilstatus << [c.name, c.code]
+    end
+  end
+  
+  def load_courses
+    @courses = []
+    courses = Course.find(:all)
+    courses.each do |c|
+      @courses << [c.name, c.id]
+    end
+  end
+  
+  def load_review_schools
+    @review_schools = []
+    review_schools = ReviewSchool.find(:all)
+    review_schools.each do |r|
+      @review_schools << [r.name, r.id]
+    end
+  end
+  
+  def load_review_centers
+    @review_centers = []
+    review_centers = ReviewCenter.find(:all)
+    review_centers.each do |r|
+      @review_centers << [r.name, r.id]
+    end  
+  end
+  
   def preload_form_data
     @regions, @provinces, @towns, @countries, @civilstatus, @courses = [], [], [], [], [], []
     
@@ -416,8 +542,6 @@ class StudentsController < ApplicationController
       end
     end
 
-
-  
     countries = Country.find(:all, :order => "name ASC")
     countries.each do |c|
       @countries << [c.name, c.id]
@@ -437,12 +561,14 @@ class StudentsController < ApplicationController
     @default_country = Country.find_by_code("PH")
     
     @review_schools = []
+    @review_schools << ['','']
     review_schools = ReviewSchool.find(:all)
     review_schools.each do |r|
       @review_schools << [r.name, r.id]
     end
 
     @review_centers = []
+    @review_centers << ['','']
     review_centers = ReviewCenter.find(:all)
     review_centers.each do |r|
       @review_centers << [r.name, r.id]
@@ -464,6 +590,7 @@ class StudentsController < ApplicationController
       @courses << [c.name, c.id]
     end
   end
+  
   
   
 end

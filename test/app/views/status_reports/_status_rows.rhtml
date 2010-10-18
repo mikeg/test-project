@@ -13,6 +13,7 @@
     <td width="50">Window Envelope</td>
     <td width="50">Stamp</td>
     <td width="50">Cedula</td>
+    <td width="50">Has Convicted File </td>
     <td width="50">status</td>
   </tr>
   <%
@@ -58,6 +59,13 @@
     <td><div id="cedula_span_<%= app.id %>">
           <%= render :partial => "status_cedula" , :locals => {:app => app} %>
         </div></td>
+    <td>
+      <% if app.student.convicted? %>
+        <div id="convicted_span_<%= app.id %>">
+          <%= render :partial => "status_convicted" , :locals => {:app => app} %>
+        </div>
+      <% end %>
+    </td>
     <td> <%= app.examination_type %></td>
 
   </tr>
@@ -243,7 +251,23 @@
           $('status_cedula_loader_' + id).hide();
         }
       });
-    }
+    },
+
+    toogle_status_convicted: function(id, val) {
+      if (params == "")
+        return false;
+      var params = "id=" + id + "&val=" + val
+      new Ajax.Request('#{url_for(:controller => '/status_reports/toogle_status_convicted')}', {
+        method: 'post',
+        parameters: params,
+        onLoading: function(transport) {
+          $('status_convicted_loader_' + id).show();
+        },
+        onSuccess: function(transport) {
+          $('status_convicted_loader_' + id).hide();
+        }
+      });
+    }    
     
     
   };

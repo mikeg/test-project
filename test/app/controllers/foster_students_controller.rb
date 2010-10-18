@@ -17,25 +17,25 @@ class FosterStudentsController < ApplicationController
 
     @add_provinces = []
     @add_towns = []
-    provinces = Province.find(:all, :conditions => ["region_id = ?", @student.region_id])
+    provinces = Province.find(:all, :conditions => ["region_id = ?", @student.region_id], :order => "name asc")
     provinces.each do |p|
-      @add_provinces << [p.name, p.id]
+      @add_provinces << [p.name.titleize, p.id]
     end
-    towns = Town.find(:all, :conditions => ["province_id = ?", @student.province_id])
+    towns = Town.find(:all, :conditions => ["province_id = ?", @student.province_id], :order => "name asc")
     towns.each do |t|
-      @add_towns << [t.name, t.id]
+      @add_towns << [t.name.titleize, t.id]
     end
 
 
     @pob_provinces = []
     @pob_towns = []
-    provinces = Province.find(:all, :conditions => ["region_id = ?", @student.pob_region_id])
+    provinces = Province.find(:all, :conditions => ["region_id = ?", @student.pob_region_id], :order => "name asc")
     provinces.each do |p|
-      @pob_provinces << [p.name, p.id]
+      @pob_provinces << [p.name.titleize, p.id]
     end
-    towns = Town.find(:all, :conditions => ["province_id = ?", @student.pob_province_id])
+    towns = Town.find(:all, :conditions => ["province_id = ?", @student.pob_province_id], :order => "name asc")
     towns.each do |t|
-      @pob_towns << [t.name, t.id]
+      @pob_towns << [t.name.titleize, t.id]
     end
 
     app = Applicant.find(:first, :conditions => ["student_id = ? and examination_schedule_id = ?", @student.id, current_examination_schedule.id]) rescue nil

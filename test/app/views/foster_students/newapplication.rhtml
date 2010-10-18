@@ -3,7 +3,7 @@
 <% form_tag new_application_foster_students_path(:id => @student.id), :method => 'post' do %>
   <%= render :partial => "app_naf" %>
   <%= render :partial => "app_personal" %>
-  <%#= render :partial => "educational" %>
+  <%#= render :partial => "app_educational" %>
   <br/>
   <%= submit_tag "Submit",  :class => "submit_tag" %> <%= link_to "cancel", foster_students_path %>
 <% end -%>

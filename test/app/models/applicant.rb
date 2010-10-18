@@ -1,6 +1,7 @@
 class Applicant < ActiveRecord::Base
   set_table_name "applications"
   belongs_to :student
+  belongs_to :examination_schedule
   
   def self.search(search=nil, page=1, school=nil)
     unless school.nil?
