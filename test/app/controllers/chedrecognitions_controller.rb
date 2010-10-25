@@ -31,13 +31,15 @@ class ChedrecognitionsController < ApplicationController
   def update_province_div
     @region, @provinces, @towns = [], [], []
     @region = Region.find(params[:region_id])
-    @region.provinces.each do |p|
-      @provinces << [p.name, p.id]
+
+    provinces = @region.provinces.find(:all, :order => "name")
+    provinces.each do |p|
+      @provinces << [p.name.titleize, p.id]
     end
 
-    @region.provinces.first.towns.each do |t|
-      @towns << [t.name, t.id]
-    end unless @region.provinces.empty?
+    provinces.first.towns.find(:all, :order => "name").each do |t|
+      @towns << [t.name.titleize, t.id]
+    end
 
     render :update do |page|
       page.replace_html("province_div", :partial => 'province_select', :locals => {:school => current_user.school})
@@ -50,8 +52,8 @@ class ChedrecognitionsController < ApplicationController
   def update_town_div
     @towns = []
     @province = Province.find(params[:province_id])
-    @province.towns.each do |t|
-      @towns << [t.name, t.id]
+    @province.towns.find(:all, :order => "name").each do |t|
+      @towns << [t.name.titleize, t.id]
     end
     render :update do |page|
       page.replace_html("town_div", :partial => 'town_select', :locals => {:school => current_user.school})
@@ -62,35 +64,35 @@ class ChedrecognitionsController < ApplicationController
   
   def load_regions(school)
     @regions, @provinces, @towns = [], [], []
-    regions = Region.find(:all)
+    regions = Region.find(:all, :order => "name")
     regions.each do |r|
-      @regions << [r.name, r.id]
+      @regions << [r.name.titleize, r.id]
     end
     
     
     unless school.region.nil?
       region = school.region
       provinces = region.provinces
-      provinces.each do |p|
-        @provinces << [ p.name, p.id]
+      provinces.find(:all, :order => "name").each do |p|
+        @provinces << [ p.name.titleize, p.id]
       end
       
       unless school.province.nil?
         province = school.province
         towns = province.towns
-        towns.each do |t|
-          @towns << [t.name, t.id]
+        towns.find(:all, :order => "name").each do |t|
+          @towns << [t.name.titleize, t.id]
         end
       end
     else
 
         unless regions.first.provinces.empty?
-          regions.first.provinces.each do |p|
-            @provinces << [p.name, p.id]
+          regions.first.provinces.find(:all, :order => "name").each do |p|
+            @provinces << [p.name.titleize, p.id]
           end
           unless regions.first.provinces.first.towns.empty?
-            regions.first.provinces.first.towns.each do |t|
-              @towns << [t.name, t.id]
+            regions.first.provinces.first.towns.find(:all, :order => "name").each do |t|
+              @towns << [t.name.titleize, t.id]
             end unless regions.first.provinces
           end
         end

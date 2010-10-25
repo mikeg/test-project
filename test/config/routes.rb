@@ -44,7 +44,7 @@ ActionController::Routing::Routes.draw do |map|
   # map.root :controller => "welcome"
 
   map.resource :dashboard, :controller => "dashboard"
-  map.resources :feedback, :controller => "feedback"
+  map.resources :feedbacks, :controller => "feedbacks", :collection => { :submitted => :get }
   map.resources :schools, :controller => "schools", :collection => { :show_users => :get,
                                                                      :adduser => :get,
                                                                      :search => :post}

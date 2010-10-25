@@ -11,6 +11,10 @@ Edit Review Center
     <td><%= text_field_tag "rcenter[address]", @review_center.address %></td>
   </tr>
   <tr>
+    <td>Code</td>
+    <td><%= text_field_tag "rcenter[code]", @review_center.code %></td>
+  </tr>
+  <tr>
     <td></td>
     <td><%= submit_tag "Submit" %> <%= link_to "Cancel", review_centers_path %>
 </table>

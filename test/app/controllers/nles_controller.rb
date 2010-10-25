@@ -10,7 +10,11 @@ class NlesController < ApplicationController
   end
 
   def list_examinees
-    @applications = Applicant.find(:all, :conditions => ["special_order IS NULL AND is_completed = ?", true])
+    if params[:so].blank?
+      @applications = Applicant.find(:all, :conditions => ["special_order IS NULL AND is_completed = ?", true])
+    else
+      @applications = Applicant.find(:all, :conditions => ["special_order IS NOT NULL AND is_completed = ?", true])
+    end
   end
 
   def paid_examinees

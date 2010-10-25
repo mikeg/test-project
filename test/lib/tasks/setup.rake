@@ -1414,7 +1414,7 @@ namespace :setup do
     end
 
     #adding review schools
-    review_schools = [
+    review_centers = [
        { 'name' => 'ACCOUNTANCY REVIEW & CONSULTANCY SERVICES', 'code' => '', 'address' => '' }, 
        { 'name' => 'AOG REVIEW CENTER', 'code' => '', 'address' => '' }, 
        { 'name' => 'ACES-CORPUZ REVIEW CENTER', 'code' => '', 'address' => '' }, 
@@ -1486,9 +1486,9 @@ namespace :setup do
 
     ]
 
-    review_schools.each do |r|
+    review_centers.each do |r|
       puts r.inspect
-      rs = ReviewSchool.find(:first, :conditions => ["name = ?", r["name"]]) || ReviewSchool.new(r)
+      rs = ReviewCenter.find(:first, :conditions => ["name = ?", r["name"]]) || ReviewCenter.new(r)
       rs.save
     end
 
