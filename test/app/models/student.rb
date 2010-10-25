@@ -4,11 +4,8 @@ class Student < ActiveRecord::Base
   belongs_to :province
   belongs_to :town
   belongs_to :country
-#  belongs_to :examinee
-
   
   def self.with_foster(school, page)
-    #TODO: get students with foster
     Student.paginate(
                :per_page => 20,
                :page => page,

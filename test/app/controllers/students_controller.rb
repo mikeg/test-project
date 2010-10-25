@@ -12,6 +12,10 @@ class StudentsController < ApplicationController
   before_filter :load_review_schools, :only => [:edit]
   before_filter :load_review_centers, :only => [:edit]
 
+  def with_foster
+    @students = Student.with_foster(current_user.school, params[:page])
+  end
+  
   def index
     if current_user.role_code == "registrar"
       @students = Student.search(params[:search], params[:page], current_user.school)
@@ -99,13 +103,7 @@ class StudentsController < ApplicationController
     end
 
   end
-  
 
-  def with_foster
-    #TODO
-    @foster_students = Student.with_foster(current_user.school, params[:page])
-  end
-  
   def newapplication
     @student = Student.find(params[:id])
     preload_form_data
