@@ -12,9 +12,9 @@
         Region : <%= @student.school.region.name rescue '' %> <br/>
         Province: <%= @student.school.province.name rescue ''%> <br/>
         Municipality/City/Town : <%= @student.school.town.name rescue '' %> <br/>
-        Zipcode  : <%= @student.school.zip_code rescue ''%> <br/>
-        Area code  : <%= @student.school.area_code rescue ''%> <br/>
-        Rurban code  : <%= @student.school.rurban_code rescue ''%> <br/>
+        Zipcode  : <%= @student.school.town.zip_code rescue ''%> <br/>
+        Area code  : <%= @student.school.province.area_code rescue ''%> <br/>
+        Rurban code  : <%= @student.school.town.rurban_code rescue ''%> <br/>
 
         </td>
     </tr>

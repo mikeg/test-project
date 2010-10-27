@@ -17,13 +17,13 @@
           Municipality/City/Town : <%= current_user.school.town.name unless current_user.school.town.nil?%>
         </div>
         <div >
-          Zipcode  : <%= current_user.school.zip_code%>
+          Zipcode  : <%= current_user.school.town.zip_code rescue ''%>
         </div>
         <div >
-          Area code  : <%= current_user.school.area_code%>
+          Area code  : <%= current_user.school.province.area_code rescue ''%>
         </div>
         <div >
-          Rurban code  : <%= current_user.school.rurban_code%>
+          Rurban code  : <%= current_user.school.town.rurban_code rescue ''%>
         </div>
 
         </td>
