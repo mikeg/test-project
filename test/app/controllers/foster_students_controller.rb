@@ -415,7 +415,7 @@ class FosterStudentsController < ApplicationController
     
     regions = Region.find(:all, :order => "name asc")
     regions.each do |r|
-      @regions << [r.name.titleize, r.id]
+      @regions << [r.name.upcase, r.id]
     end
     
     unless regions.first.provinces.empty?

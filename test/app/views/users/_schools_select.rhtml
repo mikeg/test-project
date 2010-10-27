@@ -1,1 +1,1 @@
-Schools :  <%= select_tag "school_id", options_for_select(@schools, @user.school_id), :class => "text_field" %>
+Schools :  <%= select_tag "school_id", options_for_select(@schools, current_user.school_id), :class => "text_field" %>

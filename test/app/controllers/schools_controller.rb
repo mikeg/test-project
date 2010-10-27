@@ -35,13 +35,13 @@ class SchoolsController < ApplicationController
       redirect_to schools_path
     else
       @school = School.new
-      @regions = []
-      @provinces = []
-      @towns = []
+      @regions = [["Choose below",""]]
+      @provinces = [["Choose below",""]]
+      @towns = [["Choose below",""]]
       
       regions = Region.find(:all, :order => "name ASC")
       regions.each do |r|
-        @regions << [ r.name.titleize, r.id ]
+        @regions << [ r.name.upcase, r.id ]
       end
 
       regions.first.provinces.each do |r|
@@ -128,7 +128,7 @@ class SchoolsController < ApplicationController
     @towns = []
     regions = Region.find(:all, :order => "name ASC")
     regions.each do |r|
-      @regions << [ r.name.titleize, r.id ]
+      @regions << [ r.name.upcase, r.id ]
     end
 
 #    provinces = Province.find(:all, :order => "name ASC")

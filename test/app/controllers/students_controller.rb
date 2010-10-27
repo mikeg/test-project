@@ -522,11 +522,16 @@ class StudentsController < ApplicationController
   end
   
   def preload_form_data
-    @regions, @provinces, @towns, @countries, @civilstatus, @courses = [], [], [], [], [], []
+    @regions = [["Choose below",""]]
+    @provinces = [["Choose below",""]]
+    @towns = [["Choose below",""]]
+    @countries = [["Choose below",""]]
+    @civilstatus = [["Choose below",""]]
+    @courses = [["Choose below",""]]
     
     regions = Region.find(:all, :order => "name asc")
     regions.each do |r|
-      @regions << [r.name.titleize, r.id]
+      @regions << [r.name.upcase, r.id]
     end
     
     unless regions.first.provinces.empty?

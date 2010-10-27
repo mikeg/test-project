@@ -66,7 +66,7 @@ class ChedrecognitionsController < ApplicationController
     @regions, @provinces, @towns = [], [], []
     regions = Region.find(:all, :order => "name")
     regions.each do |r|
-      @regions << [r.name.titleize, r.id]
+      @regions << [r.name.upcase, r.id]
     end
     
     
