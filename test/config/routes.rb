@@ -53,9 +53,12 @@ ActionController::Routing::Routes.draw do |map|
                                                                        :list_students => :get,
                                                                        :search_student => :get},
                                                       :member => {:pay => :put }
+  map.resources :printers, :controller => "printers", :collection => { :noa => :get }
+
   map.resources :noas, :controller => "noas", :collection => { :history => :get,
                                                                :list_students => :get,
-                                                               :search_student => :get},
+                                                               :search_student => :get,
+                                                               :list_examinees => :get},
                                                       :member => {:perrc => :put }
   map.resources :fosters, :controller => "fosters"
   map.resources :foster_students, :controller => "foster_students", :member => { :view => :get,

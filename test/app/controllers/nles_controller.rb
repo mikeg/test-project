@@ -10,10 +10,15 @@ class NlesController < ApplicationController
   end
 
   def list_examinees
+    puts params.inspect
     if params[:so].blank?
-      @applications = Applicant.find(:all, :conditions => ["special_order IS NULL AND is_completed = ?", true])
+      @applications = Applicant.find(:all, :conditions => ["school_id = ?", current_user.school_id])
     else
-      @applications = Applicant.find(:all, :conditions => ["special_order IS NOT NULL AND is_completed = ?", true])
+      if params[:so] == "yes"
+        @applications = Applicant.find(:all, :conditions => ["school_id = ? AND special_order IS NOT NULL AND is_completed = ?", current_user.school_id, true])
+      else
+        @applications = Applicant.find(:all, :conditions => ["school_id = ? AND special_order IS NOT NULL AND is_completed = ?", current_user.school_id, false])
+      end
     end
   end
 

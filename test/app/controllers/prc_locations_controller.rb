@@ -3,7 +3,8 @@ class PrcLocationsController < ApplicationController
 
   def update
     @location = PrcLocation.find(params[:id])
-    @location.update_attributes(params[:prc])
+    puts @location.inspect
+    @location.update_attributes!(params[:prc])
     redirect_to prc_locations_path
   end
   

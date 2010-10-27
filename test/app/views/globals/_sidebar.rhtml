@@ -24,10 +24,10 @@
       <div id="submenu">
         <ul>
           <li>
-            <%= link_to "List of Examinees", "#" %>
+            <%= link_to "List of Examinees", list_examinees_nles_path %>
             <ul style="margin-left: -4px">
-              <li><%= link_to "With S.O", list_examinees_nles_path(:so => true) %> </li>
-              <li><%= link_to "Without S.O", list_examinees_nles_path %></li>
+              <li><%= link_to "With S.O", list_examinees_nles_path(:so => 'yes') %> </li>
+              <li><%= link_to "Without S.O", list_examinees_nles_path(:so => 'no') %></li>
             </ul>
           </li>
           <li><%= link_to "Paid Examinees", paid_examinees_nles_path %></li>
@@ -67,6 +67,9 @@
   <% when "noa" %>
     <li><%= link_to "Students", list_students_noas_path %></li>
     <li><%= link_to "Entry History", history_noas_path %></li>
+    <% if location_is_test_center %>
+    <li><%= link_to "List of Examinees", list_examinees_noas_path %></li>
+    <% end %>
   <% end %>
   	</ul>
   </div>

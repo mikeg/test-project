@@ -200,3 +200,12 @@ a:hover {
   font-size: 11px;
   clear: both;
 }
+.span_link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.span_link:hover {
+  cursor: pointer;
+  text-decoration: none;
+}

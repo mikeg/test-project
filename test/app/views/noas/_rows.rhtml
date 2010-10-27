@@ -14,7 +14,7 @@
     <td>
       <div id="perrc_div<%= examinee.id -%>">
         <% remote_form_for :form, :url => perrc_noa_path(examinee), :loading => "$('page_loader#{examinee.id}').show()", :complete => "$('page_loader#{examinee.id}').hide()", :html => { :method => :put } do |f|%>
-          <%= select_tag "test_center", options_for_select(@test_centers, nil) %>
+          <%= select_tag "prc_location_id", options_for_select(@test_centers, nil) %>
           <%= text_field_tag "perrc" %>
           <%= submit_tag "Update"%>
         <% end %>

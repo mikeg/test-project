@@ -13,6 +13,10 @@
   <li><%= radio_button_tag "prc[is_satellite]", 1, @location.is_satellite? %> Yes
       <%= radio_button_tag "prc[is_satellite]", 0, !@location.is_satellite? %> No
     </li>
+    <li>Is a testing center? : </li>
+    <li><%= radio_button_tag "prc[is_test_center]", 1, @location.is_test_center? %> Yes
+        <%= radio_button_tag "prc[is_test_center]", 0, !@location.is_test_center? %> No
+      </li>
 
   <br/><%= submit_tag "Submit",  :class => "submit_tag" %> <%= link_to "cancel", prc_locations_path %></li>
 </ul>

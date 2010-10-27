@@ -13,7 +13,10 @@ class NoasController < ApplicationController
   def history
     @examinees = Examinee.find(:all, :conditions => ["perrc IS NOT NULL"])
   end
-  
+
+  def list_examinees
+    @examinees = Examinee.list_examinees(current_user)
+  end
 
   def list_students
     @examinees = Examinee.search_noa_students(params[:search], params[:page])
@@ -21,24 +24,29 @@ class NoasController < ApplicationController
 
   def perrc
     examinee = Examinee.find(params[:id])
-    examinee.test_center_id = params[:test_center]
+    examinee.prc_location_id = params[:prc_location_id]
     examinee.perrc = params[:perrc]
-    examinee.save
+
+    unless params[:prc_location_id].blank?
+      examinee.save
     
-    tc = TestCenter.find(params[:test_center])
-    test_center_and_perrc = "#{tc.name} - #{params[:perrc]}"
-    
-    render :update do |page|
-      page.replace_html "perrc_div#{examinee.id}", :text => test_center_and_perrc
-      page.visual_effect :highlight, "perrc_div#{examinee.id}", :duration => 1
+      tc = PrcLocation.find(params[:prc_location_id])
+      test_center_and_perrc = "#{tc.region} - #{params[:perrc]}"
+      render :update do |page|
+        page.replace_html "perrc_div#{examinee.id}", :partial => "noas/perrc", :locals => {:str => test_center_and_perrc, :examinee => examinee }
+        page.visual_effect :highlight, "perrc_div#{examinee.id}", :duration => 1
+      end
+    else
+      render :nothing => true
     end
+    
   end
 
   def load_test_centers
-    @test_centers = []
-    testcenters = TestCenter.find(:all)
+    @test_centers = [["Choose Below",'']]
+    testcenters = PrcLocation.find(:all, :conditions => ["is_test_center = 1"])
     testcenters.each do |tc|
-      @test_centers << [tc.name , tc.id]
+      @test_centers << [tc.region.upcase , tc.id]
     end
   end
 end

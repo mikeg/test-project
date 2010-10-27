@@ -9,6 +9,7 @@
     <td width="200">Region </td>
     <td width="50">Code</td>
     <td width="100">Satellite</td>
+    <td width="100">Testing Center?</td>
     <td width="100">Action</td>
   </tr>
   <%
@@ -18,6 +19,7 @@
     <td><%= p.region -%></td>
     <td><%= p.code -%></td>
     <td><%= p.is_satellite? ? "Yes" : '' -%></td>
+    <td><%= p.is_test_center? ? "Yes" : '' -%></td>
     <td>
       <div id="actions">
         <%= link_to "edit", edit_prc_location_path(p) %>

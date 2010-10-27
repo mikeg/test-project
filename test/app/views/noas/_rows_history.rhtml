@@ -3,8 +3,9 @@
   <tr bgcolor="##6699FF">
     <td width=230>Student Name </td>
     <td width=130>Examinee Number</td>
-    <td>Test Center</td>
+    <td>Prc Location (Test Center)</td>
     <td>PERRC</td>
+    <td></td>
   </tr>
   <%
   @examinees.each do |examinee|
@@ -12,8 +13,9 @@
   <tr>
     <td><%= h examinee.student.fullname -%></td>
     <td><%= h examinee.id -%></td>
-    <td><%= h examinee.test_center.name -%></td>
+    <td><%= h examinee.prc_location.region -%></td>
     <td><%= h examinee.perrc -%></td>
+    <td><%= link_to "PRINT", noa_printers_path(:id => examinee.id), :target => "_blank" %></td>    
   </tr>
   <% end %>
 </table>

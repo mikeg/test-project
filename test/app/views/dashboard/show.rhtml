@@ -1,8 +1,11 @@
 <h1>Welcome to Philippine Nursing Online System</h1>
 
 
-<% unless current_user.school.nil? 
-  if current_user.school.chedreg_boardres.to_s.blank?
+<%
+with_ched_roles = ["foster", "registrar"]
+if with_ched_roles.include?(current_user.role_code.to_s)
+  unless current_user.school.nil? 
+    if current_user.school.chedreg_boardres.to_s.blank?
 %>
 <p>
   <span style="color:red">
@@ -10,7 +13,8 @@
     <%= link_to "Please click here to update it. ", chedrecognitions_path %>
   </span>
 </p>
-<% end
+  <% end
+  end
 end
 %>
 
