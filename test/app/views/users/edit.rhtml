@@ -11,7 +11,9 @@
   <li> Role: </li>
   <li><%= select_tag "role_code", options_for_select(@roles, @user.role_code), :class => "text_field" %>
     <div id="schools_div">
+      <% if current_user.role_code.to_s == "registrar" %>
       <%= render :partial => "users/schools_select" -%>
+      <% end %>
     </div>
     </li>
 
