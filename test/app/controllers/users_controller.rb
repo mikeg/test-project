@@ -40,7 +40,15 @@ class UsersController < ApplicationController
       @user.role_code = params[:role_code]
       @user.school_id = params[:school_id] unless params[:school_id].nil?
       @user.created_by = current_user
-      @user.save
+      
+      if params[:user][:password] != params[:password_confirmation]
+        flash[:error] = "Password does not match"
+      end
+      
+      if flash[:error].blank?
+        @user.save
+      end
+
       redirect_to users_path
     end
   end

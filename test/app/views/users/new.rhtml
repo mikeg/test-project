@@ -21,6 +21,9 @@
   <li><%= text_field_tag "user[username]", nil, :class => "text_field" %></li>
   <li>Password: </li>
   <li><%= password_field_tag "user[password]", nil, :class => "text_field" %></li>
+  <li>Confirm Password: </li>
+  <li><%= password_field_tag "password_confirmation", nil, :class => "text_field" %></li>
+
   <li>Access status: </li>
   <li>Enable: <%= radio_button_tag "user[is_active]", "1", false %>
     Disable: <%= radio_button_tag "user[is_active]", "0", true %>
