@@ -1,8 +1,8 @@
-<%= link_to_remote province.name, :url => show_towns_addresses_path(:province_id => province.id), 
+<%= link_to_remote province.name.upcase, :url => show_towns_addresses_path(:province_id => province.id), 
                            :method => :get, 
                            :loading => "$('addresses_loader').show()", 
                            :complete => "$('addresses_loader').hide()"  %> - <%= province.area_code %>
-<span style="font-size:10px">
+<span style="font-size:10px; padding-left: 10px">
   <%= link_to_remote "edit", :url => { :action => "edit_province", :id => province.id } %>|
   <%= link_to_remote "delete", :url => { :action => "delete_province", :id => province.id }, 
     :confirm => "Are you sure you want to delete this? \nThis will also delete municipalities/towns under this province." %>

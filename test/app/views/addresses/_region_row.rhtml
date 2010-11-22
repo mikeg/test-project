@@ -1,5 +1,5 @@
-<%= link_to_remote region.name.to_s, :url => show_provinces_addresses_path(:region_id => region.id), :method => :get, :loading => "$('addresses_loader').show()", :complete => "$('addresses_loader').hide()"  %>
-<span style="font-size:10px">
+<%= link_to_remote region.name.to_s.upcase, :url => show_provinces_addresses_path(:region_id => region.id), :method => :get, :loading => "$('addresses_loader').show()", :complete => "$('addresses_loader').hide()"  %>
+<span style="font-size:10px; padding-left: 10px">
 <%= link_to_remote "edit", :url => { :action => "edit_region", :id => region.id } %>|
 <%= link_to_remote "delete", :url => { :action => "delete_region", :id => region.id }, :confirm => "Are you sure you want to delete this? \nThis will also delete provinces and municipalities under this region." %>
 </span>

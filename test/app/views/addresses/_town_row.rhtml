@@ -1,5 +1,5 @@
 <%=town.name -%> - <%= town.zip_code%>
-<span style="font-size:10px">
+<span style="font-size:10px; padding-left: 10px">
   <%= link_to_remote "edit", :url => { :action => "edit_town", :id => town.id } %>|
   <%= link_to_remote "delete", :url => { :action => "delete_town", :id => town.id }, 
     :confirm => "Are you sure you want to delete this?" %>
