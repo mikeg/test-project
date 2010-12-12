@@ -3,7 +3,6 @@ class PrcLocationsController < ApplicationController
 
   def update
     @location = PrcLocation.find(params[:id])
-    puts @location.inspect
     @location.update_attributes!(params[:prc])
     redirect_to prc_locations_path
   end
@@ -19,6 +18,7 @@ class PrcLocationsController < ApplicationController
   def destroy
     @prc = PrcLocation.find(params[:id])
     @prc.destroy
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     redirect_to prc_locations_path
   end
   
@@ -28,6 +28,7 @@ class PrcLocationsController < ApplicationController
       @prc = PrcLocation.new(params[:prc])
       @prc.created_by = current_user
       @prc.save
+      ActionLog.newlog(controller_name, action_name, params, current_user)
 
       if !@prc.errors.empty?
         flash[:error] = @prc.errors.first[1]

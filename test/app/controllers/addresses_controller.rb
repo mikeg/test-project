@@ -16,6 +16,8 @@ class AddressesController < ApplicationController
     region.save
     regions = Region.find(:all, :order => "name")
 
+    ActionLog.newlog(controller_name, action_name, params, current_user)
+
     render :update do |page|
       page.replace_html("add_region_div", :text => "")
       page.replace_html("all_regions", :partial => "regions", :locals => { :regions => regions })
@@ -26,6 +28,8 @@ class AddressesController < ApplicationController
   def delete_region
     region = Region.find(params[:id])
     region.destroy
+    ActionLog.newlog(controller_name, action_name, params, current_user)
+    
     render :update do |page|
       page.replace_html("region_row_#{params[:id]}", :nothing => true)
       page.replace_html("provinces", "")
@@ -42,6 +46,7 @@ class AddressesController < ApplicationController
       province.name = params[:name]
       province.area_code = params[:area_code]
       province.save
+      ActionLog.newlog(controller_name, action_name, params, current_user)
 
       render :update do |page|
         page.replace_html("province_row_#{params[:id]}", :partial => "province_row", :locals => {:province => province})
@@ -57,6 +62,8 @@ class AddressesController < ApplicationController
   def delete_town
     town = Town.find(params[:id])
     town.destroy
+    ActionLog.newlog(controller_name, action_name, params, current_user)
+    
     render :update do |page|
       page.replace_html("town_row_#{params[:id]}", :nothing => true)
     end
@@ -69,6 +76,7 @@ class AddressesController < ApplicationController
       region = Region.find(params[:id])
       region.name = params[:region_name]
       region.save
+      ActionLog.newlog(controller_name, action_name, params, current_user)
 
       render :update do |page|
         page.replace_html("region_row_#{params[:id]}", :partial => "region_row", :locals => {:region => region})
@@ -89,6 +97,7 @@ class AddressesController < ApplicationController
       town.name = params[:name]
       town.zip_code = params[:zip_code]
       town.save
+      ActionLog.newlog(controller_name, action_name, params, current_user)
 
       render :update do |page|
         page.replace_html("town_row_#{params[:id]}", :partial => "town_row", :locals => {:town => town })
@@ -191,6 +200,7 @@ class AddressesController < ApplicationController
       p.region_id = params[:region_id]
       p.area_code = params[:area_code]
       p.save
+      ActionLog.newlog(controller_name, action_name, params, current_user)
 
       @region = Region.find(params[:region_id])
       @provinces = Province.find(:all, :conditions => ["region_id = ?", @region.id])
@@ -216,6 +226,7 @@ class AddressesController < ApplicationController
       p.province_id = params[:province_id]
       p.zip_code = params[:zip_code]
       p.save
+      ActionLog.newlog(controller_name, action_name, params, current_user)
 
       @province = Province.find(params[:province_id])
       @towns = Town.find(:all, :conditions => ["province_id = ?", @province.id])

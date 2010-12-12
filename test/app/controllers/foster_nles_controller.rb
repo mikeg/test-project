@@ -47,6 +47,7 @@ class FosterNlesController < ApplicationController
     app = Applicant.find(params[:id])
     app.special_order = params[:special_order]
     app.save
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html("special_order_div#{app.id}", :text => params[:special_order].to_s)

@@ -28,6 +28,7 @@ class CashiersController < ApplicationController
   
   def update
     User.update(params[:id], params[:user])
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     redirect_to cashiers_path
   end
   
@@ -54,6 +55,8 @@ class CashiersController < ApplicationController
       examinee.examination_schedule_id = current_examination_schedule.id
       examinee.created_by = current_user.id
       examinee.save
+      
+      ActionLog.newlog(controller_name, action_name, params, current_user)
     
       render :update do |page|
         page.replace_html "payment_div#{app.id}", :text => params[:or_number]
@@ -71,6 +74,7 @@ class CashiersController < ApplicationController
       @cashier = User.new(params[:user])
       @cashier.role_id = role.id
       @cashier.save
+      ActionLog.newlog(controller_name, action_name, params, current_user)
       redirect_to cashiers_path
     end
     

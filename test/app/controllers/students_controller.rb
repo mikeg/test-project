@@ -95,6 +95,7 @@ class StudentsController < ApplicationController
     # 0919:5657898
     @student.mobile_no = "#{params[:mobile_network]}:#{params[:mobile_number]}"
     if @student.save
+      ActionLog.newlog(controller_name, action_name, params, current_user)
       flash[:notice] = "Successfully updated."
       redirect_to students_path
     else
@@ -235,7 +236,7 @@ class StudentsController < ApplicationController
         ed_info.save
       end
 
-      
+      ActionLog.newlog(controller_name, action_name, params, current_user)
       flash[:notice] = "Student added successfully"
       redirect_to students_path
     else
@@ -336,7 +337,7 @@ class StudentsController < ApplicationController
         ed_info.save
       end
 
-
+      ActionLog.newlog(controller_name, action_name, params, current_user)
       flash[:notice] = "Application created successfully"
       redirect_to status_reports_path
 

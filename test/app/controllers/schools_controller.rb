@@ -32,6 +32,8 @@ class SchoolsController < ApplicationController
       school.province_id = province.id
       school.town_id = town.id
       school.save!
+      
+      ActionLog.newlog(controller_name, action_name, params, current_user)
       redirect_to schools_path
     else
       @school = School.new
@@ -75,6 +77,7 @@ class SchoolsController < ApplicationController
       school.updated_at = Time.now.to_date
       school.save
 
+      ActionLog.newlog(controller_name, action_name, params, current_user)
       redirect_to schools_url
     end
   end
@@ -105,6 +108,7 @@ class SchoolsController < ApplicationController
       school_user.user_id = user.id
       school_user.save
 
+      ActionLog.newlog(controller_name, action_name, params, current_user)
       redirect_to show_users_schools_path(:id => @school.id)
     end
   end
@@ -115,6 +119,8 @@ class SchoolsController < ApplicationController
     if school.students.empty?
       school.destroy
       flash[:notice] = "School successfully deleted."
+      
+      ActionLog.newlog(controller_name, action_name, params, current_user)
     else
       flash[:error] = "Cannot delete school. School has existing students."
     end

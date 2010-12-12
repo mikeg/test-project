@@ -19,12 +19,12 @@ class ExamSchedulesController < ApplicationController
     exam_schedule.created_by = current_user.id
     exam_schedule.updated_by = current_user.id
     exam_schedule.save
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     redirect_to exam_schedules_path
   end
   
   def edit
     @schedule = ExaminationSchedule.find(params[:id])
-    puts @schedule.inspect
   end
   
   def destroy
@@ -35,6 +35,7 @@ class ExamSchedulesController < ApplicationController
       flash[:error] = "Error deleting the schedule. There are currently students are scheduled for this date."
     else
       exam_schedule.destroy
+      ActionLog.newlog(controller_name, action_name, params, current_user)
       flash[:notice] = "Successfully deleted schedule."
     end
       redirect_to exam_schedules_path

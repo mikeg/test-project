@@ -41,7 +41,6 @@ class FosterStudentsController < ApplicationController
     app = Applicant.find(:first, :conditions => ["student_id = ? and examination_schedule_id = ?", @student.id, current_examination_schedule.id]) rescue nil
 
     if app
-      puts "pass"
       flash[:error] = "Has existing application filed already."
       redirect_to foster_students_path
     end
@@ -101,6 +100,7 @@ class FosterStudentsController < ApplicationController
 
       if flash[:error].nil?
         student.save
+        ActionLog.newlog(controller_name, action_name, params, current_user)
 
         if params[:degree] == "0"
           params[:other_courses].each do |deg|
@@ -184,13 +184,8 @@ class FosterStudentsController < ApplicationController
       student.review_school2 = params[:review_school2]
       student.review_school3 = params[:review_school3]
 
-#      duplicates = Student.foster_check_duplicate(current_user, { :firstname => student.firstname, :lastname => student.lastname, :dob => student.date_of_birth.to_date.to_s})
-#      if duplicates.length > 0
-#        flash[:error] = "Student already exists!"
-#        redirect_to foster_students_path and return
-#      end
-
       student.save
+      ActionLog.newlog(controller_name, action_name, params, current_user)
 
       if params[:degree] == "0"
         params[:other_courses].each do |deg|

@@ -10,7 +10,6 @@ class NlesController < ApplicationController
   end
 
   def list_examinees
-    puts params.inspect
     if params[:so].blank?
       @applications = Applicant.find(:all, :conditions => ["school_id = ?", current_user.school_id])
     else
@@ -42,6 +41,7 @@ class NlesController < ApplicationController
     app = Applicant.find(params[:id])
     app.special_order = params[:special_order]
     app.save
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html("special_order_div#{app.id}", :text => params[:special_order].to_s)

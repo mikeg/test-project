@@ -21,6 +21,8 @@ class UsersController < ApplicationController
     @user.school_id = params[:school_id] unless params[:school_id].nil?
     @user.updated_by = current_user
     @user.save
+
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     redirect_to users_path
   end
   
@@ -47,6 +49,7 @@ class UsersController < ApplicationController
       
       if flash[:error].blank?
         @user.save
+        ActionLog.newlog(controller_name, action_name, params, current_user)
       end
 
       redirect_to users_path

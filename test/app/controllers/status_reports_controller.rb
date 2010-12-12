@@ -26,6 +26,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:is_approved, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "naf_span_#{@app.id}", render(:partial => 'status_naf', :locals => {:app => @app})
@@ -37,6 +38,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:has_tor, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "tor_span_#{@app.id}", render(:partial => 'status_tor', :locals => {:app => @app})
@@ -48,6 +50,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:has_rle, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "rle_span_#{@app.id}", render(:partial => 'status_rle', :locals => {:app => @app})
@@ -59,6 +62,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:has_order, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "ordr_span_#{@app.id}", render(:partial => 'status_ordr', :locals => {:app => @app})
@@ -70,6 +74,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:has_nso, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "nso_span_#{@app.id}", render(:partial => 'status_nso', :locals => {:app => @app})
@@ -81,6 +86,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:has_marriage, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "marriage_span_#{@app.id}", render(:partial => 'status_marriage', :locals => {:app => @app})
@@ -92,6 +98,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:is_foreign, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "foreign_span_#{@app.id}", render(:partial => 'status_foreign', :locals => {:app => @app})
@@ -103,6 +110,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:has_passport, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "passport_span_#{@app.id}", render(:partial => 'status_passport', :locals => {:app => @app})
@@ -114,6 +122,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:has_envelope, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "envelope_span_#{@app.id}", render(:partial => 'status_envelope', :locals => {:app => @app})
@@ -125,6 +134,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:has_stamp, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "stamp_span_#{@app.id}", render(:partial => 'status_stamp', :locals => {:app => @app})
@@ -136,6 +146,7 @@ class StatusReportsController < ApplicationController
     value = params[:val] == "true" ? 1 : nil
     @app = Applicant.find(params[:id])
     @app.update_attribute(:has_cedula, value)
+    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html "cedula_span_#{@app.id}", render(:partial => 'status_cedula', :locals => {:app => @app})
@@ -187,6 +198,7 @@ class StatusReportsController < ApplicationController
       end
     end    
     
+    ActionLog.newlog(controller_name, action_name, params, current_user)
   end
 
   
