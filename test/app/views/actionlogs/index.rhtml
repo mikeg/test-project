@@ -1,0 +1,27 @@
+
+
+<div>
+  <div id="title_header"><h1>Action Logs</h1></div>
+</div>
+<div style="clear:both"></div>
+
+<table cellpadding=2 cellspacing=2 border=1 width="100%" style="border-collapse: collapse">
+  <tr bgcolor="##6699FF">
+    <td>Controller</td>
+    <td>action</td>
+    <td>attributes</td>
+  </tr>
+  <%
+  @logs.each do |log|
+  %>
+  <tr>
+    <td><%= log.controller.titleize -%></td>
+    <td><%= log.action -%></td>
+    <td><%= display_formated_logs(log.params) -%></td>
+  </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @logs %>
+
+</div>
