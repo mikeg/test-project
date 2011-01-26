@@ -93,7 +93,7 @@ class StatusReportsController < ApplicationController
     @app = Applicant.find(params[:id])
     @app.has_marriage = value
 
-    ActionLog.newlog(controller_name, action_name, @app.changes current_user)
+    ActionLog.newlog(controller_name, action_name, @app.changes, current_user)
     @app.save
     render :update do |page|
       page.replace_html "marriage_span_#{@app.id}", render(:partial => 'status_marriage', :locals => {:app => @app})
