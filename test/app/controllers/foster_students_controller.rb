@@ -99,8 +99,8 @@ class FosterStudentsController < ApplicationController
       end
 
       if flash[:error].nil?
+        ActionLog.newlog(controller_name, action_name, student.changes, current_user)
         student.save
-        ActionLog.newlog(controller_name, action_name, params, current_user)
 
         if params[:degree] == "0"
           params[:other_courses].each do |deg|
@@ -184,9 +184,9 @@ class FosterStudentsController < ApplicationController
       student.review_school2 = params[:review_school2]
       student.review_school3 = params[:review_school3]
 
+      ActionLog.newlog(controller_name, action_name, student.changes, current_user)
       student.save
-      ActionLog.newlog(controller_name, action_name, params, current_user)
-
+      
       if params[:degree] == "0"
         params[:other_courses].each do |deg|
           if !deg[1].blank? && !params[:other_schools][deg[0]][1].blank?

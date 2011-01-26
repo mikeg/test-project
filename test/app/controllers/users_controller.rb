@@ -20,9 +20,10 @@ class UsersController < ApplicationController
     @user.role_code = params[:role_code]
     @user.school_id = params[:school_id] unless params[:school_id].nil?
     @user.updated_by = current_user
-    @user.save
 
-    ActionLog.newlog(controller_name, action_name, params, current_user)
+    ActionLog.newlog(controller_name, action_name, @user.changes, current_user)
+
+    @user.save
     redirect_to users_path
   end
   
@@ -48,8 +49,8 @@ class UsersController < ApplicationController
       end
       
       if flash[:error].blank?
+        ActionLog.newlog(controller_name, action_name, @user.changes, current_user)
         @user.save
-        ActionLog.newlog(controller_name, action_name, params, current_user)
       end
 
       redirect_to users_path

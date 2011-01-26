@@ -27,9 +27,9 @@ class TransfersController < ApplicationController
     history.accepted_at = Time.now.to_date
     history.new_school_id = current_user.school_id
     history.created_by = current_user.id
-    history.save
-    ActionLog.newlog(controller_name, action_name, params, current_user)
 
+    ActionLog.newlog(controller_name, action_name, history.changes, current_user)
+    history.save
     render :update do |page|
       page.replace_html "accept_div#{student.id}", :text => "Accepted..."
       page.visual_effect :highlight, "accept_div#{student.id}", :duration => 1
@@ -40,8 +40,9 @@ class TransfersController < ApplicationController
   def release_student
     student = Student.find(params[:id])
     student.released_at = Time.now.to_date
+    
+    ActionLog.newlog(controller_name, action_name, student.changes, current_user)
     student.save
-    ActionLog.newlog(controller_name, action_name, params, current_user)
 
     render :update do |page|
       page.replace_html "release_div#{student.id}", :text => "Released..."

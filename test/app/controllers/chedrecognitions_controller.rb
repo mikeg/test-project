@@ -10,8 +10,9 @@ class ChedrecognitionsController < ApplicationController
   def chedreg
     @school = current_user.school
     @school.chedreg_boardres = params[:chedreg]
+
+    ActionLog.newlog(controller_name, action_name, @school.changes, current_user)
     @school.save
-    ActionLog.newlog(controller_name, action_name, params, current_user)
     redirect_to chedrecognitions_path
   end
   
@@ -25,8 +26,9 @@ class ChedrecognitionsController < ApplicationController
     @school.region_id = params[:region_id]
     @school.province_id = params[:province_id]
     @school.town_id = params[:town_id]
+
+    ActionLog.newlog(controller_name, action_name, @school.changes, current_user)
     @school.save
-    ActionLog.newlog(controller_name, action_name, params, current_user)
     redirect_to chedrecognitions_path
   end
   

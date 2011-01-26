@@ -40,8 +40,9 @@ class NlesController < ApplicationController
   def update_special_order
     app = Applicant.find(params[:id])
     app.special_order = params[:special_order]
+
+    ActionLog.newlog(controller_name, action_name, app.changes, current_user)
     app.save
-    ActionLog.newlog(controller_name, action_name, params, current_user)
     
     render :update do |page|
       page.replace_html("special_order_div#{app.id}", :text => params[:special_order].to_s)

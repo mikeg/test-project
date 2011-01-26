@@ -18,8 +18,9 @@ class ReviewCentersController < ApplicationController
   
   def create
     tc = ReviewCenter.new(params[:rcenter])
+    ActionLog.newlog(controller_name, action_name, tc.changes, current_user)
     tc.save
-    ActionLog.newlog(controller_name, action_name, params, current_user)
+    
     flash[:notice] = "Review Center added."
     redirect_to review_centers_path
   end
@@ -27,8 +28,9 @@ class ReviewCentersController < ApplicationController
   def update
     tc = ReviewCenter.find(params[:id])
     tc.update_attributes(params[:rcenter])
+
+    ActionLog.newlog(controller_name, action_name, tc.changes, current_user)
     tc.save
-    ActionLog.newlog(controller_name, action_name, params, current_user)
     flash[:notice] = "Review Center updated."
     redirect_to review_centers_path
   end

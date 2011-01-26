@@ -27,8 +27,9 @@ class PrcLocationsController < ApplicationController
     if request.post?
       @prc = PrcLocation.new(params[:prc])
       @prc.created_by = current_user
+
+      ActionLog.newlog(controller_name, action_name, @prc.changes, current_user)
       @prc.save
-      ActionLog.newlog(controller_name, action_name, params, current_user)
 
       if !@prc.errors.empty?
         flash[:error] = @prc.errors.first[1]

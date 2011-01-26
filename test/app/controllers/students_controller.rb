@@ -94,8 +94,9 @@ class StudentsController < ApplicationController
     @student.telephone = "#{params[:telno_code]}:#{params[:telno_number]}"
     # 0919:5657898
     @student.mobile_no = "#{params[:mobile_network]}:#{params[:mobile_number]}"
+    ActionLog.newlog(controller_name, action_name, @student.changes, current_user)
+
     if @student.save
-      ActionLog.newlog(controller_name, action_name, params, current_user)
       flash[:notice] = "Successfully updated."
       redirect_to students_path
     else
@@ -182,6 +183,7 @@ class StudentsController < ApplicationController
         redirect_to students_path and return
       end
 
+      ActionLog.newlog(controller_name, action_name, student.changes, current_user)
       student.save
 
       if params[:degree] == "0"
@@ -193,6 +195,8 @@ class StudentsController < ApplicationController
             ed_info.school_id = params[:other_schools][deg[0]][1].to_i
             ed_info.graduated_at = "#{params[:other_years][deg[0]][1]}-#{params[:other_months][deg[0]][1]}-#{params[:other_days][deg[0]][1]}"
             ed_info.created_by = current_user.id
+
+            ActionLog.newlog(controller_name, action_name, ed_info.changes, current_user)
             ed_info.save
           end
         end
@@ -205,6 +209,8 @@ class StudentsController < ApplicationController
       app.created_by = current_user
       app.examination_type = params[:exam_type]
       app.examination_schedule_id = current_examination_schedule.id
+      
+      ActionLog.newlog(controller_name, action_name, app.changes, current_user)
       app.save
       
 
@@ -215,6 +221,8 @@ class StudentsController < ApplicationController
         ed_info.school_id = params[:schools1]
         ed_info.graduated_at = "#{params[:dob_months1]}-#{params[:dob_days1]}-#{params[:dob_years1]}"
         ed_info.created_by = current_user
+        
+        ActionLog.newlog(controller_name, action_name, ed_info.changes, current_user)
         ed_info.save
       end
       unless params[:courses2].blank?
@@ -224,6 +232,8 @@ class StudentsController < ApplicationController
         ed_info.school_id = params[:schools2]
         ed_info.graduated_at = "#{params[:dob_months2]}-#{params[:dob_days2]}-#{params[:dob_years2]}"
         ed_info.created_by = current_user
+        
+        ActionLog.newlog(controller_name, action_name, ed_info.changes, current_user)
         ed_info.save
       end
       unless params[:courses3].blank?
@@ -233,10 +243,12 @@ class StudentsController < ApplicationController
         ed_info.school_id = params[:schools3]
         ed_info.graduated_at = "#{params[:dob_months3]}-#{params[:dob_days3]}-#{params[:dob_years3]}"
         ed_info.created_by = current_user
+        
+        ActionLog.newlog(controller_name, action_name, ed_info.changes, current_user)
         ed_info.save
       end
 
-      ActionLog.newlog(controller_name, action_name, params, current_user)
+
       flash[:notice] = "Student added successfully"
       redirect_to students_path
     else
@@ -271,6 +283,7 @@ class StudentsController < ApplicationController
         redirect_to students_path and return
       end
 
+      ActionLog.newlog(controller_name, action_name, student.changes, current_user)
       student.save
 
       if params[:degree] == "0"
@@ -282,6 +295,8 @@ class StudentsController < ApplicationController
             ed_info.school_id = params[:other_schools][deg[0]][1].to_i
             ed_info.graduated_at = "#{params[:other_years][deg[0]][1]}-#{params[:other_months][deg[0]][1]}-#{params[:other_days][deg[0]][1]}"
             ed_info.created_by = current_user.id
+            
+            ActionLog.newlog(controller_name, action_name, ed_info.changes, current_user)
             ed_info.save
           end
         end
@@ -306,7 +321,8 @@ class StudentsController < ApplicationController
       app.has_envelope = true
       app.has_stamp = true
       app.has_cedula = true
-
+      
+      ActionLog.newlog(controller_name, action_name, app.changes, current_user)
       app.save
 
       unless params[:courses1].blank?
@@ -316,6 +332,8 @@ class StudentsController < ApplicationController
         ed_info.school_id = params[:schools1]
         ed_info.graduated_at = "#{params[:dob_months1]}-#{params[:dob_days1]}-#{params[:dob_years1]}"
         ed_info.created_by = current_user
+        
+        ActionLog.newlog(controller_name, action_name, ed_info.changes, current_user)
         ed_info.save
       end
       unless params[:courses2].blank?
@@ -325,6 +343,8 @@ class StudentsController < ApplicationController
         ed_info.school_id = params[:schools2]
         ed_info.graduated_at = "#{params[:dob_months2]}-#{params[:dob_days2]}-#{params[:dob_years2]}"
         ed_info.created_by = current_user
+        
+        ActionLog.newlog(controller_name, action_name, ed_info.changes, current_user)
         ed_info.save
       end
       unless params[:courses3].blank?
@@ -334,10 +354,11 @@ class StudentsController < ApplicationController
         ed_info.school_id = params[:schools3]
         ed_info.graduated_at = "#{params[:dob_months3]}-#{params[:dob_days3]}-#{params[:dob_years3]}"
         ed_info.created_by = current_user
+        
+        ActionLog.newlog(controller_name, action_name, ed_info.changes, current_user)
         ed_info.save
       end
 
-      ActionLog.newlog(controller_name, action_name, params, current_user)
       flash[:notice] = "Application created successfully"
       redirect_to status_reports_path
 

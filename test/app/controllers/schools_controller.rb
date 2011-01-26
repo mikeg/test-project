@@ -31,9 +31,11 @@ class SchoolsController < ApplicationController
       school.region_id = region.id
       school.province_id = province.id
       school.town_id = town.id
+
+
+      ActionLog.newlog(controller_name, action_name, school.changes, current_user)
       school.save!
-      
-      ActionLog.newlog(controller_name, action_name, params, current_user)
+
       redirect_to schools_path
     else
       @school = School.new
@@ -75,9 +77,10 @@ class SchoolsController < ApplicationController
 
       school.updated_by = current_user.id
       school.updated_at = Time.now.to_date
-      school.save
 
-      ActionLog.newlog(controller_name, action_name, params, current_user)
+
+      ActionLog.newlog(controller_name, action_name, school.changes, current_user)
+      school.save
       redirect_to schools_url
     end
   end
@@ -106,9 +109,10 @@ class SchoolsController < ApplicationController
       school_user = SchoolUser.new
       school_user.school_id = @school.id
       school_user.user_id = user.id
-      school_user.save
 
-      ActionLog.newlog(controller_name, action_name, params, current_user)
+
+      ActionLog.newlog(controller_name, action_name, school_user.changes, current_user)
+      school_user.save
       redirect_to show_users_schools_path(:id => @school.id)
     end
   end

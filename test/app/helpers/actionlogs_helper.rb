@@ -1,18 +1,26 @@
 # Methods added to this helper will be available to all templates in the application.
 module ActionlogsHelper
 
-  def display_formated_logs(params)
-    excluded = ['authenticity_token', 'commit']
-    puts params.inspect
-     html = ""
-     params.each do |h|
-       if !excluded.include?(h[0])
-         html += "#{h[0]} : #{h[1]}"
-         html += "<br/>"
-       end
-       puts h.inspect
-     end
-     html
+  def display_formated_logs(log)
+    excluded = ["updated_at", "created_at"]
+    
+    html = ""
+    puts log.params.inspect
+
+    unless log.params.empty?
+      log.params.each do |h|
+        if !excluded.include?(h[0].to_s)
+          html += h[0].to_s
+          html += " : "
+          html += h[1][0].to_s
+          html += " to "
+          html += h[1][1].to_s
+          html += "<br/>"
+        end
+      end
+    end
+
+    html
   end
 
 end

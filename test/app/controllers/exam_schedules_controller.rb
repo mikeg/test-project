@@ -18,8 +18,9 @@ class ExamSchedulesController < ApplicationController
     exam_schedule.course_id = params[:course_id]
     exam_schedule.created_by = current_user.id
     exam_schedule.updated_by = current_user.id
+
+    ActionLog.newlog(controller_name, action_name, exam_schedule.changes, current_user)
     exam_schedule.save
-    ActionLog.newlog(controller_name, action_name, params, current_user)
     redirect_to exam_schedules_path
   end
   

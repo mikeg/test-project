@@ -1,5 +1,3 @@
-
-
 <div>
   <div id="title_header"><h1>Action Logs</h1></div>
 </div>
@@ -13,12 +11,14 @@
   </tr>
   <%
   @logs.each do |log|
+    unless log.params.empty?
   %>
   <tr>
     <td><%= log.controller.titleize -%></td>
     <td><%= log.action -%></td>
-    <td><%= display_formated_logs(log.params) -%></td>
+    <td><%= display_formated_logs(log) -%></td>
   </tr>
+    <% end %>
   <% end %>
 </table>
 

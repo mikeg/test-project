@@ -19,9 +19,9 @@ class TestCentersController < ApplicationController
   
   def create
     tc = ReviewSchool.new(params[:rschool])
+
+    ActionLog.newlog(controller_name, action_name, tc.changes, current_user)
     tc.save
-    
-    ActionLog.newlog(controller_name, action_name, params, current_user)
     flash[:notice] = "Review School added."
     redirect_to test_centers_path
   end
@@ -29,8 +29,9 @@ class TestCentersController < ApplicationController
   def update
     tc = ReviewSchool.find(params[:id])
     tc.update_attributes(params[:rschool])
+
+    ActionLog.newlog(controller_name, action_name, tc.changes, current_user)
     tc.save
-    ActionLog.newlog(controller_name, action_name, params, current_user)
     flash[:notice] = "Review School updated."
     redirect_to test_centers_path
   end
