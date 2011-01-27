@@ -3,9 +3,7 @@ module ActionlogsHelper
 
   def display_formated_logs(log)
     excluded = ["updated_at", "created_at"]
-    
     html = ""
-    puts log.params.inspect
 
     unless log.params.empty?
       log.params.each do |h|
