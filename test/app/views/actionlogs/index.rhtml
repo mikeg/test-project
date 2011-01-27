@@ -12,12 +12,15 @@
   <%
   @logs.each do |log|
     unless log.params.empty?
+      history = display_formated_logs(log)
+      unless history.blank?
   %>
   <tr>
     <td><%= log.controller.titleize -%></td>
     <td><%= log.action -%></td>
-    <td><%= display_formated_logs(log) -%></td>
+    <td><%= history -%></td>
   </tr>
+      <% end %>
     <% end %>
   <% end %>
 </table>
