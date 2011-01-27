@@ -7,7 +7,6 @@ class PrcLocationsController < ApplicationController
     @location.code = params[:prc][:code]
     @location.is_satellite = params[:prc][:is_satellite]
     @location.is_test_center = params[:prc][:is_test_center]
-    @location.update_attributes!(params[:prc])
     
     ActionLog.newlog(controller_name, action_name, @location.changes, current_user)
     @location.save
