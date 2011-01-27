@@ -20,7 +20,7 @@
     <td><%= log.controller.titleize -%></td>
     <td><%= log.action -%></td>
     <td><%= history -%></td>
-    <td><%= log.created_at -%></td>
+    <td><%= log.created_at.strftime("%B %d, %Y") -%></td>
   </tr>
       <% end %>
     <% end %>
