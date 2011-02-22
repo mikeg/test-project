@@ -2,7 +2,7 @@
 module ActionlogsHelper
 
   def display_formated_logs(log)
-    excluded = ["updated_at", "created_at", "updated_by"]
+    excluded = ["updated_at", "created_at", "updated_by", "_method", "authenticity_token"]
     html = ""
 
     unless log.params.empty?
