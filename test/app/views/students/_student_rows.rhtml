@@ -16,9 +16,9 @@
     <td><%= link_to student.fullname, view_student_path(student) -%></td>
     <td><%= student.school.name rescue '' %></td>
     <td><%= student.sex %></td>
-    <td><%= student.region.name %></td>
-    <td><%= student.province.name %></td>
-    <td><%= student.town.name %>
+    <td><%= student.region.name rescue '' %></td>
+    <td><%= student.province.name rescue '' %></td>
+    <td><%= student.town.name rescue ''%>
       <div id="student_row_actions_<%= student.id %>" style="display: none; float: right;">
        <%= link_to image_tag("icons/edit.png"), edit_student_path(student), :title => "Edit "  %>
       </div>
