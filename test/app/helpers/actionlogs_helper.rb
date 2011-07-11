@@ -10,9 +10,9 @@ module ActionlogsHelper
         if !excluded.include?(h[0].to_s)
           html += h[0].to_s
           html += " : "
-          html += h[1][0].to_s
+          html += h[1][0].to_s rescue ''
           html += " to "
-          html += h[1][1].to_s
+          html += h[1][1].to_s rescue ''
           html += "<br/>"
         end
       end

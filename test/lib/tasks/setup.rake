@@ -466,7 +466,7 @@ namespace :setup do
       { "name" => "Single", "code" => "single"},
       { "name" => "Married", "code" => "married" },
       { "name" => "Widow/er", "code" => "widow" },
-      { "name" => "Divorsed", "code" => "divorsed" },
+      { "name" => "Divorced", "code" => "divorced" },
       { "name" => "Annulled", "code" => "annulled" },
       { "name" => "Legally Separated", "code" => "separated" }
     ]
