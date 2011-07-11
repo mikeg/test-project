@@ -8,7 +8,7 @@ module ActionlogsHelper
     unless log.params.empty?
       log.params.each do |h|
         action_str = h[0].to_s rescue ''
-        if !excluded.include?(h[0].to_s)
+        if !excluded.include?(action_str)
           html += h[0].to_s rescue ''
           html += " : "
           html += h[1][0].to_s rescue ''
