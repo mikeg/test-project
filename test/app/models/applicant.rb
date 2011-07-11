@@ -4,10 +4,11 @@ class Applicant < ActiveRecord::Base
   belongs_to :examination_schedule
   
   def self.search(search=nil, page=1, school=nil)
+    fourth_or_graduate = ['fourth2', 'graduate']
     unless school.nil?
-      students= Student.find(:all, :conditions => ['school_id = ? and (firstname like ? or lastname like ?)', school.id, "%#{search}%", "%#{search}%" ], :order => "lastname asc")      
+      students= Student.find(:all, :conditions => ['year IN (?) AND school_id = ? and (firstname like ? or lastname like ?)', fourth_or_graduate, school.id, "%#{search}%", "%#{search}%" ], :order => "lastname asc")      
     else
-      students= Student.find(:all, :conditions => ['firstname like ? or lastname like ?', "%#{search}%", "%#{search}%" ], :order => "lastname asc")
+      students= Student.find(:all, :conditions => ['year IN (?) AND firstname like ? or lastname like ?', fourth_or_graduate, "%#{search}%", "%#{search}%" ], :order => "lastname asc")
     end
     
     student_ids = students.map(&:id)
