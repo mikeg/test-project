@@ -21,7 +21,11 @@ class SessionsController < ApplicationController
     unless @user.nil?
       if @user.is_active?
         create_session
-        redirect_to dashboard_path
+        if @user.username == "admin"
+          redirect_to schools_path
+        else
+          redirect_to dashboard_path
+        end
       else
         flash[:error] = "Account Temporarily On-Hold. Please contact BoN Administrator. Thank You."
         redirect_to index_sessions_path

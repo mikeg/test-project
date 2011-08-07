@@ -30,32 +30,34 @@ class StudentsController < ApplicationController
     @nursing_course = Course.find_by_abbrev("BSN")
     @default_country = Country.find_by_code("PH")
     
-    region = Region.find(@student.region_id)
-    province = Province.find(@student.province_id)
-    pob_province = Province.find(@student.pob_province_id)
-    town = Town.find(@student.town_id)
-    pob_town = Town.find(@student.pob_town_id)
-    
+    region = Region.find(@student.region_id) rescue nil
+    unless region.nil?
+      province = Province.find(@student.province_id)
+      pob_province = Province.find(@student.pob_province_id)
+      town = Town.find(@student.town_id)
+      pob_town = Town.find(@student.pob_town_id)
+    end
+
     regions = Region.find(:all)
     regions.each do |r|
-      @regions << [r.name.titleize, r.id]
+      @regions << [CGI.unescapeHTML(r.name.titleize), r.id]
     end
     
     unless region.provinces.empty?
       region.provinces.find(:all, :order => "name asc").each do |p|
-        @provinces << [p.name.titleize, p.id]
+        @provinces << [CGI.unescapeHTML(p.name.titleize), p.id]
       end
       province.towns.find(:all, :order => "name asc").each do |t|
-        @towns << [t.name.titleize, t.id]
+        @towns << [CGI.unescapeHTML(t.name.titleize), t.id]
       end
     end
 
     unless region.provinces.empty?
       region.provinces.find(:all, :order => "name asc").each do |p|
-        @pob_provinces << [p.name.titleize, p.id]
+        @pob_provinces << [CGI.unescapeHTML(p.name.titleize), p.id]
       end
       pob_province.towns.find(:all, :order => "name asc").each do |t|
-        @pob_towns << [t.name.titleize, t.id]
+        @pob_towns << [CGI.unescapeHTML(t.name.titleize), t.id]
       end
     end
   end
@@ -375,7 +377,7 @@ class StudentsController < ApplicationController
     @region, @provinces, @towns = [], [], []
     @region = Region.find(params[:region_id])
     @region.provinces.find(:all, :order => "name asc").each do |p|
-      @provinces << [p.name.titleize, p.id]
+      @provinces << [CGI.unescapeHTML(p.name.titleize), p.id]
     end
 
     @region.provinces.first.towns.each do |t|
@@ -394,7 +396,7 @@ class StudentsController < ApplicationController
     @towns = []
     @province = Province.find(params[:province_id])
     @province.towns.find(:all, :order => "name asc").each do |t|
-      @towns << [t.name.titleize, t.id]
+      @towns << [CGI.unescapeHTML(t.name.titleize), t.id]
     end
     render :update do |page|
       page.replace_html("address_town_div", :partial => 'students/town_select', :locals => { :towns => @towns, :selected_id => nil })
@@ -410,7 +412,7 @@ class StudentsController < ApplicationController
     end
 
     @region.provinces.first.towns.find(:all, :order => "name asc").each do |t|
-      @pob_towns << [t.name.titleize, t.id]
+      @pob_towns << [CGI.unescapeHTML(t.name.titleize), t.id]
     end
 
     render :update do |page|
@@ -425,7 +427,7 @@ class StudentsController < ApplicationController
     @pob_towns = []
     @province = Province.find(params[:province_id])
     @province.towns.find(:all, :order => "name asc").each do |t|
-      @pob_towns << [t.name.titleize, t.id]
+      @pob_towns << [CGI.unescapeHTML(t.name.titleize), t.id]
     end
     render :update do |page|
       page.replace_html("pob_town_div", :partial => 'students/pob_town_select', :locals => { :towns => @pob_towns, :selected_id => nil})

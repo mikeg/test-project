@@ -13,8 +13,11 @@
     <div id="schools_div"></div>
     </li>
 
-  <li><span id="prc_location">PRC Location Handled: </span></li>
+  <div id="prc_location">
+  <li><span>PRC Location Handled: </span></li>
   <li><%= select_tag "user[location]", options_for_select(@prc_locations,nil), :class => "text_field" %></li>
+  </div>
+
   <li>Employee No.: </li>
   <li><%= text_field_tag "user[employee_no]",nil, :class => "text_field" %></li>
   <li>Username: </li>
@@ -41,6 +44,9 @@
     var role = $j("#role_code").val();
     if (role == "foster") {
       $j("#user_location").hide();
+      $j("#prc_location").hide();
+    }else if (role == "registrar") {
+      $j("#user_location").show();
       $j("#prc_location").hide();
     }else{
       $j("#user_location").show();

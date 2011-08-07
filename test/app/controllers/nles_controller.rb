@@ -16,7 +16,7 @@ class NlesController < ApplicationController
       if params[:so] == "yes"
         @applications = Applicant.find(:all, :conditions => ["school_id = ? AND special_order IS NOT NULL AND is_completed = ?", current_user.school_id, true])
       else
-        @applications = Applicant.find(:all, :conditions => ["school_id = ? AND special_order IS NOT NULL AND is_completed = ?", current_user.school_id, false])
+        @applications = Applicant.find(:all, :conditions => ["school_id = ? AND special_order IS NULL AND is_completed = ?", current_user.school_id, false])
       end
     end
   end
