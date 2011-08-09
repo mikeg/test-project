@@ -6,6 +6,7 @@ class Student < ActiveRecord::Base
   belongs_to :country
   
   def self.with_foster(school, page)
+    puts school.id
     Student.paginate(
                :per_page => 20,
                :page => page,
@@ -51,7 +52,7 @@ class Student < ActiveRecord::Base
   def self.foster_search(search, page, foster)
     paginate :per_page => 20,
              :page => page,
-             :conditions => [' foster_id IS NOT NULL AND  ( firstname like ? or lastname like ? or middlename like ?)', "%#{search}%", "%#{search}%", "%#{search}%"],
+             :conditions => [' foster_id IS NULL AND  ( firstname like ? or lastname like ? or middlename like ?)', "%#{search}%", "%#{search}%", "%#{search}%"],
              :order => "lastname"
   end
 

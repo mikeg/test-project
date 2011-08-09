@@ -176,7 +176,6 @@ class FosterStudentsController < ApplicationController
       student.pob_region_id = params[:pob_region_id]
       student.pob_province_id = params[:pob_province_id]
       student.pob_town_id = params[:pob_town_id]
-      student.school_id = current_user.school_id
       student.review_center1 = params[:review_center1]
       student.review_center2 = params[:review_center2]
       student.review_center3 = params[:review_center3]

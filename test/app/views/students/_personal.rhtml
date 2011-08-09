@@ -105,37 +105,55 @@
     </tr>
 
     <tr>
-      <td width="220" align="right">Father's Firstname: </td>
+      <td width="220" align="right">Father's first name: </td>
       <td>
         <%= text_field_tag "student[fathers_firstname]"%>
-        Maiden Name:
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Father's Maiden name: </td>
+      <td>
         <%= text_field_tag "student[fathers_maiden]"%>
-        Last Name:
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Father's Last name: </td>
+      <td>
         <%= text_field_tag "student[fathers_lastname]"%>
-        </td>
-    </tr>
-    <tr>
-      <td width="220" align="right">Father's Citizenship: </td>
-      <td>
-        <%= select_tag "student[father_citizenship_id]", options_for_select(@countries, @default_country.id)%>
-        </td>
-    </tr>
-    
-    <tr>
-      <td width="220" align="right">Mother's Firstname: </td>
-      <td>
-        <%= text_field_tag "student[mothers_firstname]"%>
-        Maiden Name:
-        <%= text_field_tag "student[mothers_maiden]"%>
-        Last Name:
-        <%= text_field_tag "student[mothers_lastname]"%>
         </td>
     </tr>
 
     <tr>
+      <td width="220" align="right">Father's Citizenship: </td>
+      <td>
+        <%= select_tag "student[father_citizenship_id]", options_for_select(@countries, nil)%>
+        </td>
+    </tr>
+    
+    <tr>
+      <td width="220" align="right">Mother's First name: </td>
+      <td>
+        <%= text_field_tag "student[mothers_firstname]"%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Mother's Maiden nam: </td>
+      <td>
+        <%= text_field_tag "student[mothers_maiden]"%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Mother's Last name: </td>
+      <td>
+        <%= text_field_tag "student[mothers_lastname]"%>
+        </td>
+    </tr>
+
+
+    <tr>
       <td width="220" align="right">Mother's Citizenship: </td>
       <td>
-        <%= select_tag "student[mother_citizenship_id]", options_for_select(@countries, @default_country.id)%>
+        <%= select_tag "student[mother_citizenship_id]", options_for_select(@countries, nil)%>
         </td>
     </tr>
 
@@ -160,6 +178,7 @@
 
 
 <script>
+
 $j("#student_marital_status").change(function() {
   var val = $j("#student_marital_status").val();
   if (val == "married") {

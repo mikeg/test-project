@@ -1,6 +1,6 @@
 <span class="page_title">Add Student</span>
 <br/><br/>
-<% form_tag new_student_path, :method => 'post' do %>
+<% form_tag new_student_path, :method => 'post', :id => "add_student_form" do %>
   <%= render :partial => "naf" %>
   <%= render :partial => "personal" %>
   <%= render :partial => "educational" %>
@@ -13,6 +13,68 @@
 <%= observe_field("pob_region_id", :url => {:action => :update_province_select_pob }, :with => 'region_id', :loading => "$('pob_loader').show()", :complete => "$('pob_loader').hide()") %>
 
 <script>
+
+
+  $j("#add_student_form").bind("submit", function() {
+    if ($j("#student_lastname").val().length < 1) {
+      alert("Please enter surname/family name")
+      $j("#student_lastname").focus();
+      return false;
+    }else if ($j("#student_firstname").val().length < 1) {
+      alert("Please enter first name")
+      $j("#student_firstname").focus();
+      return false;
+    }else if ($j("#student_middlename").val().length < 1) {
+      alert("Please enter middle name")
+      $j("#student_middlename").focus();
+      return false;
+    }else if ($j("#student_email").val().length < 1) {
+      alert("Please enter email address")
+      $j("#student_email").focus();
+      return false;
+    }else if ($j("#student_fathers_firstname").val().length < 1) {
+      alert("Please enter father's first name")
+      $j("#student_fathers_firstname").focus();
+      return false;
+    }else if ($j("#student_fathers_maiden").val().length < 1) {
+      alert("Please enter father's maiden name")
+      $j("#student_fathers_maiden").focus();
+      return false;
+    }else if ($j("#student_fathers_lastname").val().length < 1) {
+      alert("Please enter father's last name")
+      $j("#student_fathers_lastname").focus();
+      return false;
+    }else if ( (!$j("#student_sex_male").is(':checked') && !$j("#student_sex_female").is(':checked')) ){
+      alert("Please specify your gender.")
+      $j("#student_sex_male").focus();
+      return false;
+    }else if ($j("#student_fathers_citizenship_id").val() == "") {
+      alert("Please select father's citizenship")
+      $j("#student_fathers_citizenship_id").focus();
+      return false;
+    }else if ($j("#student_mothers_citizenship_id").val() == "") {
+      alert("Please select mother's citizenship")
+      $j("#student_mothers_citizenship_id").focus();
+      return false;
+    }else if ($j("#student_marital_status").val() == "") {
+      alert("Please select marital status")
+      $j("#student_marital_status").focus();
+      return false;
+    }
+
+  	$j.ajax({
+  		type		: "POST",
+  		cache	: false,
+  		url		: "/data/login.php",
+  		data		: $(this).serializeArray(),
+  		success: function(data) {
+  		  alert(data);
+  		}
+  	});
+
+  	return false;
+  });
+
 function check_duplicate_studentx(){
   var firstname = $j("#student_firstname").val();
   var lastname = $j("#student_lastname").val();
