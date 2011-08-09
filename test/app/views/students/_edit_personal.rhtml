@@ -105,20 +105,64 @@
         Citizensip : <%= select_tag "student[spouse_citizenship_id]", options_for_select(@countries, @student.spouse_citizenship_id)%>
         </td>
     </tr>
+
     <tr>
-      <td width="220" align="right">Father's Name: </td>
+      <td width="220" align="right">Father's first name: </td>
       <td>
-        <%= text_field_tag "student[father]", @student.father %>
-        Citizensip : <%= select_tag "student[father_citizenship_id]", options_for_select(@countries, @student.father_citizenship_id.to_i)%>
+        <%= text_field_tag "student[fathers_firstname]", @student.fathers_firstname%>
         </td>
     </tr>
     <tr>
-      <td width="220" align="right">Mother's Name: </td>
+      <td width="220" align="right">Father's Maiden name: </td>
       <td>
-        <%= text_field_tag "student[mother]", @student.mother%>
-        Citizensip : <%= select_tag "student[mother_citizenship_id]", options_for_select(@countries, @student.mother_citizenship_id.to_i) %>
+        <%= text_field_tag "student[fathers_maiden]", @student.fathers_maiden%>
         </td>
     </tr>
+    <tr>
+      <td width="220" align="right">Father's Last name: </td>
+      <td>
+        <%= text_field_tag "student[fathers_lastname]", @student.fathers_lastname%>
+        </td>
+    </tr>
+
+    <tr>
+      <td width="220" align="right">Father's Citizenship: </td>
+      <td>
+        <% fz = Country.find(@student.father_citizenship_id)%>
+        <%= select_tag "student[father_citizenship_id]", options_for_select(@countries, [fz.name, fz.id])%>
+        </td>
+    </tr>
+    
+    <tr>
+      <td width="220" align="right">Mother's First name: </td>
+      <td>
+        <%= text_field_tag "student[mothers_firstname]", @student.mothers_firstname%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Mother's Maiden nam: </td>
+      <td>
+        <%= text_field_tag "student[mothers_maiden]", @student.mothers_maiden%>
+        </td>
+    </tr>
+    <tr>
+      <td width="220" align="right">Mother's Last name: </td>
+      <td>
+        <%= text_field_tag "student[mothers_lastname]", @student.mothers_lastname%>
+        </td>
+    </tr>
+
+
+    <tr>
+      <td width="220" align="right">Mother's Citizenship: </td>
+      <td>
+        <% mz = Country.find(@student.mother_citizenship_id)%>
+        <%= select_tag "student[mother_citizenship_id]", options_for_select(@countries, [mz.name, mz.id])%>
+        </td>
+    </tr>
+
+
+
     <tr>
       <td width="220" align="right">Have you ever been convicted in a final judgment by any military tribunal or administrative body? </td>
       <td>
