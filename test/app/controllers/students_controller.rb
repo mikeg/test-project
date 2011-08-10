@@ -588,14 +588,14 @@ class StudentsController < ApplicationController
     @default_country = Country.find_by_code("PH")
     
     @review_schools = []
-    @review_schools << ['','']
+    @review_schools << ['Choose below', '']
     review_schools = ReviewSchool.find(:all)
     review_schools.each do |r|
       @review_schools << [r.name, r.id]
     end
 
     @review_centers = []
-    @review_centers << ['','']
+    @review_centers << ['Choose below', '']
     review_centers = ReviewCenter.find(:all)
     review_centers.each do |r|
       @review_centers << [r.name, r.id]
